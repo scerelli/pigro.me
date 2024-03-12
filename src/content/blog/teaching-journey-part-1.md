@@ -3,13 +3,14 @@
 title: 'The beginning of my teaching journey'
 description: 'This blog post shares my experiences and challenges in bringing the magic of tech to a young audience in Turin. It is a reflection on bridging the gap between curiosity and understanding, tailored for educators parents, and anyone interested in the transformative power of tech education.'
 pubDate: 'Feb 20 2024'
-
+updateDate: 'Mar 12 2024'
 ---
+
 Growing up as a 90s kid, I was blessed with the luxury of gradually growing alongside technology. My afternoons were filled with boundless curiosity, delving into the enchanting world hidden within circuits and screens. The magic of technology wasn't just a backdrop to my childhood; it became a core part of my identity.
 
 This journey began in the most unexpected of ways – with a computer from my father, which I promptly disassembled. My explorations were not without consequences; many mornings, my father would leave for work only to return to a dismantled PC or a completely changed operating system. 
 
-My early adventures, especially my dive into Linux when I was ~12 years old (I was attracted by the camaleon of open suse  :'D), were not mere moments of rebellion but milestones of discovery, even though were marred with lost documents and steep learning curves.
+My early adventures, especially my dive into Linux when I was ~12 years old (I was attracted by the chameleon of [openSUSE](https://www.opensuse.org/)  :'D), were not mere moments of rebellion but milestones of discovery, even though were marred with lost documents and steep learning curves.
 
 <br />
 

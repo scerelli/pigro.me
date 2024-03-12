@@ -18,3 +18,7 @@
 h1 {
 	@apply text-3xl
 }
+
+.blog-content a {
+	@apply underline hover:text-slate-500  dark:hover:text-slate-50
+}
