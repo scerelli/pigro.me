@@ -1,39 +1,27 @@
 ---
 import { getCollection } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro'
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts'
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
 import FormattedDate from '../components/FormattedDate.astro';
+import MainLayout from '../layouts/MainLayout.astro'
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body class="min-h-[100vh] flex flex-col">
-		<Header />
-		<main class="flex justify-center w-full bg-transparent flex-1">
-			<section class="max-w-screen-2xl w-full">
-				<ul class="flex flex-col justify-center">
-					{
-						posts.map((post) => (
-							<li class="border-b-2 last-of-type:border-b-0">
-								<a class="flex flex-col items-center py-5 gap-0" href={`/blog/${post.slug}/`}>
-									<h4 class="text-xl mb-0">{post.data.title}</h4>
-									<p class="text-sm"><FormattedDate date={post.data.pubDate} /></p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
-</html>
+<MainLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<section class="w-full flex-1">
+		<ul class="flex flex-col justify-center">
+			{
+				posts.map((post) => (
+					<li class="dark:text-slate-50 text-slate-900 border-b-2 last-of-type:border-b-0">
+						<a class="flex flex-col items-center py-5 gap-0" href={`/blog/${post.slug}/`}>
+							<h4 class="text-xl mb-0">{post.data.title}</h4>
+							<p class="text-sm"><FormattedDate date={post.data.pubDate} /></p>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</section>
+</MainLayout>

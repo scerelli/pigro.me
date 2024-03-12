@@ -1,6 +1,7 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
+import { AstroFont } from 'astro-font'
 import '../styles/global.css';
 
 interface Props {
@@ -47,3 +48,36 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<AstroFont
+	config={[
+		{
+			name: "Favorit",
+			src: [
+				{
+					style: 'normal',
+					weight: '400',
+					path: './public/fonts/ABCFavorit-Regular.woff'
+				},
+			],
+			preload: true,
+			display: "swap",
+			selector: "h1",
+			fallback: "serif",
+		},
+		{
+			name: "ArialGrotesk",
+			src: [
+				{
+					style: 'normal',
+					weight: '400',
+					path: './public/fonts/ArialGrotesk-Regular.woff'
+				},
+			],
+			preload: true,
+			display: "swap",
+			selector: "body",
+			fallback: "sans-serif",
+		},
+	]}
+/>

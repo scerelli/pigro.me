@@ -1,43 +1,51 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import FormattedDate from '../components/FormattedDate.astro'
+import Layout from '../layouts/MainLayout.astro';
 ---
 
 <Layout
-	title="About Me and this website"
-	description="Lorem ipsum dolor sit amet"
+	title="About me"
+	description="Hello! I'm Stefano 🧙🏼"
 	pubDate={new Date('December 24 2023')}
 >
-	<p>
-		Hello! I'm Stefano 🧙🏼, a software engineer who's been navigating the code world since the age of 13.
-		My career has been a journey through a variety of technologies, programming languages, and dynamic team environments.<br />
-		But what truly fascinates me is the <i>"magic"</i> of human-machine interaction and how technology, in its broader sense, impacts our lives.
-	</p>
+	<section class="w-full flex-1 text-slate-900 dark:text-slate-50">
+		<div class="flex flex-col gap-2 mb-4">
+			<FormattedDate date={new Date("24 Dec 2023")} />
+			<h1 class="mx-0">About me</h1>
+			<hr />
+		</div>
+		<p>
+			Hello! I'm Stefano 🧙🏼, a software engineer who's been navigating the code / tech world since the age of 13.
+			My career has been a journey through a variety of technologies, programming languages, and dynamic team environments.<br />
+			But what truly fascinates me is the <i>"magic"</i> of human-machine interaction and how technology, in its broader sense, impacts our lives.
+		</p>
 
-	<p>
-		Since my childhood in the 90s, I've been intrigued by how simple electrical circuits evolved into the daily interfaces we interact with.
-		<br />While I'm not nostalgic, as the digital world today has its own joys, there's a certain charm in those early days.
-		This curiosity has turned into a lifelong study of how products, from the physical like a mouse to services like Airbnb, present themselves.
-		It's about making complex systems intuitive and enjoyable, a pursuit of simple solutions to complex problems.
-	</p>
+		<p>
+			Since my childhood in the 90s, I've been intrigued by how simple electrical circuits evolved into the daily interfaces we interact with.
+			<br />While I'm not nostalgic, as the digital world today has its own joys, there's a certain charm in those early days.
+			This curiosity has turned into a lifelong study of how products, from the physical like a mouse to services like Airbnb, present themselves.
+			It's about making complex systems intuitive and enjoyable, a pursuit of simple solutions to complex problems.
+		</p>
 
-	<br />
-	<p>
-		In my various roles, I've passionately embraced more than just engineering tasks.
-		Even when hired as an engineer, I consistently sought involvement in design processes.
-		This wasn't just about crossing disciplinary boundaries; it was about being closer to my end stakeholders.
-		Understanding their needs firsthand gave me a broader perspective on my work, allowing me to see beyond just the immediate task at hand.
-		I've always believed in the importance of comprehending the full spectrum of a product's impact, from initial design to final implementation.
-		Moreover, I found a special kind of fulfillment in developing tools for other developers.
-		This wasn't just about coding; it was about crafting solutions that helped my colleagues build faster and automate more effectively.
-		By focusing on these tools, I aimed to streamline our workflows, enhancing both efficiency and simplifcation in our daily tasks.
-	</p>
+		<br />
+		<p>
+			In my various roles, I've passionately embraced more than just engineering tasks.
+			Even when hired as an engineer, I consistently sought involvement in design processes.
+			This wasn't just about crossing disciplinary boundaries; it was about being closer to my end stakeholders.
+			Understanding their needs firsthand gave me a broader perspective on my work, allowing me to see beyond just the immediate task at hand.
+			I've always believed in the importance of comprehending the full spectrum of a product's impact, from initial design to final implementation.
+			Moreover, I found a special kind of fulfillment in developing tools for other developers.
+			This wasn't just about coding; it was about crafting solutions that helped my colleagues build faster and automate more effectively.
+			By focusing on these tools, I aimed to streamline our workflows, enhancing both efficiency and simplifcation in our daily tasks.
+		</p>
 
-	<br />
-	<p>
-		Away from technology, I find solace in the mountains and nature, exploring different ways of living. The tranquility there balances the digital chaos of my professional life. I'm also fascinated by languages, not just the programming kind. My current challenge is self-learning Japanese, an adventure both challenging and rewarding.
-	</p>
+		<br />
+		<p>
+			Away from technology, I find solace in the mountains and nature, exploring different ways of living. The tranquility there balances the digital chaos of my professional life. I'm also fascinated by languages, not just the programming kind. My current challenge is self-learning Japanese, an adventure both challenging and rewarding.
+		</p>
 
-	<p>
-		Fun fact: I spend a lot of time observing, and sometimes even talking to, insects and small animals. There's something captivating about watching these tiny creatures live their lives. It's a whole different world, right under our noses!
-	</p>
+		<p>
+			Fun fact: I spend a lot of time observing, and sometimes even talking to, insects and small animals. There's something captivating about watching these tiny creatures live their lives. It's a whole different world, right under our noses!
+		</p>
+	</section>
 </Layout>
