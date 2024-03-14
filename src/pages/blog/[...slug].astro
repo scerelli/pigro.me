@@ -17,7 +17,7 @@ const post = Astro.props;
 const { Content } = await post.render();
 ---
 <MainLayout title={post.data.title} description={post.data.description} >
-	<div class="leading-7 text-gray-700 dark:text-gray-300 px-5">
+	<div class="leading-7 px-5">
 		<article
 			id="article"
 			role="article"
