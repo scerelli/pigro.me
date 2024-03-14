@@ -16,7 +16,7 @@ body {
 	font-size: 16px;
 	font-weight: regular;
 	font-family: ArialGrotesk;
-	@apply text-slate-600 dark:text-gray-300
+	@apply text-slate-600 dark:text-gray-300 dark:bg-slate-800
 }
 
 * {

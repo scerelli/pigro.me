@@ -29,6 +29,6 @@ Starting with a single fourth-grade class, I aim to recreate the sense of wonder
 
 <br />
 
-I must extend my heartfelt gratitude to Maestra Giorgia and Elena, that belived in me and without whom this journey would not have been possible. Their support has not only enabled this initiative, but has also made it a transformative experience for both the students and me. Through this blog, I plan to document our experiences, challenges, and achievements. The ultimate goal is to create an open and free framework for anyone wishing to embark on a similar venture, be it with their children, students, or for personal enrichment.
+I must extend my heartfelt gratitude to Maestra Giorgia and Elena, that believed in this project and without whom this journey would not have been possible. Their support has not only enabled this initiative, but has also made it a transformative experience for both the students and me. Through this blog, I plan to document our experiences, challenges, and achievements. The ultimate goal is to create an open and free framework for anyone wishing to embark on a similar venture, be it with their children, students, or for personal enrichment.
 
 I hope you'll choose to accompany me on this journey, where the real adventure lies in sharing  for growing. I eagerly await your feedback and insights as we embark on this path.  
