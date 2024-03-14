@@ -15,10 +15,22 @@
 		0 16px 32px rgba(var(--gray), 33%);
 }
 
+body {
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h5 {
+	font-family: "Favorit";
+}
+
 h1 {
 	@apply text-3xl
 }
 
 .blog-content a {
 	@apply underline hover:text-slate-500  dark:hover:text-slate-50
+}
+
+.blog-content h2 {
+	@apply text-2xl block mb-2 first-of-type:mt-0 mt-2
 }
