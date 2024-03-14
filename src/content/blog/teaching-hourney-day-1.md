@@ -19,7 +19,7 @@ The adventure started with the children discovering a secret message in class, a
 <br />
 <br />
 
-![Our Computer Room made by just one old computer in an empty room](./images/computer-room.jpeg)
+![Our Computer Room made by just one old computer in an empty room](./images/computer-room.jpg)
 
 <br />
 
