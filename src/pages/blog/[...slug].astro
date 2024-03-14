@@ -24,17 +24,15 @@ const { Content } = await post.render();
 			class="prose mt-8 prose-pre:border-[1px] prose-pre:border-skin-line prose-pre:border-solid"
 		>
 			<div class="flex flex-col gap-2 mb-4">
-				<div class="date">
-					<FormattedDate date={post.data.pubDate} />
-					{
-						post.data.updatedDate && (
-							<div class="last-updated-on">
-								Last updated on <FormattedDate date={post.data.updatedDate} />
-							</div>
-						)
-					}
-				</div>
 				<h1 class="mx-0">{post.data.title}</h1>
+				<FormattedDate date={post.data.pubDate} showYear />
+				{
+					post.data.updatedDate && (
+						<div class="last-updated-on">
+							Last updated on <FormattedDate date={post.data.updatedDate} />
+						</div>
+					)
+				}
 				<hr />
 			</div>
 			<div class="blog-content">

@@ -17,10 +17,21 @@
 
 body {
 	font-size: 16px;
+	font-weight: regular;
+	font-family: ArialGrotesk;
+}
+
+p, span, a {
+	font-family: ArialGrotesk;
 }
 
 h1, h2, h3, h4, h5, h5 {
 	font-family: "Favorit";
+	@apply dark:text-green-300 text-green-600;
+}
+
+a {
+	@apply dark:text-green-300 text-green-600 hover:underline active:underline;
 }
 
 h1 {
@@ -33,4 +44,12 @@ h1 {
 
 .blog-content h2 {
 	@apply text-2xl block mb-2 first-of-type:mt-0 mt-2
+}
+
+ul {
+	@apply flex flex-col gap-3 pl-4 my-4;
+}
+
+ul li {
+	@apply list-disc
 }
