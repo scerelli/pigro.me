@@ -21,14 +21,14 @@ Having been fortunate enough to turn my passion into a career as a software engi
 
 <br />
 
-This year marked a pivotal change in my life: I decided to dedicate some of my time to teaching, "stepping away" from the digital world to engage directly with the generations that will shape the world when I will be an old man. My initiative isn't about becoming an influencer or a content creator, but about making a tangible difference in a local school in the city I live, Turin (Italy), working with children who may not have the same opportunities I was fortunate enough to have and in a political system that does everything in their power to go against the youngest generations.
+This year marked a pivotal change in my life: I decided to dedicate some of my time to teaching, "stepping away" from the digital world to engage directly with the generations that will shape the world when I will be an old man. My initiative isn't about becoming an influencer or a content creator, but it is about making a tangible difference in a local school in the city where I live, Turin (Italy), working with children who may not have the same opportunities I was fortunate enough to have and in a political system that does everything in its power to go against the youngest generations.
 
 <br />
 
-Starting with a single fourth-grade class, I aim to recreate the sense of wonder I felt as a child. Our journey, that I will shape up together with my co-pilots: the students and teachers, will encompass hands-on experiences with computers, an exploration of computational thinking, and an understanding of the significant role we play in using and shaping up technology. This project is not just about teaching; it's about sharing a journey of discovery, responsibility, and creativity.  
+Starting with a single fourth-grade class, I aim to recreate the sense of wonder I felt as a child. The journey,  I will shape up together with my co-pilots students and teachers, will encompass hands-on experiences with computers, an exploration of computational thinking, and an understanding of the significant role we play in using and shaping up technology. This project is not just about teaching; it's about sharing a journey of discovery, responsibility, and creativity.  
 
 <br />
 
-I must extend my heartfelt gratitude to Maestra Giorgia and Elena, that believed in this project and without whom this journey would not have been possible. Their support has not only enabled this initiative, but has also made it a transformative experience for both the students and me. Through this blog, I plan to document our experiences, challenges, and achievements. The ultimate goal is to create an open and free framework for anyone wishing to embark on a similar venture, be it with their children, students, or for personal enrichment.
+I must extend my heartfelt gratitude to Maestra Giorgia and Elena, that who believed in this project and without whom this journey would not have been possible. Their support not only has enabled this initiative, but has also made it a transformative experience for both the students and myself. Through this blog, I plan to document our experiences, challenges, and achievements. The ultimate goal is to create an open and free framework for anyone who wishes to embark on a similar venture, be it either with their children, students, or for personal enrichment.
 
-I hope you'll choose to accompany me on this journey, where the real adventure lies in sharing  for growing. I eagerly await your feedback and insights as we embark on this path.  
+I hope you'll choose to accompany me on this journey, where the real adventure lies in sharing  for growing. I eagerly await your feedback and your insights as we embark on this path.  

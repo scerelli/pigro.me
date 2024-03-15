@@ -8,14 +8,14 @@ pubDate: 'Feb 22 2024'
 
 In our most recent pre-sessions, Maestra Giorgia and I decided to inject a bit of mystery and excitement into the classroom. We designed an introductory quest, a story for the children to unravel. This approach was aimed at sparking their interest right from the start.<br>
 
-Maestra Giorgia shared her insight that role-playing, woven with educational goals, could be one of the most engaging teaching methods. It's the allure of storytelling, the joy of play, that captivates young minds, making complex concepts more accessible and intriguing.
+Maestra Giorgia shared her insight that role-playing, woven with educational goals, could be one of the most engaging teaching methods. It's the allure of storytelling, together with the joy of play, that captivates young minds, making complex concepts more accessible and intriguing.
 
 We reflected on what the role of a coder, someone who writes instructions for a machine, might mean to them. Considering they were learning about scribes in history class, we drew a parallel: just as scribes were essential in their time for documenting important information, today's programmers play a similar role in our digital world. The concept was to frame programmers as the modern scribes of our time, translating human intent into machine actions.
 <br /><br />
 
 ## The Quest Begins
 
-The adventure started with the children discovering a secret message in class, a coded note that, once deciphered, led them straight to me in the computer room. And let's set the scene correctly: our "computer room" is merely an empty space (for now), underused and forgotten, which we will transform into a tech exploration zone.
+The adventure started with the children discovering a secret message in class, a coded note that, once deciphered, led them straight to me in the computer room. But let's describe the setting correctly: our "computer room" is merely an empty space (for now), underused and forgotten, which we will eventually transform into a tech exploration zone.
 <br />
 <br />
 
@@ -32,7 +32,7 @@ The moment I entered the room, I was greeted with eager faces. Although we had n
 
 We started with an ice-breaking session, sitting in a circle, exchanging questions. The children were curious about me, my past, and what we would be doing together. It was a moment of mutual curiosity, setting the ground for a collective learning experience.
 
-It became clear they were predominantly passive users of technology, unaware of the workings of their everyday devices. So, without delay, we rolled up our sleeves and got hands-on because active engagement is where the real learning begins.
+It became clear they were mostly passive users of technology, unaware of the workings of their everyday devices. So, without delay, we rolled up our sleeves and got hands-on because active engagement is where the real learning begins.
 
 I brought out an ancient computer, laid it bare in the center of the room, and the excitement was palpable. As Maestra Giorgia and I moderated the children's eagerness, I began explaining the inner connections and components of the computer.
 
@@ -64,4 +64,4 @@ As we continue this journey, I'm reminded of the power of sharing knowledge and 
 
 <br /><hr><br />
 
-In closing, I'd like to extend a heartfelt thank you to [Linda Liukas](http://lindaliukas.com) for her exceptional contributions to the world of coding education for children. Her work has been an invaluable resource during my course preparation, offering both inspiration and a solid educational foundation. The captivating illustrations have been met with great enthusiasm by the class.
+To conclude, I'd like to extend a heartfelt thank you to [Linda Liukas](http://lindaliukas.com) for her exceptional contributions to the world of coding education for children. Her work has been an invaluable resource during my course preparation, offering both inspiration and a solid educational foundation. The captivating illustrations were met met with great enthusiasm by the class.

@@ -30,7 +30,7 @@ const groupedPosts = groupPostsByMonth(allPosts);
 
 <MainLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
 	<section class="w-full">
-		<div class="flex flex-col justify-center gap-4 px-5 lg:px-0">
+		<div class="flex flex-col justify-center gap-4 lg:px-0">
 			{
 				Object.entries(groupedPosts).map(([date, posts]) => (
 					<div>
