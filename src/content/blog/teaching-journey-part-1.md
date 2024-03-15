@@ -5,6 +5,8 @@ pubDate: 'Feb 20 2024'
 updateDate: 'Mar 12 2024'
 ---
 
+
+
 Growing up as a 90s kid, I was blessed with the luxury of gradually growing alongside technology. My afternoons were filled with boundless curiosity, delving into the enchanting world hidden within circuits and screens. The magic of technology wasn't just a backdrop to my childhood; it became a core part of my identity.
 
 This journey began in the most unexpected of ways – with a computer from my father, which I promptly disassembled. My explorations were not without consequences; many mornings, my father would leave for work only to return to a dismantled PC or a completely changed operating system. 
@@ -32,3 +34,7 @@ Starting with a single fourth-grade class, I aim to recreate the sense of wonder
 I must extend my heartfelt gratitude to Maestra Giorgia and Elena, that who believed in this project and without whom this journey would not have been possible. Their support not only has enabled this initiative, but has also made it a transformative experience for both the students and myself. Through this blog, I plan to document our experiences, challenges, and achievements. The ultimate goal is to create an open and free framework for anyone who wishes to embark on a similar venture, be it either with their children, students, or for personal enrichment.
 
 I hope you'll choose to accompany me on this journey, where the real adventure lies in sharing  for growing. I eagerly await your feedback and your insights as we embark on this path.  
+
+<br /><br />
+This blog post is part of a series: 
+- Part 2: [TIntroducing technology to kids through storytelling]("/blog/teaching-journey-day-1")

@@ -3,7 +3,6 @@ title: 'Introducing technology to kids through storytelling'
 description: 'This blog post shares my experiences and challenges in bringing the magic of tech to a young audience in Turin. It is a reflection on bridging the gap between curiosity and understanding, tailored for educators parents, and anyone interested in the transformative power of tech education.'
 pubDate: 'Feb 22 2024'
 ---
-
 ## A Creative Approach to Learning
 
 In our most recent pre-sessions, Maestra Giorgia and I decided to inject a bit of mystery and excitement into the classroom. We designed an introductory quest, a story for the children to unravel. This approach was aimed at sparking their interest right from the start.<br>
@@ -65,3 +64,6 @@ As we continue this journey, I'm reminded of the power of sharing knowledge and 
 <br /><hr><br />
 
 To conclude, I'd like to extend a heartfelt thank you to [Linda Liukas](http://lindaliukas.com) for her exceptional contributions to the world of coding education for children. Her work has been an invaluable resource during my course preparation, offering both inspiration and a solid educational foundation. The captivating illustrations were met met with great enthusiasm by the class.
+<br /><br />
+This blog post is part of a series: 
+- Part 1: [The beginning of my teaching journey]("/blog/teaching-journey-day-1")
