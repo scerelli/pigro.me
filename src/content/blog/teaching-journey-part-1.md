@@ -37,4 +37,4 @@ I hope you'll choose to accompany me on this journey, where the real adventure l
 
 <br /><br />
 This blog post is part of a series: 
-- Part 2: [TIntroducing technology to kids through storytelling]("/blog/teaching-journey-day-1")
+- Part 2: <a href="/blog/teaching-journey-day-1/">Introducing technology to kids through storytelling</a>

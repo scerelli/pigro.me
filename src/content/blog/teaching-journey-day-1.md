@@ -66,4 +66,4 @@ As we continue this journey, I'm reminded of the power of sharing knowledge and 
 To conclude, I'd like to extend a heartfelt thank you to [Linda Liukas](http://lindaliukas.com) for her exceptional contributions to the world of coding education for children. Her work has been an invaluable resource during my course preparation, offering both inspiration and a solid educational foundation. The captivating illustrations were met met with great enthusiasm by the class.
 <br /><br />
 This blog post is part of a series: 
-- Part 1: [The beginning of my teaching journey]("/blog/teaching-journey-day-1")
+- Part 1: <a href="/blog/teaching-journey-part-1/">The beginning of my teaching journey</a>
