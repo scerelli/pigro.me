@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>6. Principi Teorici di Geomorfologia</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="6. Principi Teorici di Geomorfologia"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="6. Principi Teorici di Geomorfologia"/><meta name="twitter:description" content="Definizione e Oggetto di Studio Definizione Geomorfologia: studio delle forme del paesaggio terrestre e dei processi che le modellano Fattori di Controllo Fattori interni (endogeni): Tettonica: movimenti crostali, deformazioni Litologia: tipo e resistenza delle rocce Struttura geologica: stratificaz..."/><meta property="og:description" content="Definizione e Oggetto di Studio Definizione Geomorfologia: studio delle forme del paesaggio terrestre e dei processi che le modellano Fattori di Controllo Fattori interni (endogeni): Tettonica: movimenti crostali, deformazioni Litologia: tipo e resistenza delle rocce Struttura geologica: stratificaz..."/><meta property="og:image:alt" content="Definizione e Oggetto di Studio Definizione Geomorfologia: studio delle forme del paesaggio terrestre e dei processi che le modellano Fattori di Controllo Fattori interni (endogeni): Tettonica: movimenti crostali, deformazioni Litologia: tipo e resistenza delle rocce Struttura geologica: stratificaz..."/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/Geografia/6.-Principi-Teorici-di-Geomorfologia"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/Geografia/6.-Principi-Teorici-di-Geomorfologia"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Definizione e Oggetto di Studio Definizione Geomorfologia: studio delle forme del paesaggio terrestre e dei processi che le modellano Fattori di Controllo Fattori interni (endogeni): Tettonica: movimenti crostali, deformazioni Litologia: tipo e resistenza delle rocce Struttura geologica: stratificaz..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvcGlncm8ubWUvcGlncm8ubWUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://quartz.jzhao.xyz/Geografia/6.-Principi-Teorici-di-Geomorfologia-og-image.webp"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/Geografia/6.-Principi-Teorici-di-Geomorfologia-og-image.webp"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/Geografia/6.-Principi-Teorici-di-Geomorfologia-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="Geografia/6.-Principi-Teorici-di-Geomorfologia"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Quartz 4</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../Geografia/">Geografia</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>6. Principi Teorici di Geomorfologia</a></div></nav><h1 class="article-title">6. Principi Teorici di Geomorfologia</h1><p show-comma="true" class="content-meta"><time datetime="2025-07-13T00:45:34.000Z">Jul 13, 2025</time><span>6 min read</span></p></div></div><article class="popover-hint"><h2 id="definizione-e-oggetto-di-studio">Definizione e Oggetto di Studio<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definizione-e-oggetto-di-studio" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="definizione">Definizione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definizione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Geomorfologia</strong>: studio delle forme del paesaggio terrestre e dei processi che le modellano</p>
+<h3 id="fattori-di-controllo">Fattori di Controllo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fattori-di-controllo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Fattori interni (endogeni)</strong>:</p>
+<ul>
+<li><strong>Tettonica</strong>: movimenti crostali, deformazioni</li>
+<li><strong>Litologia</strong>: tipo e resistenza delle rocce</li>
+<li><strong>Struttura geologica</strong>: stratificazione, fratturazione</li>
+</ul>
+<p><strong>Fattori esterni (esogeni)</strong>:</p>
+<ul>
+<li><strong>Clima</strong>: temperatura, precipitazioni, stagionalità</li>
+<li><strong>Vegetazione</strong>: copertura, tipo, densità</li>
+<li><strong>Idrografia</strong>: reticoli fluviali, dinamica delle acque</li>
+</ul>
+<h3 id="risultato">Risultato<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#risultato" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Le forme del paesaggio derivano dall’<strong>interazione dinamica</strong> tra fattori endogeni ed esogeni</p>
+<hr/>
+<h1 id="tipi-di-geomorfologia">Tipi di Geomorfologia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tipi-di-geomorfologia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="geomorfologia-strutturale">Geomorfologia Strutturale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#geomorfologia-strutturale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Definizione</strong>: forme controllate principalmente dalla struttura delle rocce</p>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Controllo litologico</strong>: resistenza differenziale rocce</li>
+<li><strong>Controllo tettonico</strong>: faglie, pieghe, fratture</li>
+<li><strong>Esempi</strong>: scarpate di faglia, creste monoclinali, sinclinali sospese</li>
+</ul>
+<p><strong>Fattori dominanti</strong>:</p>
+<ul>
+<li>Tipo di roccia</li>
+<li>Orientazione strati</li>
+<li>Presenza discontinuità</li>
+</ul>
+<h2 id="geomorfologia-climatica">Geomorfologia Climatica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#geomorfologia-climatica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Definizione</strong>: forme controllate principalmente dal clima</p>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Controllo climatico</strong>: temperatura, precipitazioni, venti</li>
+<li><strong>Processi specifici</strong>: erosione, sedimentazione, alterazione</li>
+<li><strong>Esempi</strong>: forme glaciali, desertiche, tropicali</li>
+</ul>
+<p><strong>Fattori dominanti</strong>:</p>
+<ul>
+<li>Regime termico</li>
+<li>Regime pluviometrico</li>
+<li>Variabilità stagionale</li>
+</ul>
+<h3 id="distinzione-operativa">Distinzione Operativa<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distinzione-operativa" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Geomorfologia strutturale</strong>: forma dipende da “cosa” (litologia/struttura)</li>
+<li><strong>Geomorfologia climatica</strong>: forma dipende da “come” (processi attivi)</li>
+</ul>
+<hr/>
+<h1 id="scale-delle-forme-geomorfologiche">Scale delle Forme Geomorfologiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scale-delle-forme-geomorfologiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="principio-dimensionale">Principio Dimensionale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#principio-dimensionale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Concetto</strong>: ogni forma ha <strong>limiti dimensionali intrinseci</strong></p>
+<ul>
+<li>Non può esistere sotto certe dimensioni minime</li>
+<li>Non può superare certe dimensioni massime</li>
+<li>Range dimensionale specifico per ogni processo</li>
+</ul>
+<h2 id="classificazione-per-scale">Classificazione per Scale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#classificazione-per-scale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="piccolissima-scala-geotessiture">Piccolissima Scala: Geotessiture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#piccolissima-scala-geotessiture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Dimensioni</strong>: centinaia-migliaia km</p>
+<p><strong>Esempi</strong>:</p>
+<ul>
+<li>Catene montuose (Alpi, Ande, Himalaya)</li>
+<li>Grandi bacini sedimentari (Bacino Padano)</li>
+<li>Archi insulari (Antille, Indonesia)</li>
+<li>Rift continentali (Great Rift Valley)</li>
+</ul>
+<p><strong>Controllo</strong>: <strong>esclusivamente strutturale</strong></p>
+<ul>
+<li>Tettonica globale</li>
+<li>Dinamica placche</li>
+<li>Processi litosferici</li>
+</ul>
+<h3 id="piccola-scala-morfotessiture">Piccola Scala: Morfotessiture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#piccola-scala-morfotessiture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Dimensioni</strong>: decine-centinaia km</p>
+<p><strong>Esempi</strong>:</p>
+<ul>
+<li>Vulcani individuali (Etna, Vesuvio)</li>
+<li>Altopiani (Altopiano delle Murge)</li>
+<li>Massicci granitici isolati</li>
+<li>Sinclinali e anticlinali maggiori</li>
+</ul>
+<p><strong>Controllo</strong>: <strong>prevalentemente strutturale</strong></p>
+<ul>
+<li>Litologia locale</li>
+<li>Strutture tettoniche regionali</li>
+<li>Vulcanismo</li>
+</ul>
+<h3 id="media-scala-morfosculturemacroforme">Media Scala: Morfosculture/Macroforme<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#media-scala-morfosculturemacroforme" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Dimensioni</strong>: decametri-chilometri</p>
+<p><strong>Esempi</strong>:</p>
+<ul>
+<li>Valli fluviali</li>
+<li>Circhi glaciali</li>
+<li>Doline carsiche</li>
+<li>Conoidi alluvionali</li>
+</ul>
+<p><strong>Controllo</strong>: <strong>struttura + clima</strong></p>
+<ul>
+<li>Interazione fattori endogeni ed esogeni</li>
+<li>Processi di modellamento attivi</li>
+<li>Controlli litologici locali</li>
+</ul>
+<h3 id="grande-e-grandissima-scala-microforme">Grande e Grandissima Scala: Microforme<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#grande-e-grandissima-scala-microforme" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Dimensioni</strong>: centimetri-decametri</p>
+<p><strong>Esempi</strong>:</p>
+<ul>
+<li>Piccole ondulazioni terreno</li>
+<li>Conche di dissoluzione</li>
+<li>Buche di deflazione eolica</li>
+<li>Incisioni su rocce</li>
+</ul>
+<p><strong>Controllo</strong>: <strong>prevalentemente climatico/locale</strong></p>
+<ul>
+<li>Singoli processi geomorfologici</li>
+<li>Microclima locale</li>
+<li>Condizioni ambientali specifiche</li>
+</ul>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Unità elementari</strong> del paesaggio</li>
+<li>Maggiore sensibilità a variazioni ambientali</li>
+<li>Tempi di formazione più rapidi</li>
+</ul>
+<h2 id="tabella-riassuntiva-scale">Tabella Riassuntiva Scale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tabella-riassuntiva-scale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Scala</th><th>Nome</th><th>Dimensioni</th><th>Controllo Principale</th><th>Esempi</th></tr></thead><tbody><tr><td><strong>Piccolissima</strong></td><td>Geotessiture</td><td>100-1000 km</td><td>Strutturale</td><td>Catene montuose</td></tr><tr><td><strong>Piccola</strong></td><td>Morfotessiture</td><td>10-100 km</td><td>Strutturale</td><td>Vulcani, altopiani</td></tr><tr><td><strong>Media</strong></td><td>Morfosculture</td><td>0.1-10 km</td><td>Struttura + clima</td><td>Valli, doline</td></tr><tr><td><strong>Grande</strong></td><td>Microforme</td><td>0.001-0.1 km</td><td>Climatico/locale</td><td>Ondulazioni, buche</td></tr></tbody></table></div>
+<hr/>
+<h1 id="geometria-frattale-e-misure">Geometria Frattale e Misure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#geometria-frattale-e-misure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="concetto-di-frattale">Concetto di Frattale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#concetto-di-frattale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Principio</strong>: la lunghezza di oggetti naturali varia con la scala di misura</p>
+<h3 id="effetto-della-scala">Effetto della Scala<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#effetto-della-scala" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Misura grossolana</strong>: linee appaiono semplici, lunghezza minore</li>
+<li><strong>Misura dettagliata</strong>: emergono irregolarità, lunghezza maggiore</li>
+<li><strong>Autosimilarità</strong>: pattern simili a scale diverse</li>
+</ul>
+<h3 id="dimensione-frattale">Dimensione Frattale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dimensione-frattale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Range dimensionale</strong>:</p>
+<ul>
+<li><strong>1D</strong>: linea perfettamente retta</li>
+<li><strong>Tra 1 e 2</strong>: linee irregolari (coste frastagliate)</li>
+<li><strong>2D</strong>: superficie perfettamente piana</li>
+<li><strong>Tra 2 e 3</strong>: superfici rugose</li>
+</ul>
+<h3 id="esempi-geomorfologici">Esempi Geomorfologici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#esempi-geomorfologici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Coste</strong>: dimensione frattale ~1.2-1.3</li>
+<li><strong>Reti idrografiche</strong>: dimensione frattale ~1.7-1.8</li>
+<li><strong>Superfici topografiche</strong>: dimensione frattale ~2.1-2.3</li>
+</ul>
+<h3 id="implicazioni-pratiche">Implicazioni Pratiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implicazioni-pratiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Cartografia</strong>: scala influenza rappresentazione</li>
+<li><strong>Misure geomorfometriche</strong>: dipendenza dalla risoluzione</li>
+<li><strong>Modellazione</strong>: necessità scale multiple</li>
+</ul>
+<hr/>
+<h1 id="il-fattore-tempo">Il Fattore Tempo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#il-fattore-tempo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="ruolo-del-tempo-nel-modellamento">Ruolo del Tempo nel Modellamento<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ruolo-del-tempo-nel-modellamento" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="controlli-temporali">Controlli Temporali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#controlli-temporali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Il tempo controlla</strong>:</p>
+<ul>
+<li><strong>Dimensione delle forme</strong>: più tempo → forme più grandi</li>
+<li><strong>Età delle forme</strong>: datazione relativa e assoluta</li>
+<li><strong>Stabilità</strong>: resistenza a modificazioni successive</li>
+</ul>
+<h3 id="trasformazione-delle-forme">Trasformazione delle Forme<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trasformazione-delle-forme" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Principio</strong>: le forme si trasformano nel tempo</p>
+<ul>
+<li><strong>Evoluzione</strong>: passaggio da una morfologia all’altra</li>
+<li><strong>Successioni</strong>: sequenze temporali di forme</li>
+<li><strong>Eredità</strong>: forme antiche in paesaggi moderni</li>
+</ul>
+<h2 id="processi-rapidi-vs-processi-lenti">Processi Rapidi vs Processi Lenti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processi-rapidi-vs-processi-lenti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="processi-rapidi">Processi Rapidi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processi-rapidi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Tempi</strong>: minuti-anni</li>
+<li><strong>Energia</strong>: elevata, concentrata</li>
+<li><strong>Effetti</strong>: distruttivi, cancellano forme lente</li>
+</ul>
+<p><strong>Esempi</strong>:</p>
+<ul>
+<li>Frane catastrofiche</li>
+<li>Alluvioni eccezionali</li>
+<li>Erosioni intense</li>
+<li>Eventi sismici</li>
+</ul>
+<h3 id="processi-lenti">Processi Lenti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processi-lenti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Tempi</strong>: decenni-millenni</li>
+<li><strong>Energia</strong>: bassa, distribuita</li>
+<li><strong>Effetti</strong>: costruttivi, creano forme stabili</li>
+</ul>
+<p><strong>Esempi</strong>:</p>
+<ul>
+<li>Alterazione chimica</li>
+<li>Evoluzione dei suoli</li>
+<li>Modellamento carsico</li>
+<li>Incisione fluviale normale</li>
+</ul>
+<h3 id="interazioni">Interazioni<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#interazioni" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Gerarchia temporale</strong>: processi rapidi <strong>cancellano</strong> forme create da processi lenti</p>
+<h2 id="età-del-paesaggio">Età del Paesaggio<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#età-del-paesaggio" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="indicatori-di-età">Indicatori di Età<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#indicatori-di-età" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Presenza di forme lente</strong> = <strong>età avanzata del paesaggio</strong></p>
+<p><strong>Esempio</strong>: blocchi rocciosi intorno ad Avigliana</p>
+<ul>
+<li>Indicano bassa erosione recente</li>
+<li>Suggeriscono stabilità morfologica</li>
+<li>Evidenziano età avanzata del modellamento</li>
+</ul>
+<h3 id="tempo-di-ricorrenza">Tempo di Ricorrenza<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tempo-di-ricorrenza" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Definizione</strong>: intervallo medio tra eventi morfologici rilevanti</p>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Periodicità</strong>: eventi non casuali ma ricorrenti</li>
+<li><strong>Soglie</strong>: condizioni necessarie per attivazione</li>
+<li><strong>Percezione umana</strong>: eventi rari percepiti come “casuali”</li>
+</ul>
+<p><strong>Esempi</strong>:</p>
+<ul>
+<li>Frane: tempo ricorrenza 50-200 anni</li>
+<li>Alluvioni: tempo ricorrenza 10-500 anni</li>
+<li>Valanghe: tempo ricorrenza 30-100 anni</li>
+</ul>
+<h3 id="implicazioni-per-valutazione-rischio">Implicazioni per Valutazione Rischio<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implicazioni-per-valutazione-rischio" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Eventi “killer”</strong>: apparentemente casuali ma periodici</li>
+<li><strong>Memoria storica</strong>: limitata rispetto ai tempi geologici</li>
+<li><strong>Prevenzione</strong>: necessità considerare tempi lunghi</li>
+</ul>
+<hr/>
+<h1 id="paesaggio-e-velocità-di-sviluppo">Paesaggio e Velocità di Sviluppo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#paesaggio-e-velocità-di-sviluppo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="esempio-degli-inselberg">Esempio degli Inselberg<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#esempio-degli-inselberg" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="definizione-1">Definizione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definizione-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Inselberg</strong>: rilievi isolati emergenti da pianure in regioni tropicali e subtropicali</p>
+<h3 id="caratteristiche-morfologiche">Caratteristiche Morfologiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristiche-morfologiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Rocce resistenti</strong>: graniti, gneiss, quarziti</li>
+<li><strong>Emergenza</strong>: sopra superfici pianeggianti</li>
+<li><strong>Isolamento</strong>: circondati da pediment</li>
+</ul>
+<h3 id="zone-con-diverse-velocità-di-evoluzione">Zone con Diverse Velocità di Evoluzione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#zone-con-diverse-velocità-di-evoluzione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="pediment-superficie-piana">Pediment (Superficie Piana)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pediment-superficie-piana" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Velocità</strong>: degradazione molto lenta</li>
+<li><strong>Processo</strong>: alterazione chimica profonda</li>
+<li><strong>Risultato</strong>: superficie sub-pianeggiante stabile</li>
+</ul>
+<h4 id="pendii-inclinati">Pendii Inclinati<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pendii-inclinati" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Velocità</strong>: degradazione media</li>
+<li><strong>Processo</strong>: transizione tra pediment e rilievo</li>
+<li><strong>Risultato</strong>: raccordo morfologico</li>
+</ul>
+<h4 id="rilievi-superiori">Rilievi Superiori<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rilievi-superiori" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Velocità</strong>: disfacimento rapido</li>
+<li><strong>Processo</strong>: esfoliazione, termoclastismo</li>
+<li><strong>Risultato</strong>: arretramento versanti</li>
+</ul>
+<h3 id="ruolo-della-vegetazione">Ruolo della Vegetazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ruolo-della-vegetazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Colonizzazione fessure</strong>: rallenta disfacimento</li>
+<li><strong>Protezione</strong>: riduce erosione</li>
+<li><strong>Feedback positivo</strong>: migliori condizioni → più vegetazione</li>
+</ul>
+<h3 id="evoluzione-a-lungo-termine">Evoluzione a Lungo Termine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evoluzione-a-lungo-termine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Percezione di stabilità</strong>: sembrano immutabili ma evolvono lentamente <strong>Processo</strong>: riduzione dimensioni fino a scomparsa <strong>Tempi</strong>: milioni di anni</p>
+<hr/>
+<h1 id="età-delle-forme">Età delle Forme<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#età-delle-forme" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="classificazione-temporale">Classificazione Temporale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#classificazione-temporale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="forma-attuale">Forma Attuale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#forma-attuale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Definizione</strong>: morfologia osservata oggi <strong>Caratteristiche</strong>: modificata da processi recenti e attivi</p>
+<h3 id="età-relativa-per-scale-temporali">Età Relativa per Scale Temporali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#età-relativa-per-scale-temporali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="scale-geostrutturali-pliocene-5-2-ma">Scale Geostrutturali (Pliocene, ~5-2 Ma)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scale-geostrutturali-pliocene-5-2-ma" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Esempi</strong>: grandi rilievi alpini, catene montuose principali</p>
+<h4 id="scale-glaciali-pleistocene-2-ma-10-ka">Scale Glaciali (Pleistocene, ~2 Ma-10 ka)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scale-glaciali-pleistocene-2-ma-10-ka" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Esempi</strong>: valli glaciali, morene, circhi</p>
+<h4 id="scale-alluvionali-olocene-10-ka-presente">Scale Alluvionali (Olocene, ~10 ka-presente)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scale-alluvionali-olocene-10-ka-presente" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Esempi</strong>: piane alluvionali, terrazzi fluviali</p>
+<h4 id="scale-attuali-storico-1000-anni">Scale Attuali (storico, &lt;1000 anni)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scale-attuali-storico-1000-anni" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Esempi</strong>: forme da piene recenti, scarpate fresche</p>
+<h3 id="forme-fossili">Forme Fossili<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#forme-fossili" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Definizione</strong>: forme sepolte, visibili solo in sondaggi o scavi <strong>Importanza</strong>: ricostruzione evoluzione paesaggio <strong>Esempi</strong>: valli sepolte, paleo-superfici</p>
+<hr/>
+<h1 id="cause-predisponenti-e-scatenanti">Cause Predisponenti e Scatenanti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cause-predisponenti-e-scatenanti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="distinzione-concettuale">Distinzione Concettuale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distinzione-concettuale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="cause-predisponenti">Cause Predisponenti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cause-predisponenti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Definizione</strong>: fattori che <strong>favoriscono</strong> ma non innescano direttamente fenomeni</p>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Evoluzione</strong>: lenta e costante</li>
+<li><strong>Durata</strong>: permanenti o a lungo termine</li>
+<li><strong>Effetto</strong>: preparano condizioni favorevoli</li>
+</ul>
+<p><strong>Esempi</strong>:</p>
+<ul>
+<li><strong>Pendenze elevate</strong>: instabilità gravitativa</li>
+<li><strong>Fratture rocciose</strong>: debolezza strutturale</li>
+<li><strong>Litologia debole</strong>: bassa resistenza</li>
+<li><strong>Alterazione chimica</strong>: indebolimento materiali</li>
+<li><strong>Disboscamento</strong>: perdita protezione vegetale</li>
+</ul>
+<h3 id="cause-scatenanti">Cause Scatenanti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cause-scatenanti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Definizione</strong>: eventi che <strong>attivano</strong> direttamente il fenomeno</p>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Evoluzione</strong>: rapida e puntuale</li>
+<li><strong>Durata</strong>: temporanei, episodici</li>
+<li><strong>Effetto</strong>: superano soglie di resistenza</li>
+</ul>
+<p><strong>Esempi</strong>:</p>
+<ul>
+<li><strong>Piogge intense</strong>: saturazione terreni</li>
+<li><strong>Terremoti</strong>: sollecitazioni dinamiche</li>
+<li><strong>Sovraccarichi</strong>: peso aggiuntivo improvviso</li>
+<li><strong>Scalzamento</strong>: erosione al piede</li>
+<li><strong>Gelo-disgelo</strong>: variazioni volumetriche</li>
+</ul>
+<h2 id="interazioni-e-soglie">Interazioni e Soglie<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#interazioni-e-soglie" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="modello-concettuale">Modello Concettuale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#modello-concettuale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Sequenza</strong>: predisponenti <strong>preparano</strong> → scatenanti <strong>attivano</strong></p>
+<h3 id="soglie-di-attivazione">Soglie di Attivazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#soglie-di-attivazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Accumulo</strong>: fattori predisponenti riducono soglia</li>
+<li><strong>Trigger</strong>: fattori scatenanti superano soglia</li>
+<li><strong>Evento</strong>: manifestazione del fenomeno</li>
+</ul>
+<h3 id="implicazioni-pratiche-1">Implicazioni Pratiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implicazioni-pratiche-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Previsione</strong>: necessità considerare entrambi i tipi di cause <strong>Prevenzione</strong>: interventi su cause predisponenti più efficaci <strong>Gestione emergenze</strong>: monitoraggio cause scatenanti</p>
+<h2 id="tabella-cause-predisponenti-vs-scatenanti">Tabella Cause Predisponenti vs Scatenanti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tabella-cause-predisponenti-vs-scatenanti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Aspetto</th><th>Cause Predisponenti</th><th>Cause Scatenanti</th></tr></thead><tbody><tr><td><strong>Evoluzione</strong></td><td>Lenta, costante</td><td>Rapida, puntuale</td></tr><tr><td><strong>Durata</strong></td><td>Permanente</td><td>Temporanea</td></tr><tr><td><strong>Effetto</strong></td><td>Preparano terreno</td><td>Danno il via</td></tr><tr><td><strong>Controllo</strong></td><td>Difficile</td><td>Possibile monitoraggio</td></tr><tr><td><strong>Prevenzione</strong></td><td>Interventi strutturali</td><td>Sistemi di allerta</td></tr></tbody></table></div>
+<hr/>
+<h1 id="principi-sintetici-di-geomorfologia">Principi Sintetici di Geomorfologia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#principi-sintetici-di-geomorfologia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="regole-fondamentali">Regole Fondamentali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#regole-fondamentali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-principio-di-scala">1. Principio di Scala<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-principio-di-scala" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>“Forma grande = struttura e clima; forma piccola = dettagli locali”</em></p>
+<h3 id="2-principio-temporale">2. Principio Temporale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-principio-temporale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>“Il paesaggio non è fermo: processi lenti creano, processi rapidi cancellano”</em></p>
+<h3 id="3-principio-causale">3. Principio Causale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-principio-causale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>“Le predisponenti preparano, le scatenanti attivano”</em></p>
+<h3 id="4-principio-di-equilibrio">4. Principio di Equilibrio<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-principio-di-equilibrio" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>“Le forme riflettono l’equilibrio tra fattori endogeni ed esogeni”</em></p>
+<h2 id="approccio-metodologico">Approccio Metodologico<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#approccio-metodologico" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="analisi-multiscala">Analisi Multiscala<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#analisi-multiscala" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Riconoscimento</strong>: scala appropriata per ogni forma</li>
+<li><strong>Controlli</strong>: identificazione fattori dominanti per scala</li>
+<li><strong>Processi</strong>: relazione scala-processo-tempo</li>
+</ul>
+<h3 id="analisi-multitemporale">Analisi Multitemporale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#analisi-multitemporale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Età relative</strong>: sequenze cronologiche</li>
+<li><strong>Velocità</strong>: processi rapidi vs lenti</li>
+<li><strong>Ricorrenza</strong>: periodicità fenomeni</li>
+</ul>
+<h3 id="analisi-causale">Analisi Causale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#analisi-causale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Predisponenti</strong>: condizioni di base</li>
+<li><strong>Scatenanti</strong>: fattori trigger</li>
+<li><strong>Soglie</strong>: limiti di stabilità</li>
+</ul>
+<h2 id="applicazioni-pratiche">Applicazioni Pratiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#applicazioni-pratiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="gestione-del-territorio">Gestione del Territorio<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gestione-del-territorio" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Valutazione rischio</strong>: cause predisponenti + scatenanti</li>
+<li><strong>Pianificazione</strong>: considerazione scale temporali</li>
+<li><strong>Prevenzione</strong>: interventi appropriati alla scala</li>
+</ul>
+<h3 id="ricerca-geomorfologica">Ricerca Geomorfologica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ricerca-geomorfologica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Metodologia</strong>: approccio sistematico multi-scala</li>
+<li><strong>Datazione</strong>: ricostruzione cronologie</li>
+<li><strong>Modellazione</strong>: relazioni causa-effetto</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="toc-content overflow" id="list-1"><li class="depth-1"><a href="#definizione-e-oggetto-di-studio" data-for="definizione-e-oggetto-di-studio">Definizione e Oggetto di Studio</a></li><li class="depth-2"><a href="#definizione" data-for="definizione">Definizione</a></li><li class="depth-2"><a href="#fattori-di-controllo" data-for="fattori-di-controllo">Fattori di Controllo</a></li><li class="depth-2"><a href="#risultato" data-for="risultato">Risultato</a></li><li class="depth-0"><a href="#tipi-di-geomorfologia" data-for="tipi-di-geomorfologia">Tipi di Geomorfologia</a></li><li class="depth-1"><a href="#geomorfologia-strutturale" data-for="geomorfologia-strutturale">Geomorfologia Strutturale</a></li><li class="depth-1"><a href="#geomorfologia-climatica" data-for="geomorfologia-climatica">Geomorfologia Climatica</a></li><li class="depth-2"><a href="#distinzione-operativa" data-for="distinzione-operativa">Distinzione Operativa</a></li><li class="depth-0"><a href="#scale-delle-forme-geomorfologiche" data-for="scale-delle-forme-geomorfologiche">Scale delle Forme Geomorfologiche</a></li><li class="depth-1"><a href="#principio-dimensionale" data-for="principio-dimensionale">Principio Dimensionale</a></li><li class="depth-1"><a href="#classificazione-per-scale" data-for="classificazione-per-scale">Classificazione per Scale</a></li><li class="depth-2"><a href="#piccolissima-scala-geotessiture" data-for="piccolissima-scala-geotessiture">Piccolissima Scala: Geotessiture</a></li><li class="depth-2"><a href="#piccola-scala-morfotessiture" data-for="piccola-scala-morfotessiture">Piccola Scala: Morfotessiture</a></li><li class="depth-2"><a href="#media-scala-morfosculturemacroforme" data-for="media-scala-morfosculturemacroforme">Media Scala: Morfosculture/Macroforme</a></li><li class="depth-2"><a href="#grande-e-grandissima-scala-microforme" data-for="grande-e-grandissima-scala-microforme">Grande e Grandissima Scala: Microforme</a></li><li class="depth-1"><a href="#tabella-riassuntiva-scale" data-for="tabella-riassuntiva-scale">Tabella Riassuntiva Scale</a></li><li class="depth-0"><a href="#geometria-frattale-e-misure" data-for="geometria-frattale-e-misure">Geometria Frattale e Misure</a></li><li class="depth-1"><a href="#concetto-di-frattale" data-for="concetto-di-frattale">Concetto di Frattale</a></li><li class="depth-2"><a href="#effetto-della-scala" data-for="effetto-della-scala">Effetto della Scala</a></li><li class="depth-2"><a href="#dimensione-frattale" data-for="dimensione-frattale">Dimensione Frattale</a></li><li class="depth-2"><a href="#esempi-geomorfologici" data-for="esempi-geomorfologici">Esempi Geomorfologici</a></li><li class="depth-2"><a href="#implicazioni-pratiche" data-for="implicazioni-pratiche">Implicazioni Pratiche</a></li><li class="depth-0"><a href="#il-fattore-tempo" data-for="il-fattore-tempo">Il Fattore Tempo</a></li><li class="depth-1"><a href="#ruolo-del-tempo-nel-modellamento" data-for="ruolo-del-tempo-nel-modellamento">Ruolo del Tempo nel Modellamento</a></li><li class="depth-2"><a href="#controlli-temporali" data-for="controlli-temporali">Controlli Temporali</a></li><li class="depth-2"><a href="#trasformazione-delle-forme" data-for="trasformazione-delle-forme">Trasformazione delle Forme</a></li><li class="depth-1"><a href="#processi-rapidi-vs-processi-lenti" data-for="processi-rapidi-vs-processi-lenti">Processi Rapidi vs Processi Lenti</a></li><li class="depth-2"><a href="#processi-rapidi" data-for="processi-rapidi">Processi Rapidi</a></li><li class="depth-2"><a href="#processi-lenti" data-for="processi-lenti">Processi Lenti</a></li><li class="depth-2"><a href="#interazioni" data-for="interazioni">Interazioni</a></li><li class="depth-1"><a href="#età-del-paesaggio" data-for="età-del-paesaggio">Età del Paesaggio</a></li><li class="depth-2"><a href="#indicatori-di-età" data-for="indicatori-di-età">Indicatori di Età</a></li><li class="depth-2"><a href="#tempo-di-ricorrenza" data-for="tempo-di-ricorrenza">Tempo di Ricorrenza</a></li><li class="depth-2"><a href="#implicazioni-per-valutazione-rischio" data-for="implicazioni-per-valutazione-rischio">Implicazioni per Valutazione Rischio</a></li><li class="depth-0"><a href="#paesaggio-e-velocità-di-sviluppo" data-for="paesaggio-e-velocità-di-sviluppo">Paesaggio e Velocità di Sviluppo</a></li><li class="depth-1"><a href="#esempio-degli-inselberg" data-for="esempio-degli-inselberg">Esempio degli Inselberg</a></li><li class="depth-2"><a href="#definizione-1" data-for="definizione-1">Definizione</a></li><li class="depth-2"><a href="#caratteristiche-morfologiche" data-for="caratteristiche-morfologiche">Caratteristiche Morfologiche</a></li><li class="depth-2"><a href="#zone-con-diverse-velocità-di-evoluzione" data-for="zone-con-diverse-velocità-di-evoluzione">Zone con Diverse Velocità di Evoluzione</a></li><li class="depth-2"><a href="#ruolo-della-vegetazione" data-for="ruolo-della-vegetazione">Ruolo della Vegetazione</a></li><li class="depth-2"><a href="#evoluzione-a-lungo-termine" data-for="evoluzione-a-lungo-termine">Evoluzione a Lungo Termine</a></li><li class="depth-0"><a href="#età-delle-forme" data-for="età-delle-forme">Età delle Forme</a></li><li class="depth-1"><a href="#classificazione-temporale" data-for="classificazione-temporale">Classificazione Temporale</a></li><li class="depth-2"><a href="#forma-attuale" data-for="forma-attuale">Forma Attuale</a></li><li class="depth-2"><a href="#età-relativa-per-scale-temporali" data-for="età-relativa-per-scale-temporali">Età Relativa per Scale Temporali</a></li><li class="depth-2"><a href="#forme-fossili" data-for="forme-fossili">Forme Fossili</a></li><li class="depth-0"><a href="#cause-predisponenti-e-scatenanti" data-for="cause-predisponenti-e-scatenanti">Cause Predisponenti e Scatenanti</a></li><li class="depth-1"><a href="#distinzione-concettuale" data-for="distinzione-concettuale">Distinzione Concettuale</a></li><li class="depth-2"><a href="#cause-predisponenti" data-for="cause-predisponenti">Cause Predisponenti</a></li><li class="depth-2"><a href="#cause-scatenanti" data-for="cause-scatenanti">Cause Scatenanti</a></li><li class="depth-1"><a href="#interazioni-e-soglie" data-for="interazioni-e-soglie">Interazioni e Soglie</a></li><li class="depth-2"><a href="#modello-concettuale" data-for="modello-concettuale">Modello Concettuale</a></li><li class="depth-2"><a href="#soglie-di-attivazione" data-for="soglie-di-attivazione">Soglie di Attivazione</a></li><li class="depth-2"><a href="#implicazioni-pratiche-1" data-for="implicazioni-pratiche-1">Implicazioni Pratiche</a></li><li class="depth-1"><a href="#tabella-cause-predisponenti-vs-scatenanti" data-for="tabella-cause-predisponenti-vs-scatenanti">Tabella Cause Predisponenti vs Scatenanti</a></li><li class="depth-0"><a href="#principi-sintetici-di-geomorfologia" data-for="principi-sintetici-di-geomorfologia">Principi Sintetici di Geomorfologia</a></li><li class="depth-1"><a href="#regole-fondamentali" data-for="regole-fondamentali">Regole Fondamentali</a></li><li class="depth-2"><a href="#1-principio-di-scala" data-for="1-principio-di-scala">1. Principio di Scala</a></li><li class="depth-2"><a href="#2-principio-temporale" data-for="2-principio-temporale">2. Principio Temporale</a></li><li class="depth-2"><a href="#3-principio-causale" data-for="3-principio-causale">3. Principio Causale</a></li><li class="depth-2"><a href="#4-principio-di-equilibrio" data-for="4-principio-di-equilibrio">4. Principio di Equilibrio</a></li><li class="depth-1"><a href="#approccio-metodologico" data-for="approccio-metodologico">Approccio Metodologico</a></li><li class="depth-2"><a href="#analisi-multiscala" data-for="analisi-multiscala">Analisi Multiscala</a></li><li class="depth-2"><a href="#analisi-multitemporale" data-for="analisi-multitemporale">Analisi Multitemporale</a></li><li class="depth-2"><a href="#analisi-causale" data-for="analisi-causale">Analisi Causale</a></li><li class="depth-1"><a href="#applicazioni-pratiche" data-for="applicazioni-pratiche">Applicazioni Pratiche</a></li><li class="depth-2"><a href="#gestione-del-territorio" data-for="gestione-del-territorio">Gestione del Territorio</a></li><li class="depth-2"><a href="#ricerca-geomorfologica" data-for="ricerca-geomorfologica">Ricerca Geomorfologica</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.1</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

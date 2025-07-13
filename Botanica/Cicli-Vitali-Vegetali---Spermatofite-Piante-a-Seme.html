@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Cicli Vitali Vegetali - Spermatofite Piante a Seme</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="Cicli Vitali Vegetali - Spermatofite Piante a Seme"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Cicli Vitali Vegetali - Spermatofite Piante a Seme"/><meta name="twitter:description" content="Definizione e Caratteristiche Generali Classificazione Definizione: piante che producono semi Include: Gimnosperme + Angiosperme Sinonimo: Fanerogame (“a nozze evidenti”) Innovazione chiave: comparsa del seme Caratteristica Unificante Seme: struttura di dispersione che sostituisce la sporogonia Sign..."/><meta property="og:description" content="Definizione e Caratteristiche Generali Classificazione Definizione: piante che producono semi Include: Gimnosperme + Angiosperme Sinonimo: Fanerogame (“a nozze evidenti”) Innovazione chiave: comparsa del seme Caratteristica Unificante Seme: struttura di dispersione che sostituisce la sporogonia Sign..."/><meta property="og:image:alt" content="Definizione e Caratteristiche Generali Classificazione Definizione: piante che producono semi Include: Gimnosperme + Angiosperme Sinonimo: Fanerogame (“a nozze evidenti”) Innovazione chiave: comparsa del seme Caratteristica Unificante Seme: struttura di dispersione che sostituisce la sporogonia Sign..."/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/Botanica/Cicli-Vitali-Vegetali---Spermatofite-Piante-a-Seme"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/Botanica/Cicli-Vitali-Vegetali---Spermatofite-Piante-a-Seme"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Definizione e Caratteristiche Generali Classificazione Definizione: piante che producono semi Include: Gimnosperme + Angiosperme Sinonimo: Fanerogame (“a nozze evidenti”) Innovazione chiave: comparsa del seme Caratteristica Unificante Seme: struttura di dispersione che sostituisce la sporogonia Sign..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvcGlncm8ubWUvcGlncm8ubWUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://quartz.jzhao.xyz/Botanica/Cicli-Vitali-Vegetali---Spermatofite-Piante-a-Seme-og-image.webp"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/Botanica/Cicli-Vitali-Vegetali---Spermatofite-Piante-a-Seme-og-image.webp"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/Botanica/Cicli-Vitali-Vegetali---Spermatofite-Piante-a-Seme-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="Botanica/Cicli-Vitali-Vegetali---Spermatofite-Piante-a-Seme"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Quartz 4</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../Botanica/">Botanica</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Cicli Vitali Vegetali   Spermatofite Piante a Seme</a></div></nav><h1 class="article-title">Cicli Vitali Vegetali - Spermatofite Piante a Seme</h1><p show-comma="true" class="content-meta"><time datetime="2025-07-13T00:45:34.000Z">Jul 13, 2025</time><span>8 min read</span></p></div></div><article class="popover-hint"><h2 id="definizione-e-caratteristiche-generali">Definizione e Caratteristiche Generali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definizione-e-caratteristiche-generali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="classificazione">Classificazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#classificazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Definizione</strong>: piante che producono semi</li>
+<li><strong>Include</strong>: Gimnosperme + Angiosperme</li>
+<li><strong>Sinonimo</strong>: Fanerogame (“a nozze evidenti”)</li>
+<li><strong>Innovazione chiave</strong>: comparsa del seme</li>
+</ul>
+<h3 id="caratteristica-unificante">Caratteristica Unificante<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristica-unificante" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Seme</strong>: struttura di dispersione che sostituisce la sporogonia</li>
+<li><strong>Significato evolutivo</strong>: rivoluzione nelle strategie riproduttive</li>
+</ul>
+<hr/>
+<h1 id="evoluzione-dalle-crittogame-alle-spermatofite">Evoluzione dalle Crittogame alle Spermatofite<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evoluzione-dalle-crittogame-alle-spermatofite" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="1-cambiamento-dimensioni-generazioni">1. Cambiamento Dimensioni Generazioni<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-cambiamento-dimensioni-generazioni" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="trend-evolutivo-progressivo">Trend Evolutivo Progressivo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trend-evolutivo-progressivo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Briofite → Pteridofite → Gimnosperme → Angiosperme</strong></p>
+<h4 id="evoluzione-del-gametofito">Evoluzione del Gametofito<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evoluzione-del-gametofito" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Briofite</strong>: fase dominante, indipendente</li>
+<li><strong>Pteridofite</strong>: ridotto ma visibile (protallo)</li>
+<li><strong>Gimnosperme</strong>: microscopico, parassita sporofito</li>
+<li><strong>Angiosperme</strong>: ulteriore miniaturizzazione</li>
+</ul>
+<h4 id="evoluzione-dello-sporofito">Evoluzione dello Sporofito<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evoluzione-dello-sporofito" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Briofite</strong>: piccolo, dipendente gametofito</li>
+<li><strong>Pteridofite</strong>: indipendente, dominante</li>
+<li><strong>Gimnosperme</strong>: esclusivamente dominante</li>
+<li><strong>Angiosperme</strong>: massima complessità strutturale</li>
+</ul>
+<h2 id="2-evoluzione-delle-meiospore">2. Evoluzione delle Meiospore<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-evoluzione-delle-meiospore" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="da-isosporia-a-eterosporia">Da Isosporia a Eterosporia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#da-isosporia-a-eterosporia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="isosporia-condizione-primitiva">Isosporia (Condizione Primitiva)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#isosporia-condizione-primitiva" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Caratteristiche</strong>: meiospore morfologicamente identiche</li>
+<li><strong>Distribuzione</strong>: Briofite + molte Pteridofite</li>
+<li><strong>Strategia</strong>: sporogonia (rilascio ambientale)</li>
+<li><strong>Gametofiti</strong>: bisessuali o unisessuali</li>
+</ul>
+<h4 id="eterosporia-condizione-evoluta">Eterosporia (Condizione Evoluta)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#eterosporia-condizione-evoluta" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Caratteristiche</strong>: due tipi di spore dimensionalmente diverse</li>
+<li><strong>Distribuzione</strong>: alcune Pteridofite + tutte le Spermatofite</li>
+<li><strong>Specializzazione</strong>: microsporangi + macrosporangi distinti</li>
+<li><strong>Gametofiti</strong>: sempre unisessuali</li>
+</ul>
+<h2 id="3-abbandono-della-sporogonia">3. Abbandono della Sporogonia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-abbandono-della-sporogonia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="transizione-strategica">Transizione Strategica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#transizione-strategica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Innovazione decisiva</strong>: meiospore NON più rilasciate nell’ambiente</li>
+<li><strong>Nuova strategia</strong>: meccanismo di dispersione alternativo</li>
+<li><strong>Evoluzione</strong>: verso sistema più efficiente e protetto</li>
+</ul>
+<h2 id="4-miniaturizzazione-del-gametofito">4. Miniaturizzazione del Gametofito<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-miniaturizzazione-del-gametofito" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="processo-di-riduzione">Processo di Riduzione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processo-di-riduzione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Riduzione drastica</strong>: gametofiti maschili e femminili</li>
+<li><strong>Sviluppo protetto</strong>: all’interno parete meiospore</li>
+<li><strong>Vantaggi</strong>: protezione da stress ambientali</li>
+</ul>
+<hr/>
+<h1 id="evoluzione-della-macrospora--ovulo">Evoluzione della Macrospora → Ovulo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evoluzione-della-macrospora--ovulo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="formazione-dellovulo">Formazione dell’Ovulo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formazione-dellovulo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="processo-evolutivo">Processo Evolutivo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processo-evolutivo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Ritenzione macrospore</strong>: NON più rilasciate dal macrosporangio</li>
+<li><strong>Sviluppo in situ</strong>: all’interno del macrosporangio stesso</li>
+<li><strong>Formazione tegumento</strong>: avvolgimento protettivo del macrosporangio</li>
+<li><strong>Apertura micropilo</strong>: mantenimento accesso per fecondazione</li>
+</ol>
+<h3 id="definizione-di-ovulo">Definizione di Ovulo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definizione-di-ovulo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Ovulo = macrosporangio + tegumento(i) + micropilo</strong></p>
+<ul>
+<li><strong>Novità esclusiva</strong>: delle Spermatofite</li>
+<li><strong>Funzione</strong>: protezione e nutrizione del gametofito femminile</li>
+</ul>
+<h2 id="sistema-a-bambole-russe">Sistema “a Bambole Russe”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sistema-a-bambole-russe" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="contenuto-gerarchico-dellovulo">Contenuto Gerarchico dell’Ovulo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contenuto-gerarchico-dellovulo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Livello esterno</strong>: tegumento con micropilo</li>
+<li><strong>Livello intermedio</strong>: macrosporangio (nocella)</li>
+<li><strong>Livello interno</strong>: macrogametofito (da macrospora)</li>
+<li><strong>Livello più interno</strong>: gametangi femminili</li>
+<li><strong>Livello finale</strong>: gameti femminili (cellule uovo)</li>
+</ol>
+<h3 id="processo-riproduttivo">Processo Riproduttivo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processo-riproduttivo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Accesso gamia</strong>: attraverso micropilo</li>
+<li><strong>Percorso</strong>: strutture portatrici gameti maschili → ovulo</li>
+<li><strong>Fecondazione</strong>: all’interno sistema protetto</li>
+</ul>
+<hr/>
+<h1 id="trasformazione-ovulo--seme">Trasformazione Ovulo → Seme<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trasformazione-ovulo--seme" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="processo-di-maturazione">Processo di Maturazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processo-di-maturazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="cambiamenti-strutturali-post-fecondazione">Cambiamenti Strutturali Post-Fecondazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cambiamenti-strutturali-post-fecondazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Fecondazione</strong>: gameti femminili</li>
+<li><strong>Indurimento tegumenti</strong>: diventano coriacei e protettivi</li>
+<li><strong>Chiusura micropilo</strong>: sigillatura completa</li>
+<li><strong>Accumulo tessuti di riserva</strong>: nutrienti per embrione</li>
+<li><strong>Trasformazione finale</strong>: ovulo → seme maturo</li>
+</ol>
+<h3 id="significato-funzionale">Significato Funzionale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#significato-funzionale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Sostituzione sporogonia</strong>: nuovo meccanismo di dispersione</li>
+<li><strong>Efficienza aumentata</strong>: risoluzione problemi gruppi primitivi</li>
+<li><strong>Protezione avanzata</strong>: embrione in ambiente controllato</li>
+</ul>
+<hr/>
+<h1 id="vantaggi-del-seme">Vantaggi del Seme<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vantaggi-del-seme" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="1-quiescenza-embrionale">1. Quiescenza Embrionale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-quiescenza-embrionale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="problema-risolto">Problema Risolto<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#problema-risolto" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Crittogame</strong>: embrione non può arrestare sviluppo</li>
+<li><strong>Rischio</strong>: condizioni sfavorevoli → morte embrione</li>
+<li><strong>Spermatofite</strong>: capacità di quiescenza embrionale</li>
+</ul>
+<h3 id="meccanismo-di-quiescenza">Meccanismo di Quiescenza<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meccanismo-di-quiescenza" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Tegumenti coriacei</strong>: protezione fisica</li>
+<li><strong>Riduzione scambi metabolici</strong>: rallentamento vitale</li>
+<li><strong>Durata eccezionale</strong>: possibili centinaia di anni</li>
+</ul>
+<h2 id="2-processo-di-maturazione">2. Processo di Maturazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-processo-di-maturazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="tappe-della-maturazione">Tappe della Maturazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tappe-della-maturazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Accumulo sostanze di riserva</strong>: aumento peso secco</li>
+<li><strong>Disidratazione drastica</strong>: riduzione contenuto acqua</li>
+<li><strong>Rallentamento metabolico</strong>: diminuzione respirazione</li>
+</ol>
+<h3 id="risultati-funzionali">Risultati Funzionali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#risultati-funzionali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Resistenza prolungata</strong>: condizioni avverse</li>
+<li><strong>Germinazione controllata</strong>: solo con condizioni favorevoli</li>
+</ul>
+<h2 id="3-tessuti-di-riserva">3. Tessuti di Riserva<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-tessuti-di-riserva" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="endosperma">Endosperma<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#endosperma" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Funzione</strong>: energia per sviluppo embrionale</li>
+<li><strong>Composizione</strong>: polisaccaridi, grassi, proteine</li>
+<li><strong>Origine</strong>: diversa in gimnosperme vs angiosperme</li>
+<li><strong>Ploidia</strong>: caratteristica distintiva tra gruppi</li>
+</ul>
+<h2 id="4-indipendenza-dallacqua">4. Indipendenza dall’Acqua<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-indipendenza-dallacqua" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="innovazioni-riproduttive">Innovazioni Riproduttive<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#innovazioni-riproduttive" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Eliminazione</strong>: gameti maschili flagellati</li>
+<li><strong>Nuovi meccanismi</strong>: tubetto pollinico per gamia</li>
+<li><strong>Trasporto</strong>: aereo invece che acquatico</li>
+<li><strong>Colonizzazione</strong>: ambienti terrestri aridi</li>
+</ul>
+<hr/>
+<h1 id="gimnosperme">Gimnosperme<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gimnosperme" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="classificazione-e-diversità">Classificazione e Diversità<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#classificazione-e-diversità" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="gruppi-principali">Gruppi Principali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gruppi-principali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Coniferophyta</strong>: conifere (phylum più rappresentativo)
+<ul>
+<li>Larici, pini, abeti, sequoie</li>
+</ul>
+</li>
+<li><strong>Altri gruppi</strong>: Cycadophyta, Ginkgophyta, Gnetophyta</li>
+</ul>
+<h3 id="caratteristiche-dimensionali">Caratteristiche Dimensionali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristiche-dimensionali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Record mondiali</strong>: piante più grandi del pianeta</li>
+<li><strong>Crescita arborea</strong>: predominante</li>
+<li><strong>Giganti</strong>: Sequoia sempervirens, Pseudotsuga menziesii</li>
+<li><strong>Distribuzione</strong>: principalmente ovest Nord America</li>
+</ul>
+<h2 id="eterosporia-definitiva">Eterosporia Definitiva<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#eterosporia-definitiva" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="organizzazione-degli-sporangi">Organizzazione degli Sporangi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#organizzazione-degli-sporangi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Separazione completa</strong>: macrosporangi e microsporangi sempre distinti</li>
+<li><strong>Strobili</strong>: strutture specializzate portanti sporangi</li>
+<li><strong>Terminologia</strong>: coni, pigne (linguaggio comune)</li>
+<li><strong>Definizione strobilo</strong>: porzione sporofito che porta sporangi</li>
+</ul>
+<h3 id="dimorfismo-degli-strobili">Dimorfismo degli Strobili<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dimorfismo-degli-strobili" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Strobili maschili</strong>: piccoli, discreti, temporanei</li>
+<li><strong>Produzione pollinica</strong>: fine inverno, quantità enormi</li>
+<li><strong>Strobili femminili</strong>: piccoli inizialmente → pigne coriacee grandi</li>
+</ul>
+<hr/>
+<h1 id="strobilo-femminile-e-ovulo">Strobilo Femminile e Ovulo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#strobilo-femminile-e-ovulo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="struttura-dello-strobilo-femminile">Struttura dello Strobilo Femminile<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#struttura-dello-strobilo-femminile" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="organizzazione-generale">Organizzazione Generale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#organizzazione-generale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Funzione</strong>: porta macrosporangi (ovuli)</li>
+<li><strong>Sviluppo</strong>: coni piccoli → pigne coriacee mature</li>
+<li><strong>Maturazione</strong>: sviluppo ovuli → liberazione semi</li>
+</ul>
+<h3 id="squama-ovulifera">Squama Ovulifera<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#squama-ovulifera" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Disposizione</strong>: due ovuli alla base di ogni squama</li>
+<li><strong>Posizione</strong>: vicino asse longitudinale dello strobilo</li>
+<li><strong>Protezione</strong>: avvolgimento degli ovuli</li>
+</ul>
+<h2 id="componenti-dellovulo">Componenti dell’Ovulo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#componenti-dellovulo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="struttura-anatomica">Struttura Anatomica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#struttura-anatomica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Squama ovulifera</strong>: supporto di due ovuli basali</li>
+<li><strong>Ovulo</strong>: macrosporangio + tegumento</li>
+<li><strong>Micropilo</strong>: interruzione del tegumento per accesso</li>
+<li><strong>Nocella</strong>: macrosporangio all’interno dell’ovulo</li>
+</ul>
+<h3 id="nocella-macrosporangio">Nocella (Macrosporangio)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nocella-macrosporangio" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Contenuto</strong>: sostanze di riserva</li>
+<li><strong>Riduzione evolutiva</strong>: una sola cellula madre delle macrospore</li>
+<li><strong>Tessuto sporigeno</strong>: sede del processo meiotico</li>
+</ul>
+<h2 id="sviluppo-del-macrogametofito">Sviluppo del Macrogametofito<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sviluppo-del-macrogametofito" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="sequenza-di-sviluppo">Sequenza di Sviluppo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sequenza-di-sviluppo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Cellula madre macrospore</strong>: unica cellula per meiosi</li>
+<li><strong>Meiosi</strong>: 4 cellule aploidi → 3 degenerano, 1 sopravvive</li>
+<li><strong>Macrospora superstite</strong>: divisioni mitotiche</li>
+<li><strong>Macrogametofito</strong>: migliaia di cellule</li>
+<li><strong>Formazione archegoni</strong>: gametangi femminili</li>
+<li><strong>Cellule uovo</strong>: una per archegonio</li>
+</ol>
+<h3 id="organizzazione-finale-dellovulo">Organizzazione Finale dell’Ovulo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#organizzazione-finale-dellovulo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Camera pollinica</strong>: zona micropilo (arrivo polline)</li>
+<li><strong>Nocella residua</strong>: tessuto sporigeno dopo meiosi</li>
+<li><strong>Macrogametofito</strong>: occupa maggior parte spazio</li>
+<li><strong>Archegoni</strong>: due per gametofito, verso micropilo</li>
+<li><strong>Cellule uovo</strong>: almeno due totali per ovulo</li>
+</ul>
+<hr/>
+<h1 id="strobilo-maschile-e-gametofito-maschile">Strobilo Maschile e Gametofito Maschile<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#strobilo-maschile-e-gametofito-maschile" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="strobilo-maschile">Strobilo Maschile<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#strobilo-maschile" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="struttura-e-funzione">Struttura e Funzione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#struttura-e-funzione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Microsporangi</strong>: grandi espansioni</li>
+<li><strong>Tessuto sporigeno</strong>: centinaia di cellule madri</li>
+<li><strong>Meiosi</strong>: ogni cellula madre → 4 microspore (tutte vitali)</li>
+<li><strong>Produzione massiva</strong>: quantità enormi di polline</li>
+</ul>
+<h3 id="formazione-delle-microspore">Formazione delle Microspore<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formazione-delle-microspore" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Tetrade</strong>: 4 microspore inizialmente unite</li>
+<li><strong>Sviluppo</strong>: divisioni mitotiche limitate</li>
+<li><strong>Prodotto finale</strong>: microgametofito (granulo pollinico)</li>
+</ul>
+<h2 id="granulo-pollinico-microgametofito">Granulo Pollinico (Microgametofito)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#granulo-pollinico-microgametofito" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="struttura-del-polline">Struttura del Polline<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#struttura-del-polline" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Definizione</strong>: polline = microgametofito maturo</li>
+<li><strong>Protezione</strong>: pareti della microspora originaria</li>
+<li><strong>Riduzione</strong>: drastica rispetto al gametofito ancestrale</li>
+</ul>
+<h3 id="composizione-cellulare">Composizione Cellulare<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#composizione-cellulare" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Cellula del tubetto</strong>:
+<ul>
+<li>Occupa maggior spazio</li>
+<li>Contiene nucleo del tubetto</li>
+</ul>
+</li>
+<li><strong>Cellula generativa</strong>:
+<ul>
+<li>Genera gameti maschili</li>
+<li>Dimensioni ridotte</li>
+</ul>
+</li>
+</ul>
+<h3 id="sviluppo-interno">Sviluppo Interno<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sviluppo-interno" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Divisioni mitotiche</strong>: 3-4 totali nel granulo</li>
+<li><strong>Cellule protallari</strong>: degenerano rapidamente</li>
+<li><strong>Struttura matura</strong>: cellula tubetto + cellula generativa</li>
+</ul>
+<h3 id="adattamenti-per-dispersione">Adattamenti per Dispersione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adattamenti-per-dispersione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Sacche d’aria</strong>: espansioni alari per anemofilia</li>
+<li><strong>Parete</strong>: sporopollenina (resistenza estrema)</li>
+<li><strong>Quantità</strong>: liberazioni stagionali massive</li>
+</ul>
+<hr/>
+<h1 id="impollinazione-e-fecondazione">Impollinazione e Fecondazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#impollinazione-e-fecondazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="processo-in-due-fasi-distinte">Processo in Due Fasi Distinte<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processo-in-due-fasi-distinte" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-impollinazione">1. Impollinazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-impollinazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Definizione</strong>: arrivo granulo pollinico presso micropilo</li>
+<li><strong>Modalità</strong>: trasporto del vento (anemofilia)</li>
+<li><strong>Casualità</strong>: di migliaia granuli, pochi raggiungono target</li>
+<li><strong>Distanze</strong>: trasporto su tratti notevoli</li>
+</ul>
+<h3 id="2-fecondazione-gamia">2. Fecondazione (Gamia)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-fecondazione-gamia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Definizione</strong>: incontro effettivo tra gameti</li>
+<li><strong>Separazione temporale</strong>: da impollinazione (oltre un anno)</li>
+<li><strong>Causa ritardo</strong>: crescita lenta tubetto pollinico</li>
+</ul>
+<h2 id="tubetto-pollinico">Tubetto Pollinico<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tubetto-pollinico" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="funzione-e-significato-evolutivo">Funzione e Significato Evolutivo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#funzione-e-significato-evolutivo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Novità</strong>: presente in tutte le Spermatofite</li>
+<li><strong>Risoluzione</strong>: gamia senza acqua (vs Crittogame)</li>
+<li><strong>Trasporto</strong>: gameti maschili verso gameti femminili</li>
+</ul>
+<h3 id="sviluppo-del-tubetto">Sviluppo del Tubetto<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sviluppo-del-tubetto" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Germinazione</strong>: granulo pollinico presso micropilo</li>
+<li><strong>Migrazione nucleo tubetto</strong>: verso punta crescente</li>
+<li><strong>Guida crescita</strong>: del tubetto attraverso tessuti</li>
+<li><strong>Migrazione cellula generativa</strong>: nel tubetto</li>
+<li><strong>Divisione finale</strong>: cellula generativa → due nuclei spermatici</li>
+<li><strong>Gameti maschili</strong>: nuclei non flagellati</li>
+</ol>
+<h2 id="processo-di-fecondazione">Processo di Fecondazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processo-di-fecondazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="percorso-dei-tubetti-pollinici">Percorso dei Tubetti Pollinici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#percorso-dei-tubetti-pollinici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Atterraggio</strong>: presso micropilo dell’ovulo</li>
+<li><strong>Penetrazione</strong>: attraverso tessuti ovulo</li>
+<li><strong>Attraversamento</strong>: nocella</li>
+<li><strong>Raggiungimento</strong>: macrogametofito</li>
+<li><strong>Target finale</strong>: archegoni con cellule uovo</li>
+</ol>
+<h3 id="tessuti-coinvolti-ploidia">Tessuti Coinvolti (Ploidia)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tessuti-coinvolti-ploidia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Aploidi</strong>: tubetto pollinico, macrogametofito, gameti</li>
+<li><strong>Diploidi</strong>: nocella, tegumenti (derivano da sporofito)</li>
+</ul>
+<h3 id="poliembrionia">Poliembrionia<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#poliembrionia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Fecondazione multipla</strong>: almeno due cellule uovo per ovulo</li>
+<li><strong>Zigoti multipli</strong>: nello stesso macrogametofito</li>
+<li><strong>Competizione</strong>: tra embrioni nello stesso seme</li>
+<li><strong>Selezione</strong>: solo l’embrione più vigoroso sopravvive</li>
+</ul>
+<hr/>
+<h1 id="seme-delle-gimnosperme">Seme delle Gimnosperme<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#seme-delle-gimnosperme" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="struttura-del-seme">Struttura del Seme<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#struttura-del-seme" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="componenti-anatomici">Componenti Anatomici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#componenti-anatomici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Embrione</strong>: nuova generazione sporofitica (diploide)</li>
+<li><strong>Endosperma</strong>: macrogametofito (aploide) - tessuto di riserva</li>
+<li><strong>Tegumento</strong>: indurito per protezione</li>
+<li><strong>Nocella residua</strong>: tracce del macrosporangio originario</li>
+</ul>
+<h3 id="caratteristiche-dellendosperma">Caratteristiche dell’Endosperma<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristiche-dellendosperma" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Origine</strong>: dal macrogametofito femminile</li>
+<li><strong>Ploidia</strong>: aploide (caratteristica distintiva gimnosperme)</li>
+<li><strong>Funzione</strong>: sostentamento embrione fino autosufficienza</li>
+<li><strong>Composizione</strong>: carboidrati, lipidi, proteine</li>
+</ul>
+<h2 id="germinazione">Germinazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#germinazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Condizioni</strong>: favorevoli per rottura quiescenza</li>
+<li><strong>Plantula</strong>: giovane sporofito post-germinazione</li>
+<li><strong>Cotiledoni</strong>: prime foglie embrionali</li>
+<li><strong>Sviluppo</strong>: verso fase sporofitica dominante</li>
+</ul>
+<hr/>
+<h1 id="ciclo-vitale-delle-gimnosperme">Ciclo Vitale delle Gimnosperme<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ciclo-vitale-delle-gimnosperme" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="schema-completo-del-ciclo">Schema Completo del Ciclo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#schema-completo-del-ciclo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="fase-sporofitica-diploide---dominante">Fase Sporofitica (Diploide) - Dominante<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fase-sporofitica-diploide---dominante" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Sporofito adulto</strong>: albero di grandi dimensioni</li>
+<li><strong>Strobili maschili</strong>: portano microsporangi</li>
+<li><strong>Strobili femminili</strong>: portano ovuli (macrosporangi)</li>
+<li><strong>Meiosi</strong>: produzione spore aploidi</li>
+</ol>
+<h3 id="fase-gametofitica-aploide---ridotta">Fase Gametofitica (Aploide) - Ridotta<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fase-gametofitica-aploide---ridotta" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="linea-maschile">Linea Maschile<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#linea-maschile" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Microspore</strong>: da meiosi nei microsporangi</li>
+<li><strong>Microgametofito</strong>: granulo pollinico</li>
+<li><strong>Composizione</strong>: cellula tubetto + cellula generativa</li>
+<li><strong>Gameti</strong>: nuclei spermatici da cellula generativa</li>
+</ul>
+<h4 id="linea-femminile">Linea Femminile<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#linea-femminile" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Macrospora</strong>: da meiosi nella nocella</li>
+<li><strong>Macrogametofito</strong>: migliaia di cellule nell’ovulo</li>
+<li><strong>Archegoni</strong>: gametangi femminili</li>
+<li><strong>Gameti</strong>: cellule uovo negli archegoni</li>
+</ul>
+<h3 id="processi-riproduttivi">Processi Riproduttivi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processi-riproduttivi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Impollinazione</strong>: polline → micropilo (processo casuale)</li>
+<li><strong>Sviluppo tubetto</strong>: crescita attraverso tessuti nocella</li>
+<li><strong>Fecondazione</strong>: nuclei spermatici + cellule uovo</li>
+<li><strong>Zigote</strong>: ritorno alla fase diploide</li>
+<li><strong>Embriogenesi</strong>: sviluppo nel seme (con poliembrionia)</li>
+<li><strong>Disseminazione</strong>: dispersione semi (vs sporogonia)</li>
+</ol>
+<h2 id="dispersione-dei-semi">Dispersione dei Semi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dispersione-dei-semi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="modalità-principale-anemofila">Modalità Principale: Anemofila<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#modalità-principale-anemofila" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Agente</strong>: vento</li>
+<li><strong>Adattamenti</strong>: espansioni alari sui semi</li>
+<li><strong>Efficienza</strong>: ampia distribuzione territoriale</li>
+</ul>
+<h3 id="modalità-secondaria-zoofila">Modalità Secondaria: Zoofila<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#modalità-secondaria-zoofila" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Agenti</strong>: uccelli specializzati</li>
+<li><strong>Esempio</strong>: dispersione pinoli</li>
+<li><strong>Vantaggi</strong>: dispersione mirata e a lunga distanza</li>
+</ul>
+<hr/>
+<h1 id="confronto-evolutivo">Confronto Evolutivo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#confronto-evolutivo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="crittogame-vs-spermatofite">Crittogame vs Spermatofite<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#crittogame-vs-spermatofite" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="strategia-di-dispersione">Strategia di Dispersione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#strategia-di-dispersione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Crittogame</strong>: sporogonia (dispersione meiospore)</li>
+<li><strong>Spermatofite</strong>: disseminazione (dispersione semi)</li>
+</ul>
+<h3 id="dipendenza-dallacqua">Dipendenza dall’Acqua<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dipendenza-dallacqua" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Crittogame</strong>: gameti flagellati, necessità acqua</li>
+<li><strong>Spermatofite</strong>: tubetti pollinici, indipendenza idrica</li>
+</ul>
+<h3 id="sviluppo-embrionale">Sviluppo Embrionale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sviluppo-embrionale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Crittogame</strong>: sviluppo non arrestabile</li>
+<li><strong>Spermatofite</strong>: quiescenza possibile</li>
+</ul>
+<h3 id="gametofito">Gametofito<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gametofito" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Crittogame</strong>: indipendente, visibile</li>
+<li><strong>Spermatofite</strong>: ridotto, protetto/parassita</li>
+</ul>
+<h2 id="innovazioni-chiave-delle-spermatofite">Innovazioni Chiave delle Spermatofite<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#innovazioni-chiave-delle-spermatofite" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="innovazioni-strutturali">Innovazioni Strutturali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#innovazioni-strutturali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Ovulo</strong>: protezione del macrogametofito</li>
+<li><strong>Seme</strong>: quiescenza e tessuti di riserva</li>
+<li><strong>Tubetto pollinico</strong>: fecondazione senza acqua</li>
+<li><strong>Riduzione gametofito</strong>: efficienza riproduttiva</li>
+<li><strong>Tessuti di riserva</strong>: supporto embrionale prolungato</li>
+</ol>
+<h3 id="vantaggi-adattivi">Vantaggi Adattivi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vantaggi-adattivi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Colonizzazione</strong>: ambienti terrestri diversificati</li>
+<li><strong>Efficienza riproduttiva</strong>: maggiore successo riproduttivo</li>
+<li><strong>Resistenza</strong>: condizioni ambientali avverse</li>
+<li><strong>Dispersione</strong>: meccanismi più efficienti</li>
+<li><strong>Protezione</strong>: stadi vulnerabili del ciclo vitale</li>
+</ul>
+<hr/>
+<h1 id="significato-evolutivo">Significato Evolutivo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#significato-evolutivo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="transizione-evolutiva-fondamentale">Transizione Evolutiva Fondamentale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#transizione-evolutiva-fondamentale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Da acquatico a terrestre</strong>: conquista definitiva ambiente terrestre</li>
+<li><strong>Efficienza riproduttiva</strong>: superamento limitazioni crittogame</li>
+<li><strong>Diversificazione</strong>: base per radiazione adattiva angiosperme</li>
+<li><strong>Dominanza</strong>: ecosistemi terrestri moderni</li>
+</ul>
+<h2 id="preparazione-alle-angiosperme">Preparazione alle Angiosperme<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#preparazione-alle-angiosperme" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Innovazioni condivise</strong>: ovulo, seme, tubetto pollinico</li>
+<li><strong>Ulteriori sviluppi</strong>: fiore, doppia fecondazione, frutti</li>
+<li><strong>Continuità evolutiva</strong>: dalle gimnosperme alle angiosperme</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="toc-content overflow" id="list-1"><li class="depth-1"><a href="#definizione-e-caratteristiche-generali" data-for="definizione-e-caratteristiche-generali">Definizione e Caratteristiche Generali</a></li><li class="depth-2"><a href="#classificazione" data-for="classificazione">Classificazione</a></li><li class="depth-2"><a href="#caratteristica-unificante" data-for="caratteristica-unificante">Caratteristica Unificante</a></li><li class="depth-0"><a href="#evoluzione-dalle-crittogame-alle-spermatofite" data-for="evoluzione-dalle-crittogame-alle-spermatofite">Evoluzione dalle Crittogame alle Spermatofite</a></li><li class="depth-1"><a href="#1-cambiamento-dimensioni-generazioni" data-for="1-cambiamento-dimensioni-generazioni">1. Cambiamento Dimensioni Generazioni</a></li><li class="depth-2"><a href="#trend-evolutivo-progressivo" data-for="trend-evolutivo-progressivo">Trend Evolutivo Progressivo</a></li><li class="depth-1"><a href="#2-evoluzione-delle-meiospore" data-for="2-evoluzione-delle-meiospore">2. Evoluzione delle Meiospore</a></li><li class="depth-2"><a href="#da-isosporia-a-eterosporia" data-for="da-isosporia-a-eterosporia">Da Isosporia a Eterosporia</a></li><li class="depth-1"><a href="#3-abbandono-della-sporogonia" data-for="3-abbandono-della-sporogonia">3. Abbandono della Sporogonia</a></li><li class="depth-2"><a href="#transizione-strategica" data-for="transizione-strategica">Transizione Strategica</a></li><li class="depth-1"><a href="#4-miniaturizzazione-del-gametofito" data-for="4-miniaturizzazione-del-gametofito">4. Miniaturizzazione del Gametofito</a></li><li class="depth-2"><a href="#processo-di-riduzione" data-for="processo-di-riduzione">Processo di Riduzione</a></li><li class="depth-0"><a href="#evoluzione-della-macrospora--ovulo" data-for="evoluzione-della-macrospora--ovulo">Evoluzione della Macrospora → Ovulo</a></li><li class="depth-1"><a href="#formazione-dellovulo" data-for="formazione-dellovulo">Formazione dell’Ovulo</a></li><li class="depth-2"><a href="#processo-evolutivo" data-for="processo-evolutivo">Processo Evolutivo</a></li><li class="depth-2"><a href="#definizione-di-ovulo" data-for="definizione-di-ovulo">Definizione di Ovulo</a></li><li class="depth-1"><a href="#sistema-a-bambole-russe" data-for="sistema-a-bambole-russe">Sistema “a Bambole Russe”</a></li><li class="depth-2"><a href="#contenuto-gerarchico-dellovulo" data-for="contenuto-gerarchico-dellovulo">Contenuto Gerarchico dell’Ovulo</a></li><li class="depth-2"><a href="#processo-riproduttivo" data-for="processo-riproduttivo">Processo Riproduttivo</a></li><li class="depth-0"><a href="#trasformazione-ovulo--seme" data-for="trasformazione-ovulo--seme">Trasformazione Ovulo → Seme</a></li><li class="depth-1"><a href="#processo-di-maturazione" data-for="processo-di-maturazione">Processo di Maturazione</a></li><li class="depth-2"><a href="#cambiamenti-strutturali-post-fecondazione" data-for="cambiamenti-strutturali-post-fecondazione">Cambiamenti Strutturali Post-Fecondazione</a></li><li class="depth-2"><a href="#significato-funzionale" data-for="significato-funzionale">Significato Funzionale</a></li><li class="depth-0"><a href="#vantaggi-del-seme" data-for="vantaggi-del-seme">Vantaggi del Seme</a></li><li class="depth-1"><a href="#1-quiescenza-embrionale" data-for="1-quiescenza-embrionale">1. Quiescenza Embrionale</a></li><li class="depth-2"><a href="#problema-risolto" data-for="problema-risolto">Problema Risolto</a></li><li class="depth-2"><a href="#meccanismo-di-quiescenza" data-for="meccanismo-di-quiescenza">Meccanismo di Quiescenza</a></li><li class="depth-1"><a href="#2-processo-di-maturazione" data-for="2-processo-di-maturazione">2. Processo di Maturazione</a></li><li class="depth-2"><a href="#tappe-della-maturazione" data-for="tappe-della-maturazione">Tappe della Maturazione</a></li><li class="depth-2"><a href="#risultati-funzionali" data-for="risultati-funzionali">Risultati Funzionali</a></li><li class="depth-1"><a href="#3-tessuti-di-riserva" data-for="3-tessuti-di-riserva">3. Tessuti di Riserva</a></li><li class="depth-2"><a href="#endosperma" data-for="endosperma">Endosperma</a></li><li class="depth-1"><a href="#4-indipendenza-dallacqua" data-for="4-indipendenza-dallacqua">4. Indipendenza dall’Acqua</a></li><li class="depth-2"><a href="#innovazioni-riproduttive" data-for="innovazioni-riproduttive">Innovazioni Riproduttive</a></li><li class="depth-0"><a href="#gimnosperme" data-for="gimnosperme">Gimnosperme</a></li><li class="depth-1"><a href="#classificazione-e-diversità" data-for="classificazione-e-diversità">Classificazione e Diversità</a></li><li class="depth-2"><a href="#gruppi-principali" data-for="gruppi-principali">Gruppi Principali</a></li><li class="depth-2"><a href="#caratteristiche-dimensionali" data-for="caratteristiche-dimensionali">Caratteristiche Dimensionali</a></li><li class="depth-1"><a href="#eterosporia-definitiva" data-for="eterosporia-definitiva">Eterosporia Definitiva</a></li><li class="depth-2"><a href="#organizzazione-degli-sporangi" data-for="organizzazione-degli-sporangi">Organizzazione degli Sporangi</a></li><li class="depth-2"><a href="#dimorfismo-degli-strobili" data-for="dimorfismo-degli-strobili">Dimorfismo degli Strobili</a></li><li class="depth-0"><a href="#strobilo-femminile-e-ovulo" data-for="strobilo-femminile-e-ovulo">Strobilo Femminile e Ovulo</a></li><li class="depth-1"><a href="#struttura-dello-strobilo-femminile" data-for="struttura-dello-strobilo-femminile">Struttura dello Strobilo Femminile</a></li><li class="depth-2"><a href="#organizzazione-generale" data-for="organizzazione-generale">Organizzazione Generale</a></li><li class="depth-2"><a href="#squama-ovulifera" data-for="squama-ovulifera">Squama Ovulifera</a></li><li class="depth-1"><a href="#componenti-dellovulo" data-for="componenti-dellovulo">Componenti dell’Ovulo</a></li><li class="depth-2"><a href="#struttura-anatomica" data-for="struttura-anatomica">Struttura Anatomica</a></li><li class="depth-2"><a href="#nocella-macrosporangio" data-for="nocella-macrosporangio">Nocella (Macrosporangio)</a></li><li class="depth-1"><a href="#sviluppo-del-macrogametofito" data-for="sviluppo-del-macrogametofito">Sviluppo del Macrogametofito</a></li><li class="depth-2"><a href="#sequenza-di-sviluppo" data-for="sequenza-di-sviluppo">Sequenza di Sviluppo</a></li><li class="depth-2"><a href="#organizzazione-finale-dellovulo" data-for="organizzazione-finale-dellovulo">Organizzazione Finale dell’Ovulo</a></li><li class="depth-0"><a href="#strobilo-maschile-e-gametofito-maschile" data-for="strobilo-maschile-e-gametofito-maschile">Strobilo Maschile e Gametofito Maschile</a></li><li class="depth-1"><a href="#strobilo-maschile" data-for="strobilo-maschile">Strobilo Maschile</a></li><li class="depth-2"><a href="#struttura-e-funzione" data-for="struttura-e-funzione">Struttura e Funzione</a></li><li class="depth-2"><a href="#formazione-delle-microspore" data-for="formazione-delle-microspore">Formazione delle Microspore</a></li><li class="depth-1"><a href="#granulo-pollinico-microgametofito" data-for="granulo-pollinico-microgametofito">Granulo Pollinico (Microgametofito)</a></li><li class="depth-2"><a href="#struttura-del-polline" data-for="struttura-del-polline">Struttura del Polline</a></li><li class="depth-2"><a href="#composizione-cellulare" data-for="composizione-cellulare">Composizione Cellulare</a></li><li class="depth-2"><a href="#sviluppo-interno" data-for="sviluppo-interno">Sviluppo Interno</a></li><li class="depth-2"><a href="#adattamenti-per-dispersione" data-for="adattamenti-per-dispersione">Adattamenti per Dispersione</a></li><li class="depth-0"><a href="#impollinazione-e-fecondazione" data-for="impollinazione-e-fecondazione">Impollinazione e Fecondazione</a></li><li class="depth-1"><a href="#processo-in-due-fasi-distinte" data-for="processo-in-due-fasi-distinte">Processo in Due Fasi Distinte</a></li><li class="depth-2"><a href="#1-impollinazione" data-for="1-impollinazione">1. Impollinazione</a></li><li class="depth-2"><a href="#2-fecondazione-gamia" data-for="2-fecondazione-gamia">2. Fecondazione (Gamia)</a></li><li class="depth-1"><a href="#tubetto-pollinico" data-for="tubetto-pollinico">Tubetto Pollinico</a></li><li class="depth-2"><a href="#funzione-e-significato-evolutivo" data-for="funzione-e-significato-evolutivo">Funzione e Significato Evolutivo</a></li><li class="depth-2"><a href="#sviluppo-del-tubetto" data-for="sviluppo-del-tubetto">Sviluppo del Tubetto</a></li><li class="depth-1"><a href="#processo-di-fecondazione" data-for="processo-di-fecondazione">Processo di Fecondazione</a></li><li class="depth-2"><a href="#percorso-dei-tubetti-pollinici" data-for="percorso-dei-tubetti-pollinici">Percorso dei Tubetti Pollinici</a></li><li class="depth-2"><a href="#tessuti-coinvolti-ploidia" data-for="tessuti-coinvolti-ploidia">Tessuti Coinvolti (Ploidia)</a></li><li class="depth-2"><a href="#poliembrionia" data-for="poliembrionia">Poliembrionia</a></li><li class="depth-0"><a href="#seme-delle-gimnosperme" data-for="seme-delle-gimnosperme">Seme delle Gimnosperme</a></li><li class="depth-1"><a href="#struttura-del-seme" data-for="struttura-del-seme">Struttura del Seme</a></li><li class="depth-2"><a href="#componenti-anatomici" data-for="componenti-anatomici">Componenti Anatomici</a></li><li class="depth-2"><a href="#caratteristiche-dellendosperma" data-for="caratteristiche-dellendosperma">Caratteristiche dell’Endosperma</a></li><li class="depth-1"><a href="#germinazione" data-for="germinazione">Germinazione</a></li><li class="depth-0"><a href="#ciclo-vitale-delle-gimnosperme" data-for="ciclo-vitale-delle-gimnosperme">Ciclo Vitale delle Gimnosperme</a></li><li class="depth-1"><a href="#schema-completo-del-ciclo" data-for="schema-completo-del-ciclo">Schema Completo del Ciclo</a></li><li class="depth-2"><a href="#fase-sporofitica-diploide---dominante" data-for="fase-sporofitica-diploide---dominante">Fase Sporofitica (Diploide) - Dominante</a></li><li class="depth-2"><a href="#fase-gametofitica-aploide---ridotta" data-for="fase-gametofitica-aploide---ridotta">Fase Gametofitica (Aploide) - Ridotta</a></li><li class="depth-2"><a href="#processi-riproduttivi" data-for="processi-riproduttivi">Processi Riproduttivi</a></li><li class="depth-1"><a href="#dispersione-dei-semi" data-for="dispersione-dei-semi">Dispersione dei Semi</a></li><li class="depth-2"><a href="#modalità-principale-anemofila" data-for="modalità-principale-anemofila">Modalità Principale: Anemofila</a></li><li class="depth-2"><a href="#modalità-secondaria-zoofila" data-for="modalità-secondaria-zoofila">Modalità Secondaria: Zoofila</a></li><li class="depth-0"><a href="#confronto-evolutivo" data-for="confronto-evolutivo">Confronto Evolutivo</a></li><li class="depth-1"><a href="#crittogame-vs-spermatofite" data-for="crittogame-vs-spermatofite">Crittogame vs Spermatofite</a></li><li class="depth-2"><a href="#strategia-di-dispersione" data-for="strategia-di-dispersione">Strategia di Dispersione</a></li><li class="depth-2"><a href="#dipendenza-dallacqua" data-for="dipendenza-dallacqua">Dipendenza dall’Acqua</a></li><li class="depth-2"><a href="#sviluppo-embrionale" data-for="sviluppo-embrionale">Sviluppo Embrionale</a></li><li class="depth-2"><a href="#gametofito" data-for="gametofito">Gametofito</a></li><li class="depth-1"><a href="#innovazioni-chiave-delle-spermatofite" data-for="innovazioni-chiave-delle-spermatofite">Innovazioni Chiave delle Spermatofite</a></li><li class="depth-2"><a href="#innovazioni-strutturali" data-for="innovazioni-strutturali">Innovazioni Strutturali</a></li><li class="depth-2"><a href="#vantaggi-adattivi" data-for="vantaggi-adattivi">Vantaggi Adattivi</a></li><li class="depth-0"><a href="#significato-evolutivo" data-for="significato-evolutivo">Significato Evolutivo</a></li><li class="depth-1"><a href="#transizione-evolutiva-fondamentale" data-for="transizione-evolutiva-fondamentale">Transizione Evolutiva Fondamentale</a></li><li class="depth-1"><a href="#preparazione-alle-angiosperme" data-for="preparazione-alle-angiosperme">Preparazione alle Angiosperme</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.1</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

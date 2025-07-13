@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>📖 Glossario</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="📖 Glossario"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="📖 Glossario"/><meta name="twitter:description" content="A Accrescimento primario Crescita in lunghezza degli organi vegetali dovuta all’attività dei meristemi apicali."/><meta property="og:description" content="A Accrescimento primario Crescita in lunghezza degli organi vegetali dovuta all’attività dei meristemi apicali."/><meta property="og:image:alt" content="A Accrescimento primario Crescita in lunghezza degli organi vegetali dovuta all’attività dei meristemi apicali."/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/Botanica/📖-Glossario"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/Botanica/📖-Glossario"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="A Accrescimento primario Crescita in lunghezza degli organi vegetali dovuta all’attività dei meristemi apicali."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvcGlncm8ubWUvcGlncm8ubWUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://quartz.jzhao.xyz/Botanica/📖-Glossario-og-image.webp"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/Botanica/📖-Glossario-og-image.webp"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/Botanica/📖-Glossario-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="Botanica/📖-Glossario"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Quartz 4</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../Botanica/">Botanica</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>📖 Glossario</a></div></nav><h1 class="article-title">📖 Glossario</h1><p show-comma="true" class="content-meta"><time datetime="2025-07-13T00:45:34.000Z">Jul 13, 2025</time><span>10 min read</span></p></div></div><article class="popover-hint"><h2 id="a">A<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Accrescimento primario</strong></p>
+<blockquote>
+<p>Crescita in lunghezza degli organi vegetali dovuta all’attività dei meristemi apicali.</p>
+</blockquote>
+<p><strong>Accrescimento secondario</strong></p>
+<blockquote>
+<p>Crescita in spessore degli organi vegetali dovuta all’attività dei meristemi secondari (cambio e fellogeno).</p>
+</blockquote>
+<p><strong>Actinostele</strong></p>
+<blockquote>
+<p>Tipo di stele radicale con fasci vascolari disposti a stella, tipica delle radici.</p>
+</blockquote>
+<p><strong>Aerenchima</strong></p>
+<blockquote>
+<p>Tessuto parenchimatico con ampi spazi intercellulari per la circolazione dei gas.</p>
+</blockquote>
+<p><strong>Amiloplasti</strong></p>
+<blockquote>
+<p>Plastidi specializzati nell’accumulo di amido, presenti negli organi di riserva.</p>
+</blockquote>
+<p><strong>Antociani</strong></p>
+<blockquote>
+<p>Pigmenti flavonoidi responsabili della colorazione rossa, blu e viola di fiori e frutti.</p>
+</blockquote>
+<p><strong>Anteridi</strong></p>
+<blockquote>
+<p>Gametangi maschili pluricellulari dove si formano i gameti maschili flagellati.</p>
+</blockquote>
+<p><strong>Aploide</strong></p>
+<blockquote>
+<p>Cellula o organismo con un solo set di cromosomi (n). Caratterizza la fase gametofitica del ciclo vegetale.</p>
+</blockquote>
+<p><strong>Aplo-diplonte</strong></p>
+<blockquote>
+<p>Ciclo vitale con alternanza di due fasi: una aploide (gametofito) e una diploide (sporofito). Tipico di tutte le piante terrestri.</p>
+</blockquote>
+<p><strong>Aplonte</strong></p>
+<blockquote>
+<p>Ciclo vitale dove l’unico individuo pluricellulare è aploide. Lo zigote va immediatamente incontro a meiosi.</p>
+</blockquote>
+<p><strong>Archegoni</strong></p>
+<blockquote>
+<p>Gametangi femminili pluricellulari contenenti la cellula uovo. Hanno forma caratteristica con lungo collo.</p>
+</blockquote>
+<p><strong>Atactostele</strong></p>
+<blockquote>
+<p>Tipo di organizzazione vascolare con fasci sparsi nel parenchima fondamentale, tipica delle monocotiledoni.</p>
+</blockquote>
+<p><strong>Autotrofi</strong></p>
+<blockquote>
+<p>Organismi capaci di produrre sostanze organiche da sostanze inorganiche attraverso la fotosintesi.</p>
+</blockquote>
+<p><strong>Auxina</strong></p>
+<blockquote>
+<p>Ormone vegetale che regola l’allungamento cellulare e i movimenti tropici.</p>
+</blockquote>
+<h2 id="b">B<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Banda di Caspary</strong></p>
+<blockquote>
+<p>Ispessimento idrofobo sulle pareti radiali e trasversali delle cellule endodermiche che blocca il trasporto apoplastico.</p>
+</blockquote>
+<p><strong>Briofite</strong></p>
+<blockquote>
+<p>Gruppo di piante terrestri primitive senza veri tessuti vascolari, con gametofito dominante.</p>
+</blockquote>
+<h2 id="c">C<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Caliptra</strong></p>
+<blockquote>
+<p>Cuffietta coriacea che ricopre lo sporangio dei muschi. È la rimanenza dell’archegonio strappato dallo sporofito in crescita.</p>
+</blockquote>
+<p><strong>Cambio cribro-vascolare</strong></p>
+<blockquote>
+<p>Meristema secondario che produce xilema secondario verso l’interno e floema secondario verso l’esterno.</p>
+</blockquote>
+<p><strong>Carotenoidi</strong></p>
+<blockquote>
+<p>Pigmenti accessori della fotosintesi che assorbono luce blu e conferiscono colorazioni gialle e arancioni.</p>
+</blockquote>
+<p><strong>Cellule bulliformi</strong></p>
+<blockquote>
+<p>Cellule epidermiche grandi delle graminacee che controllano l’apertura e chiusura della lamina fogliare.</p>
+</blockquote>
+<p><strong>Cellule di guardia</strong></p>
+<blockquote>
+<p>Coppia di cellule epidermiche che delimitano la rima stomatica e ne controllano l’apertura.</p>
+</blockquote>
+<p><strong>Ciclo di Calvin</strong></p>
+<blockquote>
+<p>Fase oscura della fotosintesi in cui la CO₂ viene fissata e ridotta a zuccheri nel cloroplasto.</p>
+</blockquote>
+<p><strong>Circinnate</strong></p>
+<blockquote>
+<p>Tipo di sviluppo fogliare delle felci: le fronde sono inizialmente arrotolate e si aprono svolgendosi.</p>
+</blockquote>
+<p><strong>Cladodi</strong></p>
+<blockquote>
+<p>Fusti appiattiti e fotosintetici che sostituiscono funzionalmente le foglie in ambienti xerici.</p>
+</blockquote>
+<p><strong>Clorenchima</strong></p>
+<blockquote>
+<p>Tessuto parenchimatico contenente cloroplasti, specializzato nella fotosintesi.</p>
+</blockquote>
+<p><strong>Clorofilla</strong></p>
+<blockquote>
+<p>Pigmento verde contenente magnesio, essenziale per la cattura dell’energia luminosa nella fotosintesi.</p>
+</blockquote>
+<p><strong>Cloroplasti</strong></p>
+<blockquote>
+<p>Organelli delle cellule vegetali sede della fotosintesi, derivati da endosimbiosi con cianobatteri.</p>
+</blockquote>
+<p><strong>Collenchima</strong></p>
+<blockquote>
+<p>Tessuto meccanico con cellule vive e pareti ispessite, fornisce sostegno flessibile.</p>
+</blockquote>
+<p><strong>Columella</strong></p>
+<blockquote>
+<p>Zona centrale della cuffia radicale contenente statoliti per la percezione gravitropica.</p>
+</blockquote>
+<p><strong>Corpo primario</strong></p>
+<blockquote>
+<p>Porzione della pianta derivata dall’attività dei meristemi primari.</p>
+</blockquote>
+<p><strong>Corpo secondario</strong></p>
+<blockquote>
+<p>Porzione della pianta che include tessuti derivati dai meristemi secondari.</p>
+</blockquote>
+<p><strong>Cormofite</strong></p>
+<blockquote>
+<p>Piante con vera organizzazione in organi distinti (radici, fusti, foglie). Include Pteridofite e Spermatofite.</p>
+</blockquote>
+<p><strong>Cromoplasti</strong></p>
+<blockquote>
+<p>Plastidi contenenti carotenoidi, responsabili della colorazione di fiori e frutti.</p>
+</blockquote>
+<p><strong>Crittogame</strong></p>
+<blockquote>
+<p>“A nozze nascoste”. Piante senza semi (Briofite + Pteridofite) con strutture riproduttive poco evidenti.</p>
+</blockquote>
+<p><strong>Cuffia radicale</strong></p>
+<blockquote>
+<p>Struttura protettiva all’apice della radice che facilita la penetrazione nel suolo.</p>
+</blockquote>
+<p><strong>Cuticola</strong></p>
+<blockquote>
+<p>Strato ceroso impermeabile che ricopre l’epidermide delle parti aeree.</p>
+</blockquote>
+<h2 id="d">D<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#d" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Dendrocronologia</strong></p>
+<blockquote>
+<p>Scienza che studia gli anelli di crescita del legno per datazioni e ricostruzioni climatiche.</p>
+</blockquote>
+<p><strong>Diploide</strong></p>
+<blockquote>
+<p>Cellula o organismo con doppio set di cromosomi (2n). Caratterizza la fase sporofitica del ciclo vegetale.</p>
+</blockquote>
+<p><strong>Diplonte</strong></p>
+<blockquote>
+<p>Ciclo vitale dove l’unico individuo pluricellulare è diploide. Tipico degli animali.</p>
+</blockquote>
+<h2 id="e">E<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#e" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Embriofite</strong></p>
+<blockquote>
+<p>Tutte le piante terrestri, caratterizzate dalla presenza dell’embrione protetto nei tessuti materni.</p>
+</blockquote>
+<p><strong>Embrione</strong></p>
+<blockquote>
+<p>Giovane sporofito nelle prime fasi di sviluppo, protetto all’interno dei tessuti del gametofito femminile.</p>
+</blockquote>
+<p><strong>Endoderma</strong></p>
+<blockquote>
+<p>Strato più interno della corteccia radicale, con banda di Caspary per il controllo del trasporto.</p>
+</blockquote>
+<p><strong>Endosperma</strong></p>
+<blockquote>
+<p>Tessuto di riserva del seme che nutre l’embrione durante la germinazione.</p>
+</blockquote>
+<p><strong>Epidermide</strong></p>
+<blockquote>
+<p>Tessuto tegumentale che riveste le superfici esterne della pianta.</p>
+</blockquote>
+<p><strong>Eterosporia</strong></p>
+<blockquote>
+<p>Formazione di due tipi di spore morfologicamente diverse: macrospore (femminili) e microspore (maschili).</p>
+</blockquote>
+<p><strong>Eteromorfismo</strong></p>
+<blockquote>
+<p>Alternanza di generazioni con individui morfologicamente molto diversi (sporofito e gametofito).</p>
+</blockquote>
+<p><strong>Eustele</strong></p>
+<blockquote>
+<p>Organizzazione vascolare con fasci disposti in anello, tipica di dicotiledoni e gimnosperme.</p>
+</blockquote>
+<p><strong>Ezioplasti</strong></p>
+<blockquote>
+<p>Plastidi che si formano al buio, contenenti protoclorofilla che diventa clorofilla alla luce.</p>
+</blockquote>
+<h2 id="f">F<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#f" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Fanerogame</strong></p>
+<blockquote>
+<p>“A nozze evidenti”. Piante con semi (Gimnosperme + Angiosperme) con strutture riproduttive macroscopiche.</p>
+</blockquote>
+<p><strong>Fasci collaterali</strong></p>
+<blockquote>
+<p>Fasci vascolari con xilema e floema disposti sullo stesso raggio, tipici del fusto.</p>
+</blockquote>
+<p><strong>Fellogeno</strong></p>
+<blockquote>
+<p>Meristema secondario che produce sughero verso l’esterno e felloderma verso l’interno.</p>
+</blockquote>
+<p><strong>Fillotassi</strong></p>
+<blockquote>
+<p>Disposizione delle foglie sul fusto secondo pattern geneticamente determinati.</p>
+</blockquote>
+<p><strong>Fitoanticipine</strong></p>
+<blockquote>
+<p>Composti difensivi inattivi che si attivano quando la cellula viene danneggiata.</p>
+</blockquote>
+<p><strong>Fitocromo</strong></p>
+<blockquote>
+<p>Fotorecettore che percepisce la luce rossa e regola molti processi di sviluppo.</p>
+</blockquote>
+<p><strong>Fitomero</strong></p>
+<blockquote>
+<p>Unità strutturale modulare del fusto composta da nodo, internodo, foglia e gemma ascellare.</p>
+</blockquote>
+<p><strong>Floema</strong></p>
+<blockquote>
+<p>Tessuto vascolare specializzato nel trasporto di sostanze organiche elaborate.</p>
+</blockquote>
+<p><strong>Fotolisi</strong></p>
+<blockquote>
+<p>Scissione dell’acqua mediante energia luminosa nella fase luminosa della fotosintesi.</p>
+</blockquote>
+<p><strong>Fotorespirazione</strong></p>
+<blockquote>
+<p>Processo metabolico parassita della fotosintesi causato dall’attività ossigenasica della Rubisco.</p>
+</blockquote>
+<p><strong>Fotosintesi C4</strong></p>
+<blockquote>
+<p>Meccanismo fotosintetico con concentrazione spaziale della CO₂ per ridurre la fotorespirazione.</p>
+</blockquote>
+<p><strong>Fotosintesi CAM</strong></p>
+<blockquote>
+<p>Meccanismo fotosintetico con separazione temporale della fissazione della CO₂.</p>
+</blockquote>
+<p><strong>Fotosistemi</strong></p>
+<blockquote>
+<p>Complessi proteici nei cloroplasti che catturano la luce e convertono l’energia luminosa in chimica.</p>
+</blockquote>
+<p><strong>Fototropina</strong></p>
+<blockquote>
+<p>Fotorecettore per la luce blu che media il fototropismo e l’apertura stomatica.</p>
+</blockquote>
+<p><strong>Fototropismo</strong></p>
+<blockquote>
+<p>Crescita orientata verso una sorgente luminosa.</p>
+</blockquote>
+<p><strong>Fronde</strong></p>
+<blockquote>
+<p>Foglie delle felci, caratterizzate dallo sviluppo circinnato e dalla presenza di sori nella pagina inferiore.</p>
+</blockquote>
+<h2 id="g">G<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#g" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Gameti</strong></p>
+<blockquote>
+<p>Cellule aploidi specializzate per la riproduzione sessuale. Si fondono nella gamia formando lo zigote diploide.</p>
+</blockquote>
+<p><strong>Gametangi</strong></p>
+<blockquote>
+<p>Strutture pluricellulari dove si formano i gameti. Nei gruppi primitivi: anteridi (♂) e archegoni (♀).</p>
+</blockquote>
+<p><strong>Gametofito</strong></p>
+<blockquote>
+<p>Individuo aploide che produce i gameti nel ciclo aplo-diplonte. Generazione sessuale delle piante.</p>
+</blockquote>
+<p><strong>Gamia</strong></p>
+<blockquote>
+<p>Fusione di due gameti aploidi che forma lo zigote diploide. Nelle piante terrestri è sempre oogamia.</p>
+</blockquote>
+<p><strong>Grana</strong></p>
+<blockquote>
+<p>Pile di tilacoidi nei cloroplasti, sede dei fotosistemi e della fase luminosa.</p>
+</blockquote>
+<p><strong>Gravitropismo</strong></p>
+<blockquote>
+<p>Crescita orientata in risposta alla forza di gravità.</p>
+</blockquote>
+<p><strong>Guaina del fascio</strong></p>
+<blockquote>
+<p>Strato di cellule parenchimatiche che circonda i fasci vascolari nelle foglie.</p>
+</blockquote>
+<h2 id="h-i">H-I<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#h-i" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Idroidi</strong></p>
+<blockquote>
+<p>Cellule specializzate nei muschi per il trasporto di acqua e sali minerali dal gametofito allo sporofito.</p>
+</blockquote>
+<p><strong>Impollinazione</strong></p>
+<blockquote>
+<p>Trasferimento del polline dagli organi maschili a quelli femminili.</p>
+</blockquote>
+<p><strong>Indusio</strong></p>
+<blockquote>
+<p>Appendice specializzata della foglia che protegge i sori nelle felci.</p>
+</blockquote>
+<p><strong>Isosporia</strong></p>
+<blockquote>
+<p>Formazione di meiospore tutte morfologicamente uguali. Caratterizza Briofite e molte Pteridofite.</p>
+</blockquote>
+<h2 id="l">L<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Leptoidi</strong></p>
+<blockquote>
+<p>Cellule specializzate nei muschi per il trasporto di zuccheri derivati dalla fotosintesi dal gametofito allo sporofito.</p>
+</blockquote>
+<p><strong>Lignina</strong></p>
+<blockquote>
+<p>Molecola che rinforza le pareti cellulari conferendo resistenza meccanica. Compare per la prima volta nelle Pteridofite.</p>
+</blockquote>
+<p><strong>Lume tilacoidale</strong></p>
+<blockquote>
+<p>Spazio interno delle membrane tilacoidali dove si accumula H⁺ durante la fotosintesi.</p>
+</blockquote>
+<h2 id="m">M<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#m" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Macrogametofito</strong></p>
+<blockquote>
+<p>Gametofito femminile che deriva dalla germinazione di una macrospora nell’eterosporia.</p>
+</blockquote>
+<p><strong>Macrospore</strong></p>
+<blockquote>
+<p>Spore di maggiori dimensioni nell’eterosporia, con significato femminile. Generano il macrogametofito.</p>
+</blockquote>
+<p><strong>Macrosporangi</strong></p>
+<blockquote>
+<p>Sporangi che producono macrospore nell’eterosporia.</p>
+</blockquote>
+<p><strong>Meiosi</strong></p>
+<blockquote>
+<p>Divisione cellulare che dimezza il numero di cromosomi (2n → n). Genera 4 cellule aploidi geneticamente diverse.</p>
+</blockquote>
+<p><strong>Meiospore</strong></p>
+<blockquote>
+<p>Spore prodotte per meiosi negli sporangi. Prime cellule della fase aploide del ciclo.</p>
+</blockquote>
+<p><strong>Meristema apicale</strong></p>
+<blockquote>
+<p>Tessuto meristematico all’apice degli organi responsabile della crescita primaria.</p>
+</blockquote>
+<p><strong>Meristemi intercalari</strong></p>
+<blockquote>
+<p>Meristemi localizzati alla base degli internodi nelle monocotiledoni per crescita rapida.</p>
+</blockquote>
+<p><strong>Mesofillo</strong></p>
+<blockquote>
+<p>Tessuto interno della foglia compreso tra le due epidermidi, sede della fotosintesi.</p>
+</blockquote>
+<p><strong>Microgametofito</strong></p>
+<blockquote>
+<p>Gametofito maschile che deriva dalla germinazione di una microspora nell’eterosporia.</p>
+</blockquote>
+<p><strong>Micropilo</strong></p>
+<blockquote>
+<p>Apertura nei tegumenti dell’ovulo attraverso cui passa il tubetto pollinico.</p>
+</blockquote>
+<p><strong>Microspore</strong></p>
+<blockquote>
+<p>Spore di minori dimensioni nell’eterosporia, con significato maschile. Generano il microgametofito.</p>
+</blockquote>
+<p><strong>Microsporangi</strong></p>
+<blockquote>
+<p>Sporangi che producono microspore nell’eterosporia.</p>
+</blockquote>
+<h2 id="n-o">N-O<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#n-o" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Nocella</strong></p>
+<blockquote>
+<p>Macrosporangio all’interno dell’ovulo delle gimnosperme.</p>
+</blockquote>
+<p><strong>Nomofillo</strong></p>
+<blockquote>
+<p>Foglia normale completamente sviluppata, distinta dai cotiledoni.</p>
+</blockquote>
+<p><strong>Oogamia</strong></p>
+<blockquote>
+<p>Tipo di gamia dove il gamete femminile (cellula uovo) è immobile e quello maschile è mobile. Universale nelle piante terrestri.</p>
+</blockquote>
+<p><strong>Ovulo</strong></p>
+<blockquote>
+<p>Struttura delle spermatofite formata da macrosporangio circondato da tegumenti, con micropilo.</p>
+</blockquote>
+<h2 id="p">P<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#p" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Parenchima a palizzata</strong></p>
+<blockquote>
+<p>Tessuto fogliare con cellule allungate ricche di cloroplasti, principale sede della fotosintesi.</p>
+</blockquote>
+<p><strong>Parenchima lacunoso</strong></p>
+<blockquote>
+<p>Tessuto fogliare con ampie lacune per la circolazione dei gas.</p>
+</blockquote>
+<p><strong>Periciclo</strong></p>
+<blockquote>
+<p>Strato più esterno del cilindro centrale della radice, origine delle radici laterali.</p>
+</blockquote>
+<p><strong>Periderma</strong></p>
+<blockquote>
+<p>Tessuto tegumentale secondario formato da fellogeno, sughero e felloderma.</p>
+</blockquote>
+<p><strong>Plasmodesmi</strong></p>
+<blockquote>
+<p>Canali citoplasmatici che attraversano la parete cellulare e collegano cellule adiacenti.</p>
+</blockquote>
+<p><strong>Plastidi</strong></p>
+<blockquote>
+<p>Organelli caratteristici delle piante derivati da endosimbiosi, includono cloroplasti, amiloplasti e cromoplasti.</p>
+</blockquote>
+<p><strong>Poliembrionia</strong></p>
+<blockquote>
+<p>Presenza di più embrioni nello stesso seme, tipica delle gimnosperme.</p>
+</blockquote>
+<p><strong>Polline</strong></p>
+<blockquote>
+<p>Microgametofito maturo delle spermatofite, contenuto nella parete della microspora.</p>
+</blockquote>
+<p><strong>Procambio</strong></p>
+<blockquote>
+<p>Meristema primario che origina i tessuti vascolari primari.</p>
+</blockquote>
+<p><strong>Proplastidi</strong></p>
+<blockquote>
+<p>Plastidi indifferenziati presenti nelle cellule meristematiche.</p>
+</blockquote>
+<p><strong>Protonema</strong></p>
+<blockquote>
+<p>Struttura filamentosa pluricellulare che si forma per prima nella germinazione delle spore dei muschi.</p>
+</blockquote>
+<p><strong>Pteridofite</strong></p>
+<blockquote>
+<p>Gruppo di piante vascolari senza semi, con sporofito dominante (felci e affini).</p>
+</blockquote>
+<h2 id="q-r">Q-R<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q-r" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Quiescenza</strong></p>
+<blockquote>
+<p>Stato di arresto metabolico dell’embrione nel seme che permette la sopravvivenza.</p>
+</blockquote>
+<p><strong>Raggi midollari</strong></p>
+<blockquote>
+<p>Tessuto parenchimatico radiale nel legno secondario per il trasporto laterale.</p>
+</blockquote>
+<p><strong>Rizoderma</strong></p>
+<blockquote>
+<p>Epidermide della radice, priva di cuticola e con peli radicali.</p>
+</blockquote>
+<p><strong>Rizoidi</strong></p>
+<blockquote>
+<p>Singole cellule che sostituiscono le vere radici nelle Briofite. Funzione di ancoraggio e assorbimento.</p>
+</blockquote>
+<p><strong>Rizomi</strong></p>
+<blockquote>
+<p>Fusti sotterranei orizzontali con nodi e gemme per la propagazione vegetativa.</p>
+</blockquote>
+<p><strong>Rubisco</strong></p>
+<blockquote>
+<p>Enzima chiave della fotosintesi che fissa la CO₂, ma ha anche attività ossigenasica.</p>
+</blockquote>
+<h2 id="s">S<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#s" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Seme</strong></p>
+<blockquote>
+<p>Struttura di dispersione delle spermatofite contenente embrione, tessuti di riserva e tegumenti.</p>
+</blockquote>
+<p><strong>Seta</strong></p>
+<blockquote>
+<p>Peduncolo allungato che porta lo sporangio nei muschi. Parte dello sporofito.</p>
+</blockquote>
+<p><strong>Sori</strong></p>
+<blockquote>
+<p>Gruppi di sporangi sulla pagina inferiore delle fronde delle felci. Aspetto di bottoni o nastri colorati.</p>
+</blockquote>
+<p><strong>Spermatofite</strong></p>
+<blockquote>
+<p>Sinonimo di Fanerogame. Piante con semi (Gimnosperme + Angiosperme).</p>
+</blockquote>
+<p><strong>Spore</strong></p>
+<blockquote>
+<p>Cellule aploidi che germinano dando origine al gametofito. Si distinguono dai gameti perché non si fondono.</p>
+</blockquote>
+<p><strong>Sporangi</strong></p>
+<blockquote>
+<p>Strutture pluricellulari dove avviene la meiosi e si formano le meiospore.</p>
+</blockquote>
+<p><strong>Sporofito</strong></p>
+<blockquote>
+<p>Individuo diploide che produce le spore nel ciclo aplo-diplonte. Generazione asessuale delle piante.</p>
+</blockquote>
+<p><strong>Sporogonia</strong></p>
+<blockquote>
+<p>Dispersione delle spore per la colonizzazione dell’ambiente. Strategia di Briofite e Pteridofite.</p>
+</blockquote>
+<p><strong>Sporopollenina</strong></p>
+<blockquote>
+<p>Molecola idrofobica nella parete delle spore che conferisce resistenza alla disidratazione.</p>
+</blockquote>
+<p><strong>Statoliti</strong></p>
+<blockquote>
+<p>Amiloplasti che sedimentano per gravità nelle cellule della columella per la percezione gravitropica.</p>
+</blockquote>
+<p><strong>Stomi</strong></p>
+<blockquote>
+<p>Aperture epidermiche delimitate da cellule di guardia per il controllo degli scambi gassosi.</p>
+</blockquote>
+<p><strong>Strobili</strong></p>
+<blockquote>
+<p>Strutture riproduttive delle gimnosperme che portano sporangi (coni, pigne).</p>
+</blockquote>
+<p><strong>Stroma</strong></p>
+<blockquote>
+<p>Matrice del cloroplasto dove avviene il ciclo di Calvin e sono localizzati DNA e ribosomi.</p>
+</blockquote>
+<h2 id="t">T<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#t" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Tessuti meccanici</strong></p>
+<blockquote>
+<p>Tessuti specializzati nel sostegno: collenchima (flessibile) e sclerenchima (rigido).</p>
+</blockquote>
+<p><strong>Tessuti vascolari</strong></p>
+<blockquote>
+<p>Xilema e floema, specializzati nel trasporto di sostanze nella pianta.</p>
+</blockquote>
+<p><strong>Tilacoidi</strong></p>
+<blockquote>
+<p>Membrane interne dei cloroplasti organizzate in grana, sede della fase luminosa.</p>
+</blockquote>
+<p><strong>Tonoplasto</strong></p>
+<blockquote>
+<p>Membrana che delimita il vacuolo, ricca di trasportatori per il controllo osmotico.</p>
+</blockquote>
+<p><strong>Tracheofite</strong></p>
+<blockquote>
+<p>Piante con sistema vascolare (tessuti di conduzione). Include Pteridofite e Spermatofite.</p>
+</blockquote>
+<p><strong>Traspirazione</strong></p>
+<blockquote>
+<p>Perdita di acqua sotto forma di vapore attraverso stomi e cuticola.</p>
+</blockquote>
+<p><strong>Tricomi</strong></p>
+<blockquote>
+<p>Estroflessioni epidermiche (peli) con funzioni protettive, secretrici o assorbenti.</p>
+</blockquote>
+<p><strong>Tubetto pollinico</strong></p>
+<blockquote>
+<p>Struttura che trasporta i gameti maschili verso quelli femminili nelle spermatofite.</p>
+</blockquote>
+<p><strong>Tuberi</strong></p>
+<blockquote>
+<p>Fusti sotterranei ispessiti per l’accumulo di riserve (es. patata).</p>
+</blockquote>
+<p><strong>Turgore</strong></p>
+<blockquote>
+<p>Pressione interna della cellula vegetale dovuta all’ingresso di acqua nel vacuolo.</p>
+</blockquote>
+<h2 id="v-x-z">V-X-Z<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#v-x-z" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Vacuolo</strong></p>
+<blockquote>
+<p>Organello delle cellule vegetali per il controllo osmotico, l’accumulo di riserve e la detossificazione.</p>
+</blockquote>
+<p><strong>Via apoplastica</strong></p>
+<blockquote>
+<p>Trasporto attraverso pareti cellulari e spazi intercellulari.</p>
+</blockquote>
+<p><strong>Via simplastica</strong></p>
+<blockquote>
+<p>Trasporto attraverso il citoplasma cellulare e i plasmodesmi.</p>
+</blockquote>
+<p><strong>Xilema</strong></p>
+<blockquote>
+<p>Tessuto vascolare specializzato nel trasporto di acqua e sali minerali.</p>
+</blockquote>
+<p><strong>Zigote</strong></p>
+<blockquote>
+<p>Prima cellula diploide formata dalla fusione di due gameti. Origine dello sporofito per divisioni mitotiche.</p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="toc-content overflow" id="list-1"><li class="depth-0"><a href="#a" data-for="a">A</a></li><li class="depth-0"><a href="#b" data-for="b">B</a></li><li class="depth-0"><a href="#c" data-for="c">C</a></li><li class="depth-0"><a href="#d" data-for="d">D</a></li><li class="depth-0"><a href="#e" data-for="e">E</a></li><li class="depth-0"><a href="#f" data-for="f">F</a></li><li class="depth-0"><a href="#g" data-for="g">G</a></li><li class="depth-0"><a href="#h-i" data-for="h-i">H-I</a></li><li class="depth-0"><a href="#l" data-for="l">L</a></li><li class="depth-0"><a href="#m" data-for="m">M</a></li><li class="depth-0"><a href="#n-o" data-for="n-o">N-O</a></li><li class="depth-0"><a href="#p" data-for="p">P</a></li><li class="depth-0"><a href="#q-r" data-for="q-r">Q-R</a></li><li class="depth-0"><a href="#s" data-for="s">S</a></li><li class="depth-0"><a href="#t" data-for="t">T</a></li><li class="depth-0"><a href="#v-x-z" data-for="v-x-z">V-X-Z</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.1</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

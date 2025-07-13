@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>7.  Processi Carsici</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="7.  Processi Carsici"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="7.  Processi Carsici"/><meta name="twitter:description" content="Definizione e Caratteristiche Generali Definizione Carsismo: processi che interessano rocce solubili attraverso corrosione chimica, producendo aumento di permeabilità e formazione di vuoti Prodotti del Carsismo Forme epigee: forme superficiali (doline, scannellature, polje) Forme ipogee: forme sotte..."/><meta property="og:description" content="Definizione e Caratteristiche Generali Definizione Carsismo: processi che interessano rocce solubili attraverso corrosione chimica, producendo aumento di permeabilità e formazione di vuoti Prodotti del Carsismo Forme epigee: forme superficiali (doline, scannellature, polje) Forme ipogee: forme sotte..."/><meta property="og:image:alt" content="Definizione e Caratteristiche Generali Definizione Carsismo: processi che interessano rocce solubili attraverso corrosione chimica, producendo aumento di permeabilità e formazione di vuoti Prodotti del Carsismo Forme epigee: forme superficiali (doline, scannellature, polje) Forme ipogee: forme sotte..."/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/Geografia/7.--Processi-Carsici"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/Geografia/7.--Processi-Carsici"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Definizione e Caratteristiche Generali Definizione Carsismo: processi che interessano rocce solubili attraverso corrosione chimica, producendo aumento di permeabilità e formazione di vuoti Prodotti del Carsismo Forme epigee: forme superficiali (doline, scannellature, polje) Forme ipogee: forme sotte..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvcGlncm8ubWUvcGlncm8ubWUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://quartz.jzhao.xyz/Geografia/7.--Processi-Carsici-og-image.webp"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/Geografia/7.--Processi-Carsici-og-image.webp"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/Geografia/7.--Processi-Carsici-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="Geografia/7.--Processi-Carsici"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Quartz 4</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../Geografia/">Geografia</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>7.  Processi Carsici</a></div></nav><h1 class="article-title">7.  Processi Carsici</h1><p show-comma="true" class="content-meta"><time datetime="2025-07-13T00:45:34.000Z">Jul 13, 2025</time><span>8 min read</span></p></div></div><article class="popover-hint"><h2 id="definizione-e-caratteristiche-generali">Definizione e Caratteristiche Generali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definizione-e-caratteristiche-generali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="definizione">Definizione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definizione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Carsismo</strong>: processi che interessano rocce solubili attraverso corrosione chimica, producendo aumento di permeabilità e formazione di vuoti</p>
+<h3 id="prodotti-del-carsismo">Prodotti del Carsismo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#prodotti-del-carsismo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Forme epigee</strong>: forme superficiali (doline, scannellature, polje)</li>
+<li><strong>Forme ipogee</strong>: forme sotterranee (grotte, cavità, sifoni, tubi freatici)</li>
+</ul>
+<h3 id="meccanismi-principali">Meccanismi Principali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meccanismi-principali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Dissoluzione</strong>: processo dominante</li>
+<li><strong>Idrolisi</strong>: alterazione strutture cristalline</li>
+<li><strong>Aloclastismo</strong>: cristallizzazione salina nelle fratture</li>
+</ul>
+<hr/>
+<h1 id="rocce-carsificabili">Rocce Carsificabili<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rocce-carsificabili" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="distribuzione-e-importanza">Distribuzione e Importanza<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distribuzione-e-importanza" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Copertura globale</strong>: ~20% delle terre emerse</p>
+<h2 id="tipologie-di-rocce">Tipologie di Rocce<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tipologie-di-rocce" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="calcare-caco">Calcare (CaCO₃)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#calcare-caco" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Diffusione</strong>: più diffuso a livello mondiale</li>
+<li><strong>Solubilità</strong>: moderata, dipendente da pH e CO₂</li>
+<li><strong>Morfologie</strong>: più varie e spettacolari</li>
+</ul>
+<h3 id="dolomia-camgco">Dolomia (CaMg(CO₃)₂)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dolomia-camgco" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Caratteristiche</strong>: più fragile del calcare</li>
+<li><strong>Limitazioni</strong>: meno adatta a grandi forme carsiche</li>
+<li><strong>Comportamento</strong>: fratturazione più intensa</li>
+</ul>
+<h3 id="gesso-caso2ho">Gesso (CaSO₄·2H₂O)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gesso-caso2ho" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Solubilità</strong>: molto elevata</li>
+<li><strong>Morfologie</strong>: forme meno estese ma più rapide</li>
+<li><strong>Problemi</strong>: instabilità strutturale</li>
+</ul>
+<h3 id="sali-evaporitici">Sali Evaporitici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sali-evaporitici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Tipologie</strong>: sali potassici, salgemma</li>
+<li><strong>Solubilità</strong>: estremamente elevata</li>
+<li><strong>Paesaggi</strong>: fragili, evoluzione rapidissima</li>
+</ul>
+<h3 id="silice">Silice<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#silice" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Solubilità</strong>: molto bassa</li>
+<li><strong>Forme</strong>: microforme simil-carsiche</li>
+<li><strong>Condizioni</strong>: climi tropicali molto umidi</li>
+</ul>
+<hr/>
+<h1 id="dissoluzione-dei-carbonati">Dissoluzione dei Carbonati<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dissoluzione-dei-carbonati" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="reazione-fondamentale">Reazione Fondamentale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reazione-fondamentale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Equilibrio chimico</strong>: CaCO₃ + H₂O + CO₂ ⇌ Ca²⁺ + 2HCO₃⁻</p>
+<h2 id="fattori-di-controllo">Fattori di Controllo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fattori-di-controllo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="ph-della-soluzione">pH della Soluzione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ph-della-soluzione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Condizioni acide</strong>: pH &lt;7 → accelerazione dissoluzione</li>
+<li><strong>Condizioni basiche</strong>: pH >7 → precipitazione carbonati</li>
+<li><strong>Zona ottimale</strong>: pH 4-6 per massima corrosione</li>
+</ul>
+<h3 id="concentrazione-co">Concentrazione CO₂<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#concentrazione-co" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Alta [CO₂]</strong>: maggiore aggressività dell’acqua</li>
+<li><strong>Fonti CO₂</strong>: atmosfera, respirazione suoli, decomposizione organica</li>
+<li><strong>Variazioni stagionali</strong>: massima in estate per attività biologica</li>
+</ul>
+<h3 id="temperatura">Temperatura<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#temperatura" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Solubilità CO₂</strong>: inversamente proporzionale a temperatura</li>
+<li><strong>Velocità reazione</strong>: direttamente proporzionale a temperatura</li>
+<li><strong>Effetto netto</strong>: dipende dal fattore limitante</li>
+</ul>
+<h3 id="corrosione-da-miscelazione">Corrosione da Miscelazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#corrosione-da-miscelazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Meccanismo</strong>: acque con temperature diverse si mescolano <strong>Risultato</strong>: disequilibrio → rinnovata capacità corrosiva <strong>Importanza</strong>: nelle zone di contatto idrico</p>
+<hr/>
+<h1 id="microforme-carsiche-epigee">Microforme Carsiche Epigee<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#microforme-carsiche-epigee" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="fattori-di-controllo-1">Fattori di Controllo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fattori-di-controllo-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Litologia</strong>: tipo di roccia carbonatica</li>
+<li><strong>Pendenza</strong>: inclinazione superficie</li>
+<li><strong>Precipitazioni</strong>: quantità e regime</li>
+<li><strong>Copertura vegetale</strong>: presenza e densità</li>
+<li><strong>Tempo di esposizione</strong>: durata all’alterazione subaerea</li>
+</ul>
+<h2 id="forme-del-carso-nudo">Forme del Carso Nudo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#forme-del-carso-nudo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="caratteristiche-generali">Caratteristiche Generali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristiche-generali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Agente</strong>: dissoluzione da acqua meteorica</li>
+<li><strong>Aspetto</strong>: forme taglienti, acute</li>
+<li><strong>Distribuzione</strong>: rocce esposte senza copertura</li>
+</ul>
+<h3 id="tipologie-principali">Tipologie Principali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tipologie-principali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Graffi</strong>:</p>
+<ul>
+<li><strong>Morfologia</strong>: incisioni lineari superficiali</li>
+<li><strong>Genesi</strong>: scorrimento laminare acqua piovana</li>
+<li><strong>Dimensioni</strong>: millimetriche-centimetriche</li>
+</ul>
+<p><strong>Scannellature</strong>:</p>
+<ul>
+<li><strong>Morfologia</strong>: solchi ramificati con sezione concava</li>
+<li><strong>Genesi</strong>: reticolo idrografico in miniatura</li>
+<li><strong>Pattern</strong>: dendritico, anastomizzato</li>
+</ul>
+<p><strong>Solchi a doccia</strong>:</p>
+<ul>
+<li><strong>Morfologia</strong>: incisioni da flusso concentrato</li>
+<li><strong>Localizzazione</strong>: pareti verticali</li>
+<li><strong>Genesi</strong>: cascatelle temporanee</li>
+</ul>
+<p><strong>Gocce</strong>:</p>
+<ul>
+<li><strong>Morfologia</strong>: piccole cavità emisferiche</li>
+<li><strong>Genesi</strong>: stillicidio prolungato</li>
+<li><strong>Localizzazione</strong>: sotto sporgenze rocciose</li>
+</ul>
+<p><strong>Crepacci carsici</strong>:</p>
+<ul>
+<li><strong>Morfologia</strong>: profonde fratture verticali o trincee</li>
+<li><strong>Genesi</strong>: allargamento fratture tettoniche</li>
+<li><strong>Dimensioni</strong>: decimetriche-metriche</li>
+</ul>
+<p><img src="../Geografia/_images/Crepacci-carsici.jpg" width="auto" height="auto" alt/> <img src="../Geografia/_images/Graffi-carsici-su-ciottioli-di-dolomia.jpg" width="auto" height="auto" alt/> <img src="../Geografia/_images/Scannellature-viste-dall'alto.jpg" width="auto" height="auto" alt/> <img src="../Geografia/_images/Solchi-a-doccia-di-parete-in-calcare.jpg" width="auto" height="auto" alt/></p>
+<h2 id="forme-fitocarsiche">Forme Fitocarsiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#forme-fitocarsiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="caratteristiche-generali-1">Caratteristiche Generali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristiche-generali-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Substrato</strong>: roccia nuda con attività biologica</li>
+<li><strong>Agente</strong>: CO₂ e acidi organici di origine biologica</li>
+<li><strong>Morfologie</strong>: più arrotondate rispetto al carso nudo</li>
+</ul>
+<h3 id="tipologie-specifiche">Tipologie Specifiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tipologie-specifiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Kamenitze</strong>:</p>
+<ul>
+<li><strong>Morfologia</strong>: vasche su roccia pianeggiante</li>
+<li><strong>Genesi</strong>: ristagnio acqua → sviluppo alghe unicellulari</li>
+<li><strong>Processo</strong>: produzione CO₂ e acidi organici → corrosione</li>
+</ul>
+<p><strong>Alveoli di corrosione (honeycomb)</strong>:</p>
+<ul>
+<li><strong>Morfologia</strong>: cavità piccole a nido d’ape</li>
+<li><strong>Genesi</strong>: bio-corrosione localizzata</li>
+<li><strong>Associazione</strong>: spesso con microrganismi</li>
+</ul>
+<p><strong>Tsingy</strong>:</p>
+<ul>
+<li><strong>Morfologia</strong>: lame taglienti alte alcuni metri</li>
+<li><strong>Distribuzione</strong>: climi tropicali</li>
+<li><strong>Genesi</strong>: corrosione differenziale intensa</li>
+</ul>
+<h2 id="forme-del-carso-semilibero-e-coperto">Forme del Carso Semilibero e Coperto<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#forme-del-carso-semilibero-e-coperto" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="caratteristiche-generali-2">Caratteristiche Generali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristiche-generali-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Copertura</strong>: parzialmente ricoperto da suolo o neve</li>
+<li><strong>Contatto</strong>: acqua aggressiva quasi permanente</li>
+<li><strong>Morfologie</strong>: forme arrotondate, meno acute</li>
+</ul>
+<h3 id="tipologie">Tipologie<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tipologie" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Karren arrotondati</strong>:</p>
+<ul>
+<li><strong>Posizione</strong>: sotto copertura suolo</li>
+<li><strong>Morfologia</strong>: solchi smussati</li>
+<li><strong>Genesi</strong>: corrosione prolungata in ambiente protetto</li>
+</ul>
+<p><strong>Solchi di radici</strong>:</p>
+<ul>
+<li><strong>Agente</strong>: bio-corrosione da apparati radicali</li>
+<li><strong>Morfologia</strong>: solchi meandriformi (humus-water grooves)</li>
+<li><strong>Controllo</strong>: distribuzione vegetazione</li>
+</ul>
+<p><img src="../Geografia/_images/altre-forme-carsiche.jpg" width="auto" height="auto" alt/> <img src="../Geografia/_images/PXL_20250707_150112175~2.jpg" width="auto" height="auto" alt/></p>
+<h2 id="distribuzione-altitudinale">Distribuzione Altitudinale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distribuzione-altitudinale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="influenza-della-pendenza">Influenza della Pendenza<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#influenza-della-pendenza" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Zonazione tipica</strong>:</p>
+<ul>
+<li><strong>Parte alta</strong>: graffi, scannellature, canne d’organo</li>
+<li><strong>Metà parete</strong>: crepacci, gocce</li>
+<li><strong>Parte bassa</strong>: solchi di radici, bio-corrosione</li>
+</ul>
+<p><img src="../Geografia/_images/Pasted-image-20250707163039.png" width="auto" height="auto" alt/></p>
+<hr/>
+<h1 id="macroforme-carsiche-epigee">Macroforme Carsiche Epigee<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#macroforme-carsiche-epigee" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="doline-e-uvala">Doline e Uvala<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#doline-e-uvala" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="definizione-generale">Definizione Generale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definizione-generale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Doline</strong>: depressioni decametriche di forma ovale/circolare con drenaggio esclusivamente sotterraneo</p>
+<p><strong>Caratteristiche comuni</strong>:</p>
+<ul>
+<li>Prime forme a svilupparsi nel carsismo</li>
+<li>Più comuni nel paesaggio carsico</li>
+<li>Evoluzione nel tempo</li>
+</ul>
+<h3 id="tipologie-di-doline">Tipologie di Doline<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tipologie-di-doline" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="doline-a-imbuto">Doline a Imbuto<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#doline-a-imbuto" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Morfologia</strong>:</p>
+<ul>
+<li><strong>Versanti</strong>: ripidi ricoperti di suolo</li>
+<li><strong>Centro</strong>: inghiottitoio per convogliare acqua sottoterra</li>
+<li><strong>Profondità</strong>: elevata (specialmente climi tropicali)</li>
+</ul>
+<p><strong>Ambiente</strong>: carsi in rapido sviluppo</p>
+<h4 id="doline-a-fondo-piatto">Doline a Fondo Piatto<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#doline-a-fondo-piatto" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Morfologia</strong>:</p>
+<ul>
+<li><strong>Forma</strong>: larghe e poco profonde</li>
+<li><strong>Fondo</strong>: pianeggiante per accumulo sedimenti</li>
+<li><strong>Distribuzione</strong>: climi temperati o tropicali con stagione secca</li>
+</ul>
+<p><strong>Genesi</strong>: evoluzione da doline a imbuto</p>
+<ul>
+<li>Impurezzze insolubili della roccia</li>
+<li>Tappamento fessure di drenaggio</li>
+<li>Formazione laghi temporanei o fondi di terra rossa</li>
+</ul>
+<h4 id="doline-di-crollo">Doline di Crollo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#doline-di-crollo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Morfologia</strong>:</p>
+<ul>
+<li><strong>Fianchi</strong>: verticali e strapiombanti</li>
+<li><strong>Genesi</strong>: collasso volta cavità sotterranee</li>
+<li><strong>Esempi</strong>: cenotes (spesso allagati)</li>
+</ul>
+<h4 id="doline-di-subsidenza">Doline di Subsidenza<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#doline-di-subsidenza" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Materiali</strong>: rocce insolubili permeabili (sabbie, ceneri vulcaniche, till)</li>
+<li><strong>Substrato</strong>: rocce solubili sottostanti</li>
+<li><strong>Meccanismo</strong>: sprofondamento durante formazione cavità</li>
+</ul>
+<h4 id="megadoline">Megadoline<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#megadoline" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Dimensioni</strong>:</p>
+<ul>
+<li><strong>Larghezza</strong>: >500 m</li>
+<li><strong>Profondità</strong>: >100 m</li>
+<li><strong>Morfologia</strong>: forma a scodella o piatto</li>
+<li><strong>Evoluzione</strong>: sviluppo da doline normali in tempi lunghi</li>
+</ul>
+<h4 id="cockpit">Cockpit<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cockpit" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Natura</strong>: depressioni fluviocarsiche</li>
+<li><strong>Dimensioni</strong>: grandi</li>
+<li><strong>Clima</strong>: tropicali molto umidi</li>
+<li><strong>Associazione</strong>: con morfologie complesse</li>
+</ul>
+<h3 id="uvala">Uvala<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uvala" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Definizione</strong>: depressioni derivanti dall’unione di doline contigue <strong>Morfologia</strong>: forme complesse, spesso allungate <strong>Evoluzione</strong>: stadio avanzato del carsismo</p>
+<p><img src="../Geografia/_images/Doline.jpg" width="auto" height="auto" alt/></p>
+<h2 id="polje">Polje<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#polje" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="definizione-e-caratteristiche">Definizione e Caratteristiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definizione-e-caratteristiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Polje</strong>: grandi depressioni carsiche (anche decine di km²) con fondo piatto</p>
+<h3 id="caratteristiche-morfologiche">Caratteristiche Morfologiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristiche-morfologiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Dimensioni</strong>: chilometriche</li>
+<li><strong>Fondo</strong>: pianeggiante, spesso alluvionato</li>
+<li><strong>Allagamenti</strong>: stagionali o permanenti</li>
+<li><strong>Bordi</strong>: spesso ripidi</li>
+</ul>
+<h3 id="tipologie-di-polje">Tipologie di Polje<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tipologie-di-polje" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="polje-marginale">Polje Marginale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#polje-marginale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Posizione</strong>: al margine di massa carbonatica</li>
+<li><strong>Drenaggio</strong>: verso l’esterno del carso</li>
+</ul>
+<h4 id="polje-di-attraversamento">Polje di Attraversamento<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#polje-di-attraversamento" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Posizione</strong>: interno al carso</li>
+<li><strong>Drenaggio</strong>: fiumi allogenici lo attraversano</li>
+</ul>
+<h4 id="polje-di-livello-di-base">Polje di Livello di Base<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#polje-di-livello-di-base" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Posizione</strong>: alla quota di emergenza sorgenti carsiche</li>
+<li><strong>Controllo</strong>: livello di base locale</li>
+</ul>
+<p><img src="../Geografia/_images/Pasted-image-20250707172131.png" width="auto" height="auto" alt/> <img src="../Geografia/_images/polje.jpg" width="auto" height="auto" alt/></p>
+<h2 id="valli-carsiche">Valli Carsiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#valli-carsiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="canyon-carsici">Canyon Carsici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#canyon-carsici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Genesi</strong>: scavati da fiumi sotterranei <strong>Evoluzione</strong>: venuti all’aria per crolli della volta <strong>Morfologia</strong>: profonde gole con fianchi verticali</p>
+<p><strong>Fiumi allogenici</strong>: acque da bacini con rocce insolubili in quantità tale da non essere completamente assorbite</p>
+<h3 id="valli-secche">Valli Secche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#valli-secche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Caratteristiche</strong>: senza deflusso superficiale permanente <strong>Genesi</strong>: abbassamento livello di base → cattura sotterranea</p>
+<h3 id="valli-cieche">Valli Cieche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#valli-cieche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Terminazione</strong>: in grotta alla base della parete <strong>Alternativa</strong>: termine in doline o inghiottitoi <strong>Funzione</strong>: punto di assorbimento acque superficiali</p>
+<h3 id="valli-di-risorgenza">Valli di Risorgenza<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#valli-di-risorgenza" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Genesi</strong>: scavate da grandi corsi d’acqua che riemergono <strong>Caratteristiche</strong>: portate elevate da sistemi carsici estesi <strong>Morfologia</strong>: valli ben incise con sorgenti vauclusiane</p>
+<hr/>
+<h1 id="carso-ipogeo">Carso Ipogeo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#carso-ipogeo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="formazione-delle-discontinuità">Formazione delle Discontinuità<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formazione-delle-discontinuità" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="origine-delle-fratture">Origine delle Fratture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#origine-delle-fratture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Macrodisequazione</strong>: grandi fessure verticali</p>
+<ul>
+<li><strong>Origine</strong>: stress tettonici delle catene montuose</li>
+<li><strong>Morfologia</strong>: grotte tettoniche strette e profonde</li>
+</ul>
+<p><strong>Stress tettonici</strong>: tipici di ambienti orogenici</p>
+<ul>
+<li><strong>Reticolo fitto</strong>: acqua senza vie di fuga → grotte labirintiche</li>
+<li><strong>Fiumi sotterranei</strong>: quando fratture organizzate</li>
+</ul>
+<p><strong>Porosità della roccia</strong>: in assenza fratture importanti</p>
+<ul>
+<li><strong>Infiltrazione diffusa</strong>: fino a strati impermeabili</li>
+<li><strong>Grotte orizzontali</strong>: numerose e poco profonde</li>
+</ul>
+<h2 id="circolazione-idrica-sotterranea">Circolazione Idrica Sotterranea<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#circolazione-idrica-sotterranea" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="epicarso">Epicarso<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#epicarso" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Posizione</strong>: sotto suolo e forme carsiche superficiali <strong>Caratteristiche</strong>:</p>
+<ul>
+<li>Ricco di fessure prevalentemente verticali</li>
+<li>Acqua scorre in fusoidi</li>
+<li><strong>75% corrosione carsica globale</strong></li>
+</ul>
+<p><strong>Processo di saturazione</strong>:</p>
+<ul>
+<li>Acqua si satura di carbonati scendendo</li>
+<li>Fessure si restringono → forma a imbuto</li>
+<li>Forti piogge → allagamento epicarso</li>
+<li>Falda temporanea → infiltrazione in fessure orizzontali</li>
+</ul>
+<h3 id="zona-vadosa">Zona Vadosa<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#zona-vadosa" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Posizione</strong>: sotto epicarso <strong>Caratteristiche</strong>:</p>
+<ul>
+<li>Contiene aria e acqua</li>
+<li>Prevalgono condotti verticali (pozzi)</li>
+<li>Fessure allargate in forme cilindriche</li>
+</ul>
+<p><strong>Processi</strong>:</p>
+<ul>
+<li>Azione meccanica dell’acqua che cade a cascata</li>
+<li>Allargamento preferenziale fessure verticali</li>
+</ul>
+<h3 id="zona-epifreatica">Zona Epifreatica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#zona-epifreatica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Caratteristiche</strong>: allagamento stagionale in climi stagionali</p>
+<ul>
+<li><strong>Stagioni umide</strong>: allagata</li>
+<li><strong>Stagioni secche</strong>: emersa</li>
+</ul>
+<p><strong>Formazione gallerie paragenetiche</strong>:</p>
+<ul>
+<li><strong>Semi-intasamento</strong>: sedimenti alluvionali</li>
+<li><strong>Corrosione rinnovata</strong>: miscelazione per temperature diverse</li>
+<li><strong>Solchi sinuosi</strong>: su soffitti liberi da sedimenti</li>
+<li><strong>Cavità emisferiche</strong>: sui soffitti</li>
+</ul>
+<p><strong>Pendenti</strong>: lame taglienti di roccia simili a stalattiti</p>
+<ul>
+<li><strong>Formazione</strong>: processo erosivo antigravitativo</li>
+<li><strong>Condizioni</strong>: gallerie svuotate da sedimenti</li>
+</ul>
+<p><strong>Sifoni</strong>: gallerie basse permanentemente allagate</p>
+<ul>
+<li><strong>Causa</strong>: ostruzione da sedimenti</li>
+<li><strong>Effetto</strong>: acqua costretta a scavare in alto</li>
+</ul>
+<h3 id="zona-freatica">Zona Freatica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#zona-freatica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Posizione</strong>: più profonda, permanentemente satura <strong>Caratteristiche</strong>:</p>
+<ul>
+<li>Pressione aumenta con profondità</li>
+<li>Deflusso per principio vasi comunicanti (non gravità)</li>
+</ul>
+<p><strong>Dissoluzione sotto pressione</strong>:</p>
+<ul>
+<li>Acqua pressurizzata dissolve intensamente</li>
+<li>Formazione tubi freatici (sezione circolare)</li>
+</ul>
+<p><strong>Sviluppo preferenziale</strong>: al limite rocce solubili/impermeabili</p>
+<ul>
+<li><strong>Alternative</strong>: molto profondi con ritorno superficie</li>
+<li><strong>Sorgenti vauclusiane</strong>: grandi portate d’acqua</li>
+</ul>
+<p><strong>Ipercarsismo</strong>: risalita attraverso rocce insolubili</p>
+<ul>
+<li><strong>Acque termali</strong>: di profondità, gassose e acide</li>
+<li><strong>Corrosività elevata</strong>: per caratteristiche chimiche speciali</li>
+</ul>
+<h2 id="sezioni-tipiche-delle-grotte">Sezioni Tipiche delle Grotte<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sezioni-tipiche-delle-grotte" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="morfologie-caratteristiche">Morfologie Caratteristiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#morfologie-caratteristiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Fusoidali</strong>: sezioni verticali a goccia</li>
+<li><strong>Pozzi</strong>: condotti verticali profondi da stillicidio</li>
+<li><strong>Gallerie epifreatiche</strong>: orizzontali, spesso sedimentate</li>
+<li><strong>Tubi freatici</strong>: sezione rotonda/ellittica</li>
+</ul>
+<p><img src="../Geografia/_images/Pasted-image-20250708170608.png" width="auto" height="auto" alt/></p>
+<h2 id="livello-di-base-carsico">Livello di Base Carsico<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#livello-di-base-carsico" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="definizione-e-controllo">Definizione e Controllo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definizione-e-controllo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Livello di base</strong>: corrisponde alla quota di risorgenza delle acque carsiche</p>
+<h3 id="evoluzione-del-sistema">Evoluzione del Sistema<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evoluzione-del-sistema" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Abbassamento livello</strong>: per erosione e sollevamento tettonico</p>
+<ul>
+<li><strong>Gallerie superiori</strong>: diventano inattive</li>
+<li><strong>Processi</strong>: sedimentazione, speleogenesi chimica</li>
+<li><strong>Formazioni</strong>: stalattiti, stalagmiti</li>
+</ul>
+<p><strong>Buchi di serratura</strong>: gallerie attive transizionali</p>
+<ul>
+<li><strong>Forma</strong>: sezione caratteristica</li>
+<li><strong>Posizione</strong>: tra zona vadosa e freatica</li>
+</ul>
+<p><strong>Crolli</strong>: creano grandi saloni sotterranei</p>
+<ul>
+<li><strong>Cause</strong>: instabilità strutturale</li>
+<li><strong>Dimensioni</strong>: spazi molto ampi</li>
+</ul>
+<p><img src="../Geografia/_images/zone-idrologiche-carsiche.jpg" width="auto" height="auto" alt/></p>
+<h3 id="esempi-significativi">Esempi Significativi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#esempi-significativi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Grotta Abukumado (Giappone)</strong>: più livelli di gallerie</p>
+<ul>
+<li><strong>Evidenza</strong>: diversi livelli di base</li>
+<li><strong>Evoluzione</strong>: abbassamento progressivo</li>
+</ul>
+<p><strong>Grotte marine</strong>: risorgenti sotto livello marino</p>
+<ul>
+<li><strong>Esempio</strong>: Grotta del Bue Marino (Sardegna)</li>
+<li><strong>Particolarità</strong>: interazione acqua dolce/salata</li>
+</ul>
+<hr/>
+<h1 id="circolazione-dellaria-e-corrosione">Circolazione dell’Aria e Corrosione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#circolazione-dellaria-e-corrosione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="meccanismo-delle-correnti-daria">Meccanismo delle Correnti d’Aria<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meccanismo-delle-correnti-daria" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="controllo-termico">Controllo Termico<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#controllo-termico" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Differenze termiche</strong>: tra ingressi generano correnti stagionali</p>
+<h3 id="cicli-stagionali">Cicli Stagionali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cicli-stagionali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Estate</strong>:</p>
+<ul>
+<li><strong>Esterno</strong>: aria calda</li>
+<li><strong>Grotta</strong>: aria fredda stabile in basso</li>
+<li><strong>Circolazione</strong>: aria esterna entra, fredda esce dal basso</li>
+</ul>
+<p><strong>Inverno</strong>:</p>
+<ul>
+<li><strong>Esterno</strong>: aria fredda</li>
+<li><strong>Grotta</strong>: aria calda relativa in basso</li>
+<li><strong>Circolazione</strong>: aria calda esce dall’alto, fredda entra</li>
+</ul>
+<h2 id="effetti-corrosivi">Effetti Corrosivi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#effetti-corrosivi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="processi-di-condensazione">Processi di Condensazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processi-di-condensazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Condensazione</strong>: su pareti della grotta</li>
+<li><strong>Corrosione</strong>: incrementata da acqua di condensa</li>
+<li><strong>Morfologie</strong>: cavità emisferiche, strutture simili a pozzi</li>
+</ul>
+<h3 id="grotte-termali">Grotte Termali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#grotte-termali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Grotte con aria calda</strong>: temperatura superiore all’esterno</p>
+<ul>
+<li><strong>Esempio</strong>: Monte Kronio (Sicilia)</li>
+<li><strong>Strutture</strong>: simili a camere termali</li>
+<li><strong>Processi</strong>: corrosione accelerata da vapori caldi</li>
+</ul>
+<h2 id="significato-della-ventilazione">Significato della Ventilazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#significato-della-ventilazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Ricambio d’aria</strong>: mantiene disequilibri chimici</li>
+<li><strong>Trasporto umidità</strong>: alimenta processi corrosivi</li>
+<li><strong>Controllo climatico</strong>: delle grotte</li>
+<li><strong>Speleogenesi</strong>: contributo ai processi di formazione</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="toc-content overflow" id="list-1"><li class="depth-1"><a href="#definizione-e-caratteristiche-generali" data-for="definizione-e-caratteristiche-generali">Definizione e Caratteristiche Generali</a></li><li class="depth-2"><a href="#definizione" data-for="definizione">Definizione</a></li><li class="depth-2"><a href="#prodotti-del-carsismo" data-for="prodotti-del-carsismo">Prodotti del Carsismo</a></li><li class="depth-2"><a href="#meccanismi-principali" data-for="meccanismi-principali">Meccanismi Principali</a></li><li class="depth-0"><a href="#rocce-carsificabili" data-for="rocce-carsificabili">Rocce Carsificabili</a></li><li class="depth-1"><a href="#distribuzione-e-importanza" data-for="distribuzione-e-importanza">Distribuzione e Importanza</a></li><li class="depth-1"><a href="#tipologie-di-rocce" data-for="tipologie-di-rocce">Tipologie di Rocce</a></li><li class="depth-2"><a href="#calcare-caco" data-for="calcare-caco">Calcare (CaCO₃)</a></li><li class="depth-2"><a href="#dolomia-camgco" data-for="dolomia-camgco">Dolomia (CaMg(CO₃)₂)</a></li><li class="depth-2"><a href="#gesso-caso2ho" data-for="gesso-caso2ho">Gesso (CaSO₄·2H₂O)</a></li><li class="depth-2"><a href="#sali-evaporitici" data-for="sali-evaporitici">Sali Evaporitici</a></li><li class="depth-2"><a href="#silice" data-for="silice">Silice</a></li><li class="depth-0"><a href="#dissoluzione-dei-carbonati" data-for="dissoluzione-dei-carbonati">Dissoluzione dei Carbonati</a></li><li class="depth-1"><a href="#reazione-fondamentale" data-for="reazione-fondamentale">Reazione Fondamentale</a></li><li class="depth-1"><a href="#fattori-di-controllo" data-for="fattori-di-controllo">Fattori di Controllo</a></li><li class="depth-2"><a href="#ph-della-soluzione" data-for="ph-della-soluzione">pH della Soluzione</a></li><li class="depth-2"><a href="#concentrazione-co" data-for="concentrazione-co">Concentrazione CO₂</a></li><li class="depth-2"><a href="#temperatura" data-for="temperatura">Temperatura</a></li><li class="depth-2"><a href="#corrosione-da-miscelazione" data-for="corrosione-da-miscelazione">Corrosione da Miscelazione</a></li><li class="depth-0"><a href="#microforme-carsiche-epigee" data-for="microforme-carsiche-epigee">Microforme Carsiche Epigee</a></li><li class="depth-1"><a href="#fattori-di-controllo-1" data-for="fattori-di-controllo-1">Fattori di Controllo</a></li><li class="depth-1"><a href="#forme-del-carso-nudo" data-for="forme-del-carso-nudo">Forme del Carso Nudo</a></li><li class="depth-2"><a href="#caratteristiche-generali" data-for="caratteristiche-generali">Caratteristiche Generali</a></li><li class="depth-2"><a href="#tipologie-principali" data-for="tipologie-principali">Tipologie Principali</a></li><li class="depth-1"><a href="#forme-fitocarsiche" data-for="forme-fitocarsiche">Forme Fitocarsiche</a></li><li class="depth-2"><a href="#caratteristiche-generali-1" data-for="caratteristiche-generali-1">Caratteristiche Generali</a></li><li class="depth-2"><a href="#tipologie-specifiche" data-for="tipologie-specifiche">Tipologie Specifiche</a></li><li class="depth-1"><a href="#forme-del-carso-semilibero-e-coperto" data-for="forme-del-carso-semilibero-e-coperto">Forme del Carso Semilibero e Coperto</a></li><li class="depth-2"><a href="#caratteristiche-generali-2" data-for="caratteristiche-generali-2">Caratteristiche Generali</a></li><li class="depth-2"><a href="#tipologie" data-for="tipologie">Tipologie</a></li><li class="depth-1"><a href="#distribuzione-altitudinale" data-for="distribuzione-altitudinale">Distribuzione Altitudinale</a></li><li class="depth-2"><a href="#influenza-della-pendenza" data-for="influenza-della-pendenza">Influenza della Pendenza</a></li><li class="depth-0"><a href="#macroforme-carsiche-epigee" data-for="macroforme-carsiche-epigee">Macroforme Carsiche Epigee</a></li><li class="depth-1"><a href="#doline-e-uvala" data-for="doline-e-uvala">Doline e Uvala</a></li><li class="depth-2"><a href="#definizione-generale" data-for="definizione-generale">Definizione Generale</a></li><li class="depth-2"><a href="#tipologie-di-doline" data-for="tipologie-di-doline">Tipologie di Doline</a></li><li class="depth-2"><a href="#uvala" data-for="uvala">Uvala</a></li><li class="depth-1"><a href="#polje" data-for="polje">Polje</a></li><li class="depth-2"><a href="#definizione-e-caratteristiche" data-for="definizione-e-caratteristiche">Definizione e Caratteristiche</a></li><li class="depth-2"><a href="#caratteristiche-morfologiche" data-for="caratteristiche-morfologiche">Caratteristiche Morfologiche</a></li><li class="depth-2"><a href="#tipologie-di-polje" data-for="tipologie-di-polje">Tipologie di Polje</a></li><li class="depth-1"><a href="#valli-carsiche" data-for="valli-carsiche">Valli Carsiche</a></li><li class="depth-2"><a href="#canyon-carsici" data-for="canyon-carsici">Canyon Carsici</a></li><li class="depth-2"><a href="#valli-secche" data-for="valli-secche">Valli Secche</a></li><li class="depth-2"><a href="#valli-cieche" data-for="valli-cieche">Valli Cieche</a></li><li class="depth-2"><a href="#valli-di-risorgenza" data-for="valli-di-risorgenza">Valli di Risorgenza</a></li><li class="depth-0"><a href="#carso-ipogeo" data-for="carso-ipogeo">Carso Ipogeo</a></li><li class="depth-1"><a href="#formazione-delle-discontinuità" data-for="formazione-delle-discontinuità">Formazione delle Discontinuità</a></li><li class="depth-2"><a href="#origine-delle-fratture" data-for="origine-delle-fratture">Origine delle Fratture</a></li><li class="depth-1"><a href="#circolazione-idrica-sotterranea" data-for="circolazione-idrica-sotterranea">Circolazione Idrica Sotterranea</a></li><li class="depth-2"><a href="#epicarso" data-for="epicarso">Epicarso</a></li><li class="depth-2"><a href="#zona-vadosa" data-for="zona-vadosa">Zona Vadosa</a></li><li class="depth-2"><a href="#zona-epifreatica" data-for="zona-epifreatica">Zona Epifreatica</a></li><li class="depth-2"><a href="#zona-freatica" data-for="zona-freatica">Zona Freatica</a></li><li class="depth-1"><a href="#sezioni-tipiche-delle-grotte" data-for="sezioni-tipiche-delle-grotte">Sezioni Tipiche delle Grotte</a></li><li class="depth-2"><a href="#morfologie-caratteristiche" data-for="morfologie-caratteristiche">Morfologie Caratteristiche</a></li><li class="depth-1"><a href="#livello-di-base-carsico" data-for="livello-di-base-carsico">Livello di Base Carsico</a></li><li class="depth-2"><a href="#definizione-e-controllo" data-for="definizione-e-controllo">Definizione e Controllo</a></li><li class="depth-2"><a href="#evoluzione-del-sistema" data-for="evoluzione-del-sistema">Evoluzione del Sistema</a></li><li class="depth-2"><a href="#esempi-significativi" data-for="esempi-significativi">Esempi Significativi</a></li><li class="depth-0"><a href="#circolazione-dellaria-e-corrosione" data-for="circolazione-dellaria-e-corrosione">Circolazione dell’Aria e Corrosione</a></li><li class="depth-1"><a href="#meccanismo-delle-correnti-daria" data-for="meccanismo-delle-correnti-daria">Meccanismo delle Correnti d’Aria</a></li><li class="depth-2"><a href="#controllo-termico" data-for="controllo-termico">Controllo Termico</a></li><li class="depth-2"><a href="#cicli-stagionali" data-for="cicli-stagionali">Cicli Stagionali</a></li><li class="depth-1"><a href="#effetti-corrosivi" data-for="effetti-corrosivi">Effetti Corrosivi</a></li><li class="depth-2"><a href="#processi-di-condensazione" data-for="processi-di-condensazione">Processi di Condensazione</a></li><li class="depth-2"><a href="#grotte-termali" data-for="grotte-termali">Grotte Termali</a></li><li class="depth-1"><a href="#significato-della-ventilazione" data-for="significato-della-ventilazione">Significato della Ventilazione</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.1</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

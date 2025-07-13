@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Foglie - Struttura, Funzioni e Adattamenti</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="Foglie - Struttura, Funzioni e Adattamenti"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Foglie - Struttura, Funzioni e Adattamenti"/><meta name="twitter:description" content="Funzioni Principali Fotosintesi: processo metabolico primario Scambio gassoso: CO₂/O₂ per fotosintesi e respirazione Traspirazione: movimento dell’acqua e controllo termico Specializzazioni: protezione, sostegno, riproduzione Morfologia Fogliare Struttura della “Foglia Tipo” (Nomofillo) Componenti P..."/><meta property="og:description" content="Funzioni Principali Fotosintesi: processo metabolico primario Scambio gassoso: CO₂/O₂ per fotosintesi e respirazione Traspirazione: movimento dell’acqua e controllo termico Specializzazioni: protezione, sostegno, riproduzione Morfologia Fogliare Struttura della “Foglia Tipo” (Nomofillo) Componenti P..."/><meta property="og:image:alt" content="Funzioni Principali Fotosintesi: processo metabolico primario Scambio gassoso: CO₂/O₂ per fotosintesi e respirazione Traspirazione: movimento dell’acqua e controllo termico Specializzazioni: protezione, sostegno, riproduzione Morfologia Fogliare Struttura della “Foglia Tipo” (Nomofillo) Componenti P..."/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/Botanica/Foglie---Struttura,-Funzioni-e-Adattamenti"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/Botanica/Foglie---Struttura,-Funzioni-e-Adattamenti"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Funzioni Principali Fotosintesi: processo metabolico primario Scambio gassoso: CO₂/O₂ per fotosintesi e respirazione Traspirazione: movimento dell’acqua e controllo termico Specializzazioni: protezione, sostegno, riproduzione Morfologia Fogliare Struttura della “Foglia Tipo” (Nomofillo) Componenti P..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvcGlncm8ubWUvcGlncm8ubWUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://quartz.jzhao.xyz/Botanica/Foglie---Struttura,-Funzioni-e-Adattamenti-og-image.webp"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/Botanica/Foglie---Struttura,-Funzioni-e-Adattamenti-og-image.webp"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/Botanica/Foglie---Struttura,-Funzioni-e-Adattamenti-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="Botanica/Foglie---Struttura,-Funzioni-e-Adattamenti"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Quartz 4</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../Botanica/">Botanica</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Foglie   Struttura, Funzioni e Adattamenti</a></div></nav><h1 class="article-title">Foglie - Struttura, Funzioni e Adattamenti</h1><p show-comma="true" class="content-meta"><time datetime="2025-07-13T00:45:34.000Z">Jul 13, 2025</time><span>8 min read</span></p></div></div><article class="popover-hint"><h2 id="funzioni-principali">Funzioni Principali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#funzioni-principali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>Fotosintesi</strong>: processo metabolico primario</li>
+<li><strong>Scambio gassoso</strong>: CO₂/O₂ per fotosintesi e respirazione</li>
+<li><strong>Traspirazione</strong>: movimento dell’acqua e controllo termico</li>
+<li><strong>Specializzazioni</strong>: protezione, sostegno, riproduzione</li>
+</ol>
+<hr/>
+<h1 id="morfologia-fogliare">Morfologia Fogliare<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#morfologia-fogliare" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="struttura-della-foglia-tipo-nomofillo">Struttura della “Foglia Tipo” (Nomofillo)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#struttura-della-foglia-tipo-nomofillo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="componenti-principali">Componenti Principali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#componenti-principali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Lamina fogliare</strong>: superficie appiattita ed espansa
+<ul>
+<li>Alto rapporto superficie/volume (condizioni favorevoli)</li>
+<li>Massimizzazione esposizione luminosa e scambi gassosi</li>
+</ul>
+</li>
+<li><strong>Picciolo</strong>: collegamento lamina-fusto
+<ul>
+<li>Variabile in lunghezza o assente (foglia sessile)</li>
+<li>Graminacee: foglia a guaina</li>
+</ul>
+</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625175913.png" width="auto" height="auto" alt/></p>
+<h2 id="tipologie-morfologiche">Tipologie Morfologiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tipologie-morfologiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="foglie-semplici-vs-composte">Foglie Semplici vs Composte<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#foglie-semplici-vs-composte" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Semplici</strong>: lamina unica indivisa</li>
+<li><strong>Composte</strong>: suddivise in foglioline
+<ul>
+<li><strong>Palmate</strong>: foglioline da punto comune</li>
+<li><strong>Pennate</strong>: foglioline lungo rachide centrale</li>
+</ul>
+</li>
+</ul>
+<h3 id="criterio-di-distinzione">Criterio di Distinzione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#criterio-di-distinzione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Gemma ascellare</strong>: discriminante fondamentale</p>
+<ul>
+<li><strong>Presenza</strong>: alla base della foglia (semplice o composta)</li>
+<li><strong>Assenza</strong>: alla base delle foglioline</li>
+<li><strong>Ricordo fitomero</strong>: nodo + foglia con gemma + internodo</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625175935.png" width="auto" height="auto" alt/> <img src="../_assets/Pasted-image-20250625175805.png" width="auto" height="auto" alt/></p>
+<h3 id="forme-e-margini-fogliari">Forme e Margini Fogliari<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#forme-e-margini-fogliari" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Forme</strong>: cordate, astate, peltate, sagittate</li>
+<li><strong>Margini</strong>: liscio, seghettato, crenato</li>
+<li><strong>Significato</strong>: caratteri tassonomici per identificazione</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625180324.png" width="auto" height="auto" alt/></p>
+<h3 id="variabilità-intraspecifica">Variabilità Intraspecifica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#variabilità-intraspecifica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Fagiolo</strong>: foglie semplici e composte contemporaneamente</li>
+<li><strong>Eucalipto</strong>: dimorfismo giovanile-adulto
+<ul>
+<li>Fase giovanile: lamina arrotondata</li>
+<li>Fase adulta: lamina lanceolata</li>
+</ul>
+</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625180304.png" width="auto" height="auto" alt/></p>
+<hr/>
+<h1 id="sistema-nervaturale">Sistema Nervaturale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sistema-nervaturale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="funzioni-delle-nervature">Funzioni delle Nervature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#funzioni-delle-nervature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Contenuto</strong>: tessuti di conduzione (xilema e floema)</li>
+<li><strong>Trasporto</strong>: linfa grezza (entrata) e elaborata (uscita)</li>
+<li><strong>Distribuzione</strong>: rete capillare per tutta la lamina</li>
+</ul>
+<h2 id="organizzazione-per-gruppi-sistematici">Organizzazione per Gruppi Sistematici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#organizzazione-per-gruppi-sistematici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="dicotiledoni---nervature-reticolate">Dicotiledoni - Nervature Reticolate<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dicotiledoni---nervature-reticolate" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Nervatura principale</strong>: centrale dominante</li>
+<li><strong>Ramificazioni gerarchiche</strong>: 1°, 2°, 3°, 4° ordine</li>
+<li><strong>Organizzazione</strong>: reticolo ottimizzato per distribuzione e raccolta</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625181508.png" width="auto" height="auto" alt/></p>
+<h3 id="monocotiledoni---nervature-parallele">Monocotiledoni - Nervature Parallele<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#monocotiledoni---nervature-parallele" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Disposizione</strong>: nervature parallele di calibro simile</li>
+<li><strong>Connessioni</strong>: piccole nervature trasversali</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625180607.png" width="auto" height="auto" alt/></p>
+<h3 id="gimnosperme---nervature-dicotomiche">Gimnosperme - Nervature Dicotomiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gimnosperme---nervature-dicotomiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Ginkgo biloba</strong>: caratteristica unica</p>
+<ul>
+<li><strong>Pattern</strong>: divisione dicotomica ripetuta</li>
+<li><strong>Mantenimento</strong>: dimensioni costanti delle nervature</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625180540.png" width="auto" height="auto" alt/></p>
+<h2 id="collegamento-sistema-vascolare">Collegamento Sistema Vascolare<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#collegamento-sistema-vascolare" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Origine</strong>: ramificazione fasci vascolari del fusto ai nodi</li>
+<li><strong>Percorso</strong>: picciolo → nervatura principale → ramificazioni</li>
+<li><strong>Orientamento</strong>: floema verso pagina inferiore, xilema superiore</li>
+<li><strong>Tipo</strong>: fasci collaterali chiusi (anche dicotiledoni)</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625180920.png" width="auto" height="auto" alt/></p>
+<hr/>
+<h1 id="abscissione-fogliare">Abscissione Fogliare<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#abscissione-fogliare" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="caratteristiche-del-processo">Caratteristiche del Processo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristiche-del-processo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Programmazione</strong>: evento controllato geneticamente</li>
+<li><strong>Timing</strong>: variabile geograficamente
+<ul>
+<li>Climi temperati: autunno-inverno</li>
+<li>Zone tropicali: inizio stagione secca</li>
+</ul>
+</li>
+</ul>
+<h2 id="meccanismi-pre-abscissione">Meccanismi Pre-Abscissione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meccanismi-pre-abscissione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="recupero-metaboliti">Recupero Metaboliti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recupero-metaboliti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Autofagia</strong>: degradazione controllata organelli</li>
+<li><strong>Recupero</strong>: clorofille e materiali citoplasmatici</li>
+<li><strong>Cambio colorazione</strong>: permanenza cromoplasti e antociani</li>
+</ul>
+<h3 id="formazione-strati-specializzati">Formazione Strati Specializzati<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formazione-strati-specializzati" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Strato protettivo</strong>: accumulo suberina nella parete
+<ul>
+<li>Blocco microorganismi</li>
+<li>Prevenzione perdita acqua</li>
+</ul>
+</li>
+<li><strong>Strato di abscissione</strong>: degradazione enzimatica pectina
+<ul>
+<li>Scollamento cellulare</li>
+<li>Distacco senza rotture traumatiche</li>
+</ul>
+</li>
+</ol>
+<p><img src="../_assets/Pasted-image-20250625181157.png" width="auto" height="auto" alt/></p>
+<h2 id="controllo-ormonale">Controllo Ormonale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#controllo-ormonale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Durante vita attiva</strong>: auxina mantiene strati inattivi</li>
+<li><strong>Al momento abscissione</strong>:
+<ul>
+<li>Diminuzione auxina</li>
+<li>Aumento etilene</li>
+<li>Attivazione strati protettivo e di abscissione</li>
+</ul>
+</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625181246.png" width="auto" height="auto" alt/></p>
+<hr/>
+<h1 id="sviluppo-fogliare">Sviluppo Fogliare<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sviluppo-fogliare" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="origine-embriologica">Origine Embriologica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#origine-embriologica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Cotiledoni</strong>: foglie embrionali (accumulo riserve)</li>
+<li><strong>Nomofilli</strong>: foglie vere (fase post-embrionale)</li>
+<li><strong>Sito formazione</strong>: meristema apicale germoglio (SAM)</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625182028.png" width="auto" height="auto" alt/></p>
+<h2 id="teoria-tunica-corpus">Teoria Tunica-Corpus<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#teoria-tunica-corpus" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="contributo-degli-strati">Contributo degli Strati<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contributo-degli-strati" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Strato L1</strong>: divisioni anticlinali → protoderma</li>
+<li><strong>Strato L2</strong>: divisioni anticlinali → tessuto fondamentale</li>
+<li><strong>Strato L3</strong> (corpus): divisioni anticlinali + periclinali → procambio</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625182722.png" width="auto" height="auto" alt/></p>
+<h3 id="formazione-primordio">Formazione Primordio<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formazione-primordio" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Innesco</strong>: divisioni periclinali in L2</li>
+<li><strong>Ispessimento</strong>: zona precisa del SAM</li>
+<li><strong>Origine esogena</strong>: porzione esterna meristema</li>
+<li><strong>Sviluppo successivo</strong>: formazione gemma ascellare</li>
+</ul>
+<h2 id="fillotassi-disposizione-fogliare">Fillotassi (Disposizione Fogliare)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fillotassi-disposizione-fogliare" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Determinazione genetica</strong> della posizione:</p>
+<ol>
+<li><strong>Alterna</strong>: una per nodo, 180° sfasamento</li>
+<li><strong>Spirale</strong>: posizione precisa rispetto precedente</li>
+<li><strong>Opposta</strong>: due foglie per nodo, 90° tra livelli</li>
+<li><strong>Verticillata</strong>: multiple foglie per nodo</li>
+</ol>
+<p><img src="../_assets/Pasted-image-20250625182553.png" width="auto" height="auto" alt/></p>
+<hr/>
+<h1 id="assi-di-sviluppo-fogliare">Assi di Sviluppo Fogliare<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#assi-di-sviluppo-fogliare" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="orientamenti-spaziali">Orientamenti Spaziali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#orientamenti-spaziali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>Prossimo-distale</strong>: dal picciolo all’apice</li>
+<li><strong>Centro-laterale</strong>: da nervatura centrale al margine</li>
+<li><strong>Adaxiale-abaxiale</strong>: da superficie superiore a inferiore</li>
+</ol>
+<h2 id="sequenza-temporale">Sequenza Temporale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sequenza-temporale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>Allungamento</strong>: sviluppo asse prossimo-distale</li>
+<li><strong>Allargamento</strong>: sviluppo asse centro-laterale</li>
+<li><strong>Ispessimento</strong>: sviluppo asse adaxiale-abaxiale</li>
+</ol>
+<h2 id="meristema-determinato">Meristema Determinato<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meristema-determinato" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Attività limitata</strong>: cessazione al completamento foglia</li>
+<li><strong>Eccezione</strong>: Welwitschia mirabilis (crescita continua)</li>
+</ul>
+<hr/>
+<h1 id="anatomia-fogliare">Anatomia Fogliare<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anatomia-fogliare" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="organizzazione-generale">Organizzazione Generale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#organizzazione-generale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Epidermide superiore</strong> + cuticola</li>
+<li><strong>Mesofillo</strong> (tessuto interno)</li>
+<li><strong>Epidermide inferiore</strong> + cuticola</li>
+<li><strong>Nervature</strong> immerse nel mesofillo</li>
+</ul>
+<h2 id="componenti-del-mesofillo">Componenti del Mesofillo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#componenti-del-mesofillo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Tessuto fondamentale</strong>: parenchima fotosintetico</li>
+<li><strong>Tessuti meccanici</strong>: collenchima e sclerenchima</li>
+<li><strong>Guaina del fascio</strong>: strato parenchimatico attorno fasci</li>
+<li><strong>Distribuzione stomatica</strong>: epidermidi con controllo specifico</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625183220.png" width="auto" height="auto" alt/></p>
+<hr/>
+<h1 id="modelli-organizzativi">Modelli Organizzativi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#modelli-organizzativi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="1-foglia-dorsoventralebifacciale">1. Foglia Dorsoventrale/Bifacciale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-foglia-dorsoventralebifacciale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="caratteristiche-generali">Caratteristiche Generali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristiche-generali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Asimmetria</strong>: lato dorsale e ventrale distinguibili</li>
+<li><strong>Portamento</strong>: plagiotropo (parallelo al suolo)</li>
+<li><strong>Illuminazione</strong>: unidirezionale dall’alto</li>
+</ul>
+<h3 id="organizzazione-interna">Organizzazione Interna<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#organizzazione-interna" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Parenchima a palizzata</strong> (superiore):</p>
+<ul>
+<li>Cellule allungate, parallelepipede</li>
+<li>Alta densità cloroplasti (100-150 per cellula)</li>
+<li>Tessuto fotosintetico principale</li>
+</ul>
+<p><strong>Parenchima spugnoso/lacunoso</strong> (inferiore):</p>
+<ul>
+<li>Ampi spazi intercellulari (aerenchima)</li>
+<li>Funzioni: diffusione gassosa + fotosintesi secondaria</li>
+</ul>
+<h3 id="specializzazioni">Specializzazioni<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#specializzazioni" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Epidermide superiore</strong>: cuticola spessa protettiva</li>
+<li><strong>Distribuzione stomatica</strong>: prevalentemente inferiore</li>
+<li><strong>Nervature</strong>: reticolate (dicotiledoni)</li>
+</ul>
+<h3 id="plasticità-fenotipica-foglie-sole-vs-ombra">Plasticità Fenotipica: Foglie Sole vs Ombra<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#plasticità-fenotipica-foglie-sole-vs-ombra" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Foglie di sole</strong>:</p>
+<ul>
+<li>Multipli strati parenchima palizzata</li>
+<li>Cuticola molto spessa</li>
+<li>Maggiore resistenza stress</li>
+</ul>
+<p><strong>Foglie d’ombra</strong>:</p>
+<ul>
+<li>Singolo strato palizzata</li>
+<li>Cuticola sottile</li>
+<li>Ottimizzazione cattura luce</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625184009.png" width="auto" height="auto" alt/> <img src="../_assets/Pasted-image-20250625184126.png" width="auto" height="auto" alt/></p>
+<h2 id="2-foglia-equifaccialeisofacciale">2. Foglia Equifacciale/Isofacciale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-foglia-equifaccialeisofacciale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="caratteristiche-distintive">Caratteristiche Distintive<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristiche-distintive" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Simmetria</strong>: due pagine identiche</li>
+<li><strong>Anatomia</strong>: interna omogenea</li>
+<li><strong>Portamento</strong>: ortotropo (perpendicolare terreno)</li>
+<li><strong>Gruppi</strong>: principalmente monocotiledoni</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625184608.png" width="auto" height="auto" alt/></p>
+<h3 id="organizzazione-strutturale">Organizzazione Strutturale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#organizzazione-strutturale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Epidermidi</strong>: superiore e inferiore identiche</li>
+<li><strong>Mesofillo</strong>: omogeneo senza asimmetria</li>
+<li><strong>Stomi</strong>: distribuzione uniforme entrambe pagine</li>
+<li><strong>Nervature</strong>: parallele (sezione trasversale)</li>
+</ul>
+<h3 id="elementi-di-riconoscimento">Elementi di Riconoscimento<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#elementi-di-riconoscimento" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Orientamento xilema</strong>: sempre verso epidermide superiore</li>
+<li><strong>Orientamento floema</strong>: sempre verso epidermide inferiore</li>
+<li><strong>Guaina fascio</strong>: molto evidente (piante C4)</li>
+<li><strong>Cellule bulliformi</strong>: controllo apertura/chiusura lamina</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625184758.png" width="auto" height="auto" alt/></p>
+<h2 id="3-foglia-unifacciale">3. Foglia Unifacciale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-foglia-unifacciale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="origine-morfogenetica">Origine Morfogenetica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#origine-morfogenetica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Derivazione</strong>: ripiegamento foglia equifacciale</li>
+<li><strong>Fusione</strong>: delle due metà lamina</li>
+<li><strong>Esempio classico</strong>: Iris</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625184921.png" width="auto" height="auto" alt/></p>
+<h3 id="caratteristiche-anatomiche">Caratteristiche Anatomiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristiche-anatomiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Due file fasci vascolari</strong>: orientamento speculare</li>
+<li><strong>Epidermide esposta</strong>: solo quella inferiore originaria</li>
+<li><strong>Orientamento floema</strong>: verso esterno in entrambe file</li>
+</ul>
+<h3 id="esempi-specializzati">Esempi Specializzati<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#esempi-specializzati" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Foglie tubulari</strong>: erba cipollina, cipolla, aglio</p>
+<ul>
+<li>Ripiegamento completo con fusione</li>
+<li>Solo epidermide inferiore esposta all’ambiente</li>
+</ul>
+<h2 id="4-foglia-centrica">4. Foglia Centrica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-foglia-centrica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="caratteristiche-generali-1">Caratteristiche Generali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#caratteristiche-generali-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Gruppi</strong>: principalmente conifere (gimnosperme)</li>
+<li><strong>Morfologia</strong>: aghiforme</li>
+<li><strong>Adattamenti</strong>: ambienti xerici</li>
+<li><strong>Nervatura</strong>: centrale unica</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625184944.png" width="auto" height="auto" alt/></p>
+<h3 id="adattamenti-xerofitici">Adattamenti Xerofitici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adattamenti-xerofitici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Dimensioni ridotte</strong>: limitazione superficie evaporante</li>
+<li><strong>Stomi infossati</strong>: riduzione gradiente potenziale idrico</li>
+<li><strong>Epidermide ispessita</strong>: cellule lignificate</li>
+<li><strong>Mesofillo compatto</strong>: organizzazione “a puzzle”</li>
+<li><strong>Canali resiniferi</strong>: carattere tassonomico</li>
+</ol>
+<h3 id="organizzazione-centrale">Organizzazione Centrale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#organizzazione-centrale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Due fasci collaterali</strong>: nella nervatura centrale</li>
+<li><strong>Tessuto di trasfusione</strong>: circostante i fasci</li>
+<li><strong>Endodermide</strong>: con bande del Caspary</li>
+<li><strong>Controllo flussi</strong>: via simplastica obbligata</li>
+</ul>
+<h3 id="funzione-tessuto-di-trasfusione">Funzione Tessuto di Trasfusione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#funzione-tessuto-di-trasfusione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Mediazione</strong>: traslocazione acqua e nutrienti</li>
+<li><strong>Filtro</strong>: passaggio obbligato mesofillo ↔ conduzione</li>
+<li><strong>Controllo</strong>: mediante endodermide (come radice)</li>
+</ul>
+<p><img src="../_assets/Pasted-image-20250625185003.png" width="auto" height="auto" alt/></p>
+<hr/>
+<h1 id="adattamenti-ambientali">Adattamenti Ambientali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adattamenti-ambientali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="xerofite-ambienti-aridi">Xerofite (Ambienti Aridi)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#xerofite-ambienti-aridi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="adattamenti-generali">Adattamenti Generali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adattamenti-generali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Tricomi protettivi</strong>: riduzione perdita acqua</li>
+<li><strong>Cuticola ispessita</strong>: minimizzazione evaporazione</li>
+<li><strong>Stomi infossati</strong>: controllo gradiente idrico</li>
+<li><strong>Spazi intercellulari ridotti</strong>: limitazione evaporazione interna</li>
+</ul>
+<h3 id="sclerofille-macchia-mediterranea">Sclerofille (Macchia Mediterranea)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sclerofille-macchia-mediterranea" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Foglie coriacee</strong>: cuticola spessissima</li>
+<li><strong>Tessuti meccanici</strong>: rigidità strutturale</li>
+</ul>
+<h3 id="oleandro-esempio-dettagliato">Oleandro (Esempio Dettagliato)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#oleandro-esempio-dettagliato" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Specializzazioni strutturali</strong>:</p>
+<ul>
+<li><strong>Epidermide superiore pluristratificata</strong></li>
+<li><strong>Cripte stomatiche</strong>: invaginazioni epidermide inferiore</li>
+<li><strong>Stomi raggruppati</strong>: all’interno delle cripte</li>
+<li><strong>Tricomi interni</strong>: trattenimento umidità locale</li>
+<li><strong>Doppio strato palizzata</strong>: alta luminosità</li>
+</ul>
+<h2 id="idrofite-ambienti-acquatici">Idrofite (Ambienti Acquatici)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#idrofite-ambienti-acquatici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="foglie-galleggianti-ninfea">Foglie Galleggianti (Ninfea)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#foglie-galleggianti-ninfea" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Adattamenti specifici</strong>:</p>
+<ul>
+<li><strong>Struttura dorsoventrale</strong>: mantenuta</li>
+<li><strong>Multipli strati palizzata</strong>: luce intensa superficiale</li>
+<li><strong>Ampie lacune</strong>: parenchima spugnoso per galleggiamento</li>
+<li><strong>Astrosclereidi</strong>: sostegno strutturale</li>
+<li><strong>Stomi superiori</strong>: scambio gassoso efficiente</li>
+<li><strong>Capacità portante</strong>: notevole nonostante lacune</li>
+</ul>
+<hr/>
+<h1 id="specializzazioni-funzionali">Specializzazioni Funzionali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#specializzazioni-funzionali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="1-funzione-protettiva">1. Funzione Protettiva<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-funzione-protettiva" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="protezione-meristemi">Protezione Meristemi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#protezione-meristemi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Perule/Ipsofilli</strong>: foglie coriacee protezione gemme</li>
+<li><strong>Caduta stagionale</strong>: alla ripresa vegetativa</li>
+</ul>
+<h3 id="protezione-organi-di-riserva">Protezione Organi di Riserva<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#protezione-organi-di-riserva" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Catafilli</strong>: foglie esterne bulbi (secche e coriacee)</li>
+<li><strong>Protezione interna</strong>: foglie di riserva</li>
+</ul>
+<h3 id="difesa-da-erbivori">Difesa da Erbivori<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#difesa-da-erbivori" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Spine fogliari</strong>: trasformazione completa foglie</li>
+<li><strong>Compensazione</strong>: fusti assumono funzione fotosintetica</li>
+</ul>
+<h2 id="2-funzione-di-sostegno">2. Funzione di Sostegno<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-funzione-di-sostegno" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Cirri</strong>: strutture apicali foglie composte</li>
+<li><strong>Tigmotropismo</strong>: avvolgimento intorno sostegni</li>
+<li><strong>Distinzione</strong>: da viticci (origine caulinare)</li>
+</ul>
+<h2 id="3-funzione-di-riserva">3. Funzione di Riserva<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-funzione-di-riserva" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="tipologie">Tipologie<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tipologie" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Bulbi</strong>: foglie interne specializzate</li>
+<li><strong>Cotiledoni</strong>: riserve embrionali</li>
+<li><strong>Piante succulente</strong>: riserva idrica
+<ul>
+<li>Ridotto rapporto superficie/volume</li>
+<li>Parenchima acquifero abbondante</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-funzione-nutritiva">4. Funzione Nutritiva<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-funzione-nutritiva" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="assorbimento-acqua-e-nutrienti">Assorbimento Acqua e Nutrienti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#assorbimento-acqua-e-nutrienti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Epifite</strong>: foglie sostituiscono radici <strong>Bromeliacee</strong>:</p>
+<ul>
+<li>Disposizione a rosetta</li>
+<li>Cuticola sottile</li>
+<li>Accumulo acqua piovana</li>
+</ul>
+<h3 id="piante-carnivore">Piante Carnivore<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#piante-carnivore" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Habitat</strong>: suoli poveri di azoto <strong>Strategia</strong>: digestione insetti per recupero azoto <strong>Tutte le trappole</strong>: modificazioni fogliari</p>
+<h4 id="trappole-passive">Trappole Passive<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trappole-passive" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Ascidi</strong> (Nepenthes, Sarracenia):</p>
+<ul>
+<li>Lamina richiusa in struttura tubulare</li>
+<li>Enzimi digestivi interni</li>
+</ul>
+<h4 id="trappole-attive">Trappole Attive<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trappole-attive" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Dionaea muscipula</strong> (meccanismo dettagliato):</p>
+<ul>
+<li><strong>Cellule motrici turgide</strong>: lungo nervatura centrale</li>
+<li><strong>Peli sensoriali</strong>: tre per metà lamina</li>
+<li><strong>Attivazione</strong>: due peli toccati → perdita turgore → chiusura</li>
+<li><strong>Digestione</strong>: tricomi ghiandolari secernono enzimi</li>
+<li><strong>Riapertura</strong>: ripristino turgore cellule motrici</li>
+</ul>
+<h2 id="5-funzione-riproduttiva">5. Funzione Riproduttiva<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-funzione-riproduttiva" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="riproduzione-asessuale">Riproduzione Asessuale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#riproduzione-asessuale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Kalanchoë</strong>: plantule marginali</p>
+<ul>
+<li>Mitosi da tessuti vegetativi</li>
+<li>Caduta e radicazione autonoma</li>
+</ul>
+<h3 id="riproduzione-sessuale">Riproduzione Sessuale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#riproduzione-sessuale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Brattee fiorali</strong>: sostituzione petali per attrazione <strong>Bougainvillea e Poinsettia</strong>:</p>
+<ul>
+<li>Brattee pigmentate vistose</li>
+<li>Fiori veri piccoli e poco appariscenti</li>
+</ul>
+<hr/>
+<h1 id="adattamenti-metabolici">Adattamenti Metabolici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adattamenti-metabolici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="problema-della-fotorespirazione">Problema della Fotorespirazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#problema-della-fotorespirazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="enzima-rubisco">Enzima Rubisco<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#enzima-rubisco" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Ribulosio 1,5-bisfosfato carbossilasi/ossigenasi</strong>:</p>
+<ul>
+<li><strong>Attività carbossilasica</strong>: CO₂ + RuBP → 2 × 3-fosfoglicerato</li>
+<li><strong>Attività ossigenasica</strong>: O₂ + RuBP → 3-fosfoglicerato + fosfoglicolato</li>
+</ul>
+<h3 id="fotorespirazione">Fotorespirazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fotorespirazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Definizione</strong>: metabolismo parassita della fotosintesi</li>
+<li><strong>Organelli coinvolti</strong>: cloroplasti, perossisomi, mitocondri</li>
+<li><strong>Perdita resa</strong>: fino al 50% efficienza fotosintetica</li>
+<li><strong>Condizioni favorenti</strong>: stomi chiusi, alta temperatura</li>
+</ul>
+<hr/>
+<h1 id="fotosintesi-c4">Fotosintesi C4<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fotosintesi-c4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="distribuzione-geografica">Distribuzione Geografica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distribuzione-geografica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Correlazione climatica</strong>: aridità e temperatura crescenti</li>
+<li><strong>Pattern</strong>: verso interno continentale e latitudini più basse</li>
+<li><strong>Dimostrazione</strong>: adattamento ambientale specifico</li>
+</ul>
+<h2 id="enzima-chiave-pep-carbossilasi">Enzima Chiave: PEP-Carbossilasi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#enzima-chiave-pep-carbossilasi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Localizzazione</strong>: citoplasma cellule mesofillo</li>
+<li><strong>Reazione</strong>: fosfoenolpiruvato + CO₂ → ossalacetato → malato</li>
+<li><strong>Caratteristica</strong>: SOLO attività carbossilasica</li>
+</ul>
+<h2 id="anatomia-kranz">Anatomia Kranz<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anatomia-kranz" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="modificazioni-strutturali">Modificazioni Strutturali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#modificazioni-strutturali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Cellule guaina fascio</strong>: molto ingrandite</li>
+<li><strong>Organizzazione</strong>: “corona” attorno fasci vascolari</li>
+<li><strong>Nome</strong>: Kranz = corona (tedesco)</li>
+</ul>
+<h3 id="espressione-enzimatica-differenziale">Espressione Enzimatica Differenziale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#espressione-enzimatica-differenziale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>PEP-carbossilasi</strong>: SOLO cellule mesofillo</li>
+<li><strong>Rubisco</strong>: SOLO cellule guaina fascio</li>
+</ul>
+<h3 id="specializzazioni-citologiche">Specializzazioni Citologiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#specializzazioni-citologiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="cellule-mesofillo">Cellule Mesofillo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cellule-mesofillo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Cloroplasti</strong>: normali con grana</li>
+<li><strong>Fase luminosa</strong>: normale con produzione O₂</li>
+<li><strong>Fase oscura</strong>: modificata con PEP-carbossilasi</li>
+</ul>
+<h4 id="cellule-guaina-fascio">Cellule Guaina Fascio<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cellule-guaina-fascio" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Cloroplasti</strong>: SENZA grana</li>
+<li><strong>Fotosistemi</strong>: solo FS1 (no produzione O₂)</li>
+<li><strong>Fase oscura</strong>: normale con Rubisco</li>
+<li><strong>Isolamento</strong>: parete suberificata</li>
+<li><strong>Comunicazione</strong>: via simplastica (plasmodesmi)</li>
+</ul>
+<h2 id="meccanismo-sistema-navetta">Meccanismo Sistema Navetta<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meccanismo-sistema-navetta" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="ciclo-malato-piruvato">Ciclo Malato-Piruvato<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ciclo-malato-piruvato" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Mesofillo</strong>: CO₂ + PEP → malato</li>
+<li><strong>Trasporto</strong>: malato → guaina fascio</li>
+<li><strong>Decarboxilazione</strong>: malato → CO₂ + piruvato</li>
+<li><strong>Ciclo Calvin</strong>: CO₂ + Rubisco → zuccheri</li>
+<li><strong>Ritorno</strong>: piruvato → mesofillo (costo: 2 ATP)</li>
+</ol>
+<h3 id="condizioni-ottimali-guaina-fascio">Condizioni Ottimali Guaina Fascio<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#condizioni-ottimali-guaina-fascio" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Bassa [O₂]</strong>: no produzione da FS2</li>
+<li><strong>Alta [CO₂]</strong>: rifornimento continuo da malato</li>
+<li><strong>Isolamento</strong>: suberina rallenta diffusione</li>
+<li><strong>Risultato</strong>: Rubisco funziona solo come carbossilasi</li>
+</ul>
+<h2 id="analisi-costi-benefici">Analisi Costi-Benefici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#analisi-costi-benefici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="vantaggi">Vantaggi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vantaggi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Resa massima</strong>: condizioni normali</li>
+<li><strong>Insensibilità</strong>: concentrazione CO₂ ambientale</li>
+<li><strong>Eliminazione</strong>: fotorespirazione</li>
+</ul>
+<h3 id="costi-energetici">Costi Energetici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#costi-energetici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>+2 ATP</strong>: per ciclo navetta</li>
+<li><strong>Convenienza</strong>: ambienti molto soleggiati</li>
+<li><strong>Limite</strong>: piante sottobosco (ATP limitato)</li>
+</ul>
+<h3 id="distribuzione-ecologica">Distribuzione Ecologica<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distribuzione-ecologica" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Ottimale</strong>: ambienti aridi, caldi, illuminati</li>
+<li><strong>Non conveniente</strong>: ambienti umidi, ombreggiati</li>
+<li><strong>Spiegazione evoluzione</strong>: adattamento ambientale specifico</li>
+<li><strong>Applicazioni</strong>: aumento artificiale CO₂ in serre per piante C3</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="toc-content overflow" id="list-1"><li class="depth-1"><a href="#funzioni-principali" data-for="funzioni-principali">Funzioni Principali</a></li><li class="depth-0"><a href="#morfologia-fogliare" data-for="morfologia-fogliare">Morfologia Fogliare</a></li><li class="depth-1"><a href="#struttura-della-foglia-tipo-nomofillo" data-for="struttura-della-foglia-tipo-nomofillo">Struttura della “Foglia Tipo” (Nomofillo)</a></li><li class="depth-2"><a href="#componenti-principali" data-for="componenti-principali">Componenti Principali</a></li><li class="depth-1"><a href="#tipologie-morfologiche" data-for="tipologie-morfologiche">Tipologie Morfologiche</a></li><li class="depth-2"><a href="#foglie-semplici-vs-composte" data-for="foglie-semplici-vs-composte">Foglie Semplici vs Composte</a></li><li class="depth-2"><a href="#criterio-di-distinzione" data-for="criterio-di-distinzione">Criterio di Distinzione</a></li><li class="depth-2"><a href="#forme-e-margini-fogliari" data-for="forme-e-margini-fogliari">Forme e Margini Fogliari</a></li><li class="depth-2"><a href="#variabilità-intraspecifica" data-for="variabilità-intraspecifica">Variabilità Intraspecifica</a></li><li class="depth-0"><a href="#sistema-nervaturale" data-for="sistema-nervaturale">Sistema Nervaturale</a></li><li class="depth-1"><a href="#funzioni-delle-nervature" data-for="funzioni-delle-nervature">Funzioni delle Nervature</a></li><li class="depth-1"><a href="#organizzazione-per-gruppi-sistematici" data-for="organizzazione-per-gruppi-sistematici">Organizzazione per Gruppi Sistematici</a></li><li class="depth-2"><a href="#dicotiledoni---nervature-reticolate" data-for="dicotiledoni---nervature-reticolate">Dicotiledoni - Nervature Reticolate</a></li><li class="depth-2"><a href="#monocotiledoni---nervature-parallele" data-for="monocotiledoni---nervature-parallele">Monocotiledoni - Nervature Parallele</a></li><li class="depth-2"><a href="#gimnosperme---nervature-dicotomiche" data-for="gimnosperme---nervature-dicotomiche">Gimnosperme - Nervature Dicotomiche</a></li><li class="depth-1"><a href="#collegamento-sistema-vascolare" data-for="collegamento-sistema-vascolare">Collegamento Sistema Vascolare</a></li><li class="depth-0"><a href="#abscissione-fogliare" data-for="abscissione-fogliare">Abscissione Fogliare</a></li><li class="depth-1"><a href="#caratteristiche-del-processo" data-for="caratteristiche-del-processo">Caratteristiche del Processo</a></li><li class="depth-1"><a href="#meccanismi-pre-abscissione" data-for="meccanismi-pre-abscissione">Meccanismi Pre-Abscissione</a></li><li class="depth-2"><a href="#recupero-metaboliti" data-for="recupero-metaboliti">Recupero Metaboliti</a></li><li class="depth-2"><a href="#formazione-strati-specializzati" data-for="formazione-strati-specializzati">Formazione Strati Specializzati</a></li><li class="depth-1"><a href="#controllo-ormonale" data-for="controllo-ormonale">Controllo Ormonale</a></li><li class="depth-0"><a href="#sviluppo-fogliare" data-for="sviluppo-fogliare">Sviluppo Fogliare</a></li><li class="depth-1"><a href="#origine-embriologica" data-for="origine-embriologica">Origine Embriologica</a></li><li class="depth-1"><a href="#teoria-tunica-corpus" data-for="teoria-tunica-corpus">Teoria Tunica-Corpus</a></li><li class="depth-2"><a href="#contributo-degli-strati" data-for="contributo-degli-strati">Contributo degli Strati</a></li><li class="depth-2"><a href="#formazione-primordio" data-for="formazione-primordio">Formazione Primordio</a></li><li class="depth-1"><a href="#fillotassi-disposizione-fogliare" data-for="fillotassi-disposizione-fogliare">Fillotassi (Disposizione Fogliare)</a></li><li class="depth-0"><a href="#assi-di-sviluppo-fogliare" data-for="assi-di-sviluppo-fogliare">Assi di Sviluppo Fogliare</a></li><li class="depth-1"><a href="#orientamenti-spaziali" data-for="orientamenti-spaziali">Orientamenti Spaziali</a></li><li class="depth-1"><a href="#sequenza-temporale" data-for="sequenza-temporale">Sequenza Temporale</a></li><li class="depth-1"><a href="#meristema-determinato" data-for="meristema-determinato">Meristema Determinato</a></li><li class="depth-0"><a href="#anatomia-fogliare" data-for="anatomia-fogliare">Anatomia Fogliare</a></li><li class="depth-1"><a href="#organizzazione-generale" data-for="organizzazione-generale">Organizzazione Generale</a></li><li class="depth-1"><a href="#componenti-del-mesofillo" data-for="componenti-del-mesofillo">Componenti del Mesofillo</a></li><li class="depth-0"><a href="#modelli-organizzativi" data-for="modelli-organizzativi">Modelli Organizzativi</a></li><li class="depth-1"><a href="#1-foglia-dorsoventralebifacciale" data-for="1-foglia-dorsoventralebifacciale">1. Foglia Dorsoventrale/Bifacciale</a></li><li class="depth-2"><a href="#caratteristiche-generali" data-for="caratteristiche-generali">Caratteristiche Generali</a></li><li class="depth-2"><a href="#organizzazione-interna" data-for="organizzazione-interna">Organizzazione Interna</a></li><li class="depth-2"><a href="#specializzazioni" data-for="specializzazioni">Specializzazioni</a></li><li class="depth-2"><a href="#plasticità-fenotipica-foglie-sole-vs-ombra" data-for="plasticità-fenotipica-foglie-sole-vs-ombra">Plasticità Fenotipica: Foglie Sole vs Ombra</a></li><li class="depth-1"><a href="#2-foglia-equifaccialeisofacciale" data-for="2-foglia-equifaccialeisofacciale">2. Foglia Equifacciale/Isofacciale</a></li><li class="depth-2"><a href="#caratteristiche-distintive" data-for="caratteristiche-distintive">Caratteristiche Distintive</a></li><li class="depth-2"><a href="#organizzazione-strutturale" data-for="organizzazione-strutturale">Organizzazione Strutturale</a></li><li class="depth-2"><a href="#elementi-di-riconoscimento" data-for="elementi-di-riconoscimento">Elementi di Riconoscimento</a></li><li class="depth-1"><a href="#3-foglia-unifacciale" data-for="3-foglia-unifacciale">3. Foglia Unifacciale</a></li><li class="depth-2"><a href="#origine-morfogenetica" data-for="origine-morfogenetica">Origine Morfogenetica</a></li><li class="depth-2"><a href="#caratteristiche-anatomiche" data-for="caratteristiche-anatomiche">Caratteristiche Anatomiche</a></li><li class="depth-2"><a href="#esempi-specializzati" data-for="esempi-specializzati">Esempi Specializzati</a></li><li class="depth-1"><a href="#4-foglia-centrica" data-for="4-foglia-centrica">4. Foglia Centrica</a></li><li class="depth-2"><a href="#caratteristiche-generali-1" data-for="caratteristiche-generali-1">Caratteristiche Generali</a></li><li class="depth-2"><a href="#adattamenti-xerofitici" data-for="adattamenti-xerofitici">Adattamenti Xerofitici</a></li><li class="depth-2"><a href="#organizzazione-centrale" data-for="organizzazione-centrale">Organizzazione Centrale</a></li><li class="depth-2"><a href="#funzione-tessuto-di-trasfusione" data-for="funzione-tessuto-di-trasfusione">Funzione Tessuto di Trasfusione</a></li><li class="depth-0"><a href="#adattamenti-ambientali" data-for="adattamenti-ambientali">Adattamenti Ambientali</a></li><li class="depth-1"><a href="#xerofite-ambienti-aridi" data-for="xerofite-ambienti-aridi">Xerofite (Ambienti Aridi)</a></li><li class="depth-2"><a href="#adattamenti-generali" data-for="adattamenti-generali">Adattamenti Generali</a></li><li class="depth-2"><a href="#sclerofille-macchia-mediterranea" data-for="sclerofille-macchia-mediterranea">Sclerofille (Macchia Mediterranea)</a></li><li class="depth-2"><a href="#oleandro-esempio-dettagliato" data-for="oleandro-esempio-dettagliato">Oleandro (Esempio Dettagliato)</a></li><li class="depth-1"><a href="#idrofite-ambienti-acquatici" data-for="idrofite-ambienti-acquatici">Idrofite (Ambienti Acquatici)</a></li><li class="depth-2"><a href="#foglie-galleggianti-ninfea" data-for="foglie-galleggianti-ninfea">Foglie Galleggianti (Ninfea)</a></li><li class="depth-0"><a href="#specializzazioni-funzionali" data-for="specializzazioni-funzionali">Specializzazioni Funzionali</a></li><li class="depth-1"><a href="#1-funzione-protettiva" data-for="1-funzione-protettiva">1. Funzione Protettiva</a></li><li class="depth-2"><a href="#protezione-meristemi" data-for="protezione-meristemi">Protezione Meristemi</a></li><li class="depth-2"><a href="#protezione-organi-di-riserva" data-for="protezione-organi-di-riserva">Protezione Organi di Riserva</a></li><li class="depth-2"><a href="#difesa-da-erbivori" data-for="difesa-da-erbivori">Difesa da Erbivori</a></li><li class="depth-1"><a href="#2-funzione-di-sostegno" data-for="2-funzione-di-sostegno">2. Funzione di Sostegno</a></li><li class="depth-1"><a href="#3-funzione-di-riserva" data-for="3-funzione-di-riserva">3. Funzione di Riserva</a></li><li class="depth-2"><a href="#tipologie" data-for="tipologie">Tipologie</a></li><li class="depth-1"><a href="#4-funzione-nutritiva" data-for="4-funzione-nutritiva">4. Funzione Nutritiva</a></li><li class="depth-2"><a href="#assorbimento-acqua-e-nutrienti" data-for="assorbimento-acqua-e-nutrienti">Assorbimento Acqua e Nutrienti</a></li><li class="depth-2"><a href="#piante-carnivore" data-for="piante-carnivore">Piante Carnivore</a></li><li class="depth-1"><a href="#5-funzione-riproduttiva" data-for="5-funzione-riproduttiva">5. Funzione Riproduttiva</a></li><li class="depth-2"><a href="#riproduzione-asessuale" data-for="riproduzione-asessuale">Riproduzione Asessuale</a></li><li class="depth-2"><a href="#riproduzione-sessuale" data-for="riproduzione-sessuale">Riproduzione Sessuale</a></li><li class="depth-0"><a href="#adattamenti-metabolici" data-for="adattamenti-metabolici">Adattamenti Metabolici</a></li><li class="depth-1"><a href="#problema-della-fotorespirazione" data-for="problema-della-fotorespirazione">Problema della Fotorespirazione</a></li><li class="depth-2"><a href="#enzima-rubisco" data-for="enzima-rubisco">Enzima Rubisco</a></li><li class="depth-2"><a href="#fotorespirazione" data-for="fotorespirazione">Fotorespirazione</a></li><li class="depth-0"><a href="#fotosintesi-c4" data-for="fotosintesi-c4">Fotosintesi C4</a></li><li class="depth-1"><a href="#distribuzione-geografica" data-for="distribuzione-geografica">Distribuzione Geografica</a></li><li class="depth-1"><a href="#enzima-chiave-pep-carbossilasi" data-for="enzima-chiave-pep-carbossilasi">Enzima Chiave: PEP-Carbossilasi</a></li><li class="depth-1"><a href="#anatomia-kranz" data-for="anatomia-kranz">Anatomia Kranz</a></li><li class="depth-2"><a href="#modificazioni-strutturali" data-for="modificazioni-strutturali">Modificazioni Strutturali</a></li><li class="depth-2"><a href="#espressione-enzimatica-differenziale" data-for="espressione-enzimatica-differenziale">Espressione Enzimatica Differenziale</a></li><li class="depth-2"><a href="#specializzazioni-citologiche" data-for="specializzazioni-citologiche">Specializzazioni Citologiche</a></li><li class="depth-1"><a href="#meccanismo-sistema-navetta" data-for="meccanismo-sistema-navetta">Meccanismo Sistema Navetta</a></li><li class="depth-2"><a href="#ciclo-malato-piruvato" data-for="ciclo-malato-piruvato">Ciclo Malato-Piruvato</a></li><li class="depth-2"><a href="#condizioni-ottimali-guaina-fascio" data-for="condizioni-ottimali-guaina-fascio">Condizioni Ottimali Guaina Fascio</a></li><li class="depth-1"><a href="#analisi-costi-benefici" data-for="analisi-costi-benefici">Analisi Costi-Benefici</a></li><li class="depth-2"><a href="#vantaggi" data-for="vantaggi">Vantaggi</a></li><li class="depth-2"><a href="#costi-energetici" data-for="costi-energetici">Costi Energetici</a></li><li class="depth-2"><a href="#distribuzione-ecologica" data-for="distribuzione-ecologica">Distribuzione Ecologica</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.1</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

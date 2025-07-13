@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>3. Effetti dei Movimenti dell'Aria e Processi Eolicia</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="3. Effetti dei Movimenti dell'Aria e Processi Eolicia"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="3. Effetti dei Movimenti dell'Aria e Processi Eolicia"/><meta name="twitter:description" content="Classificazione dei Movimenti d’Aria Movimenti Verticali Effetti: variazione umidità e formazione fenomeni meteorologici Ascensionali: aria che sale → formazione nubi e precipitazioni Discensionali: aria che scende → dissolvimento nubi, tempo sereno Movimenti Orizzontali (Venti) Effetti: processi eo..."/><meta property="og:description" content="Classificazione dei Movimenti d’Aria Movimenti Verticali Effetti: variazione umidità e formazione fenomeni meteorologici Ascensionali: aria che sale → formazione nubi e precipitazioni Discensionali: aria che scende → dissolvimento nubi, tempo sereno Movimenti Orizzontali (Venti) Effetti: processi eo..."/><meta property="og:image:alt" content="Classificazione dei Movimenti d’Aria Movimenti Verticali Effetti: variazione umidità e formazione fenomeni meteorologici Ascensionali: aria che sale → formazione nubi e precipitazioni Discensionali: aria che scende → dissolvimento nubi, tempo sereno Movimenti Orizzontali (Venti) Effetti: processi eo..."/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/Geografia/3.-Effetti-dei-Movimenti-dell'Aria-e-Processi-Eolicia"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/Geografia/3.-Effetti-dei-Movimenti-dell'Aria-e-Processi-Eolicia"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Classificazione dei Movimenti d’Aria Movimenti Verticali Effetti: variazione umidità e formazione fenomeni meteorologici Ascensionali: aria che sale → formazione nubi e precipitazioni Discensionali: aria che scende → dissolvimento nubi, tempo sereno Movimenti Orizzontali (Venti) Effetti: processi eo..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvcGlncm8ubWUvcGlncm8ubWUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://quartz.jzhao.xyz/Geografia/3.-Effetti-dei-Movimenti-dell'Aria-e-Processi-Eolicia-og-image.webp"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/Geografia/3.-Effetti-dei-Movimenti-dell'Aria-e-Processi-Eolicia-og-image.webp"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/Geografia/3.-Effetti-dei-Movimenti-dell'Aria-e-Processi-Eolicia-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="Geografia/3.-Effetti-dei-Movimenti-dell'Aria-e-Processi-Eolicia"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Quartz 4</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../Geografia/">Geografia</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>3. Effetti dei Movimenti dell'Aria e Processi Eolicia</a></div></nav><h1 class="article-title">3. Effetti dei Movimenti dell'Aria e Processi Eolicia</h1><p show-comma="true" class="content-meta"><time datetime="2025-07-13T00:45:34.000Z">Jul 13, 2025</time><span>8 min read</span></p></div></div><article class="popover-hint"><h2 id="classificazione-dei-movimenti-daria">Classificazione dei Movimenti d’Aria<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#classificazione-dei-movimenti-daria" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="movimenti-verticali">Movimenti Verticali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#movimenti-verticali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Effetti</strong>: variazione umidità e formazione fenomeni meteorologici</p>
+<ul>
+<li><strong>Ascensionali</strong>: aria che sale → formazione nubi e precipitazioni</li>
+<li><strong>Discensionali</strong>: aria che scende → dissolvimento nubi, tempo sereno</li>
+</ul>
+<h3 id="movimenti-orizzontali-venti">Movimenti Orizzontali (Venti)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#movimenti-orizzontali-venti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Effetti</strong>: processi eolici, trasporto di materiali, modellamento superficiale</p>
+<hr/>
+<h1 id="fenomeni-di-condensazione-da-moti-ascensionali">Fenomeni di Condensazione da Moti Ascensionali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fenomeni-di-condensazione-da-moti-ascensionali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="meccanismo-fisico-generale">Meccanismo Fisico Generale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meccanismo-fisico-generale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="processo-di-raffreddamento-adiabatico">Processo di Raffreddamento Adiabatico<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processo-di-raffreddamento-adiabatico" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Quando l’aria sale:</p>
+<ul>
+<li><strong>Espansione</strong>: diminuzione pressione con altitudine</li>
+<li><strong>Raffreddamento</strong>: senza scambio termico con ambiente</li>
+<li><strong>Condensazione</strong>: se presente vapore acqueo</li>
+<li><strong>Gradiente termico</strong>: ~6.5°C/km (aria secca), ~3°C/km (aria satura)</li>
+</ul>
+<h2 id="cause-dei-moti-ascensionali">Cause dei Moti Ascensionali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cause-dei-moti-ascensionali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-convergenza">1. Convergenza<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-convergenza" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Meccanismo</strong>: aria converge verso bassa pressione (centro ciclonico)</p>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li>Aria forzata a salire per continuità</li>
+<li>Formazione nubi a sviluppo verticale</li>
+<li>Precipitazioni intense e abbondanti</li>
+<li>Associata a cicloni extratropicali</li>
+</ul>
+<p><strong>Effetti meteorologici</strong>:</p>
+<ul>
+<li>Nuvolosità diffusa</li>
+<li>Piogge torrenziali</li>
+<li>Instabilità atmosferica</li>
+</ul>
+<h3 id="2-subsidenza">2. Subsidenza<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-subsidenza" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Meccanismo</strong>: aria scende e si comprime</p>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li>Riscaldamento per compressione</li>
+<li>Dissolvimento delle nubi</li>
+<li>Condizioni di stabilità atmosferica</li>
+</ul>
+<p><strong>Effetti speciali</strong>:</p>
+<ul>
+<li>Possibile formazione nebbie di radiazione</li>
+<li>Condizioni: calma notturna, suolo freddo</li>
+<li>Meccanismo: emissione radiativa dal suolo</li>
+</ul>
+<h3 id="3-innalzamento-frontale">3. Innalzamento Frontale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-innalzamento-frontale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Meccanismo</strong>: fronte atmosferico spinge aria calda sopra aria fredda</p>
+<h4 id="fronte-caldo">Fronte Caldo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fronte-caldo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Caratteristiche</strong>: sollevamento graduale aria calda</li>
+<li><strong>Nubi</strong>: stratificate, estese orizzontalmente</li>
+<li><strong>Precipitazioni</strong>: diffuse, moderate, prolungate</li>
+</ul>
+<h4 id="fronte-freddo">Fronte Freddo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fronte-freddo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Caratteristiche</strong>: sollevamento brusco aria calda</li>
+<li><strong>Nubi</strong>: cumuliformi, sviluppo verticale</li>
+<li><strong>Precipitazioni</strong>: rovesci intensi, localizzati, brevi</li>
+</ul>
+<h3 id="4-innalzamento-orografico-effetto-stau">4. Innalzamento Orografico (Effetto Stau)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-innalzamento-orografico-effetto-stau" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Meccanismo</strong>: aria umida incontra ostacolo montuoso</p>
+<p><strong>Processo</strong>:</p>
+<ul>
+<li>Aria costretta a salire lungo versante sopravento</li>
+<li>Raffreddamento rapido per espansione adiabatica</li>
+<li>Condensazione e precipitazioni abbondanti</li>
+</ul>
+<p><strong>Esempi estremi</strong>:</p>
+<ul>
+<li><strong>Cherrapunji (India)</strong>: fino a 12.000 mm/anno</li>
+<li><strong>Versanti sopravento</strong>: massime precipitazioni mondiali</li>
+</ul>
+<p><strong>Distribuzione</strong>:</p>
+<ul>
+<li><strong>Sopravento</strong>: piogge abbondanti</li>
+<li><strong>Sottovento</strong>: effetto ombra pluviometrica</li>
+</ul>
+<h3 id="5-convezione">5. Convezione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-convezione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Meccanismo</strong>: riscaldamento intenso del suolo</p>
+<p><strong>Processo</strong>:</p>
+<ul>
+<li>Riscaldamento differenziale superficie</li>
+<li>Aria calda diventa meno densa</li>
+<li>Ascesa rapida → instabilità convettiva</li>
+</ul>
+<p><strong>Caratteristiche meteorologiche</strong>:</p>
+<ul>
+<li>Nubi cumuliformi (cumuli, cumulonembi)</li>
+<li>Temporali intensi</li>
+<li>Rovesci localizzati</li>
+<li>Tipico di zone tropicali e estati continentali</li>
+</ul>
+<h2 id="riassunto-dei-processi">Riassunto dei Processi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#riassunto-dei-processi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Fenomeno</th><th>Meccanismo</th><th>Tipo Nubi</th><th>Precipitazioni</th><th>Clima Tipico</th></tr></thead><tbody><tr><td><strong>Convergenza</strong></td><td>Aria verso bassa pressione</td><td>Sviluppo verticale</td><td>Abbondanti, diffuse</td><td>Frontale</td></tr><tr><td><strong>Frontale</strong></td><td>Aria calda su fredda</td><td>Stratificate/cumuliformi</td><td>Diffuse/localizzate</td><td>Temperato</td></tr><tr><td><strong>Orografico</strong></td><td>Ostacolo montuoso</td><td>Orografiche</td><td>Molto abbondanti locali</td><td>Montano</td></tr><tr><td><strong>Convettivo</strong></td><td>Riscaldamento suolo</td><td>Cumuliformi</td><td>Rovesci intensi</td><td>Tropicale/estivo</td></tr></tbody></table></div>
+<hr/>
+<h1 id="effetto-föhn">Effetto Föhn<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#effetto-föhn" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="definizione-e-caratteristiche">Definizione e Caratteristiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definizione-e-caratteristiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Effetto föhn</strong>: vento violento, caldo e secco che scende dal lato sottovento di catena montuosa</p>
+<p><strong>Nomi regionali</strong>:</p>
+<ul>
+<li><strong>Föhn/Foehn</strong>: Alpi</li>
+<li><strong>Favonio</strong>: Italia</li>
+<li><strong>Chinook</strong>: Montagne Rocciose (USA)</li>
+<li><strong>Zonda</strong>: Ande</li>
+</ul>
+<h2 id="meccanismo-fisico">Meccanismo Fisico<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meccanismo-fisico" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="fase-di-salita-sopravento">Fase di Salita (Sopravento)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fase-di-salita-sopravento" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Aria umida</strong> sale lungo versante montuoso</li>
+<li><strong>Espansione</strong>: diminuzione pressione → spesa energia interna</li>
+<li><strong>Raffreddamento adiabatico</strong>: ~6°C/km (aria secca), ~3°C/km (satura)</li>
+<li><strong>Condensazione</strong>: formazione nubi e precipitazioni</li>
+<li><strong>Perdita umidità</strong>: deumidificazione dell’aria</li>
+</ol>
+<h3 id="fase-di-discesa-sottovento">Fase di Discesa (Sottovento)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fase-di-discesa-sottovento" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Aria deumidificata</strong> scende versante opposto</li>
+<li><strong>Compressione</strong>: aumento pressione</li>
+<li><strong>Riscaldamento adiabatico</strong>: ~10°C/km (aria secca)</li>
+<li><strong>Risultato</strong>: aria più calda e secca dell’originale</li>
+</ol>
+<h3 id="bilancio-energetico">Bilancio Energetico<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bilancio-energetico" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Energia persa</strong>: condensazione ed evaporazione sopravento</li>
+<li><strong>Energia guadagnata</strong>: compressione sottovento</li>
+<li><strong>Risultato netto</strong>: riscaldamento significativo</li>
+</ul>
+<h2 id="effetti-climatici-e-ambientali">Effetti Climatici e Ambientali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#effetti-climatici-e-ambientali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="effetti-meteorologici">Effetti Meteorologici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#effetti-meteorologici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Aumento temperatura</strong>: anche +10°C o più in poco tempo</li>
+<li><strong>Diminuzione umidità</strong>: aria molto secca</li>
+<li><strong>Visibilità eccellente</strong>: aria limpida, cielo sereno</li>
+<li><strong>Venti intensi</strong>: velocità elevate</li>
+</ul>
+<h3 id="effetti-ambientali">Effetti Ambientali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#effetti-ambientali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Scioglimento neve</strong>: precoce e rapido</li>
+<li><strong>Vegetazione</strong>: adattata a condizioni xeriche</li>
+<li><strong>Distribuzione climatica</strong>: asimmetria tra versanti</li>
+</ul>
+<h3 id="distribuzione-globale">Distribuzione Globale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distribuzione-globale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Alpi e Pirenei</strong>: Europa</li>
+<li><strong>Montagne Rocciose</strong>: Nord America</li>
+<li><strong>Ande</strong>: Sud America</li>
+<li><strong>Isole oceaniche</strong>: versanti sottovento aridi</li>
+</ul>
+<h2 id="confronto-versanti">Confronto Versanti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#confronto-versanti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Aspetto</th><th>Sopravento</th><th>Sottovento</th></tr></thead><tbody><tr><td><strong>Precipitazioni</strong></td><td>Abbondanti</td><td>Scarse</td></tr><tr><td><strong>Umidità</strong></td><td>Alta</td><td>Bassa</td></tr><tr><td><strong>Temperatura</strong></td><td>Moderata</td><td>Elevata</td></tr><tr><td><strong>Vegetazione</strong></td><td>Lussureggiante</td><td>Xerofila</td></tr><tr><td><strong>Clima</strong></td><td>Umido</td><td>Secco</td></tr></tbody></table></div>
+<hr/>
+<h1 id="nebbie-e-superfici-fredde">Nebbie e Superfici Fredde<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nebbie-e-superfici-fredde" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="definizione-e-formazione">Definizione e Formazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definizione-e-formazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Nebbia</strong>: sospensione di goccioline d’acqua nell’aria presso il suolo, visibilità &lt;1 km</p>
+<p><strong>Meccanismo generale</strong>: aria calda e umida scorre sopra superficie fredda</p>
+<h3 id="processo-di-formazione">Processo di Formazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processo-di-formazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Contatto termico</strong>: aria calda incontra superficie fredda</li>
+<li><strong>Raffreddamento per contatto</strong>: perdita calore verso superficie</li>
+<li><strong>Raggiungimento punto di rugiada</strong>: saturazione vapore acqueo</li>
+<li><strong>Condensazione</strong>: formazione goccioline sospese</li>
+</ol>
+<h2 id="tipologie-di-nebbie">Tipologie di Nebbie<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tipologie-di-nebbie" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="nebbie-monsoniche">Nebbie Monsoniche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nebbie-monsoniche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Contesto</strong>: aria calda continentale sopra zone fredde</p>
+<p><strong>Esempio europeo</strong>:</p>
+<ul>
+<li>Aria calda dall’Europa centrale</li>
+<li>Scorre sopra nord Francia più freddo</li>
+<li>Formazione durante periodi monsonici</li>
+</ul>
+<h3 id="nebbie-marine">Nebbie Marine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nebbie-marine" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Caratteristiche</strong>: tipiche di coste settentrionali fredde</p>
+<p><strong>Meccanismo</strong>:</p>
+<ul>
+<li>Aria calda trasportata da correnti marine</li>
+<li>Raffreddamento a contatto con acqua fredda</li>
+<li>Formazione nebbia persistente</li>
+</ul>
+<p><strong>Esempi</strong>:</p>
+<ul>
+<li><strong>Terranova</strong>: corrente del Golfo vs acque fredde Labrador</li>
+<li><strong>Mar del Nord</strong>: contrasti termici frequenti</li>
+<li><strong>Coste scozzesi</strong>: nebbie persistenti</li>
+</ul>
+<h3 id="nebbie-dei-deserti-costieri">Nebbie dei Deserti Costieri<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nebbie-dei-deserti-costieri" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Condizioni</strong>: correnti marine fredde risalgono presso coste aride</p>
+<p><strong>Meccanismo</strong>:</p>
+<ul>
+<li>Correnti fredde portano acqua fredda in superficie</li>
+<li>Aria calda e umida scorre sopra</li>
+<li>Raffreddamento → condensazione → nebbia</li>
+</ul>
+<p><strong>Esempi e significato ecologico</strong>:</p>
+<ul>
+<li><strong>Deserto del Perù</strong>: nebbie costiere vitali</li>
+<li><strong>Namibia</strong>: nebbie come unica fonte idrica</li>
+<li><strong>Vegetazione nebbivora</strong>: adattamenti specifici</li>
+</ul>
+<p><strong>Importanza biologica</strong>:</p>
+<ul>
+<li>Unica fonte d’acqua per piante desertiche</li>
+<li>Meccanismi di raccolta nebbia (foglie specializzate)</li>
+<li>Ecosistemi dipendenti dall’umidità atmosferica</li>
+</ul>
+<h2 id="distribuzione-e-significato">Distribuzione e Significato<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distribuzione-e-significato" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Tipo Nebbia</th><th>Localizzazione</th><th>Meccanismo</th><th>Significato</th></tr></thead><tbody><tr><td><strong>Monsonica</strong></td><td>Europa nord-occidentale</td><td>Aria calda su terra fredda</td><td>Variabilità stagionale</td></tr><tr><td><strong>Marina</strong></td><td>Coste fredde</td><td>Corrente calda su mare freddo</td><td>Persistenza climatica</td></tr><tr><td><strong>Deserti costieri</strong></td><td>Coste aride</td><td>Aria calda su acqua fredda</td><td>Vitale per ecosistemi</td></tr></tbody></table></div>
+<hr/>
+<h1 id="venti-locali-e-effetti-orografici">Venti Locali e Effetti Orografici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#venti-locali-e-effetti-orografici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="influenza-dellorografia-sui-venti">Influenza dell’Orografia sui Venti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#influenza-dellorografia-sui-venti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="fattori-modificanti">Fattori Modificanti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fattori-modificanti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Perturbazioni atmosferiche</strong>: variabilità direzionale</li>
+<li><strong>Orografia</strong>: modifiche locali del flusso</li>
+<li><strong>Riscaldamento differenziale</strong>: formazione brezze locali</li>
+</ol>
+<h3 id="effetti-di-compressione-e-accelerazione">Effetti di Compressione e Accelerazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#effetti-di-compressione-e-accelerazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="principio-di-bernoulli">Principio di Bernoulli<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#principio-di-bernoulli" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Meccanismo</strong>: flusso d’aria in strettoia → aumento velocità</p>
+<p><strong>Applicazioni</strong>:</p>
+<ul>
+<li><strong>Gole montane</strong>: accelerazione venti</li>
+<li><strong>Valli strette</strong>: effetto Venturi</li>
+<li><strong>Passi</strong>: intensificazione correnti</li>
+</ul>
+<h4 id="effetto-venturi">Effetto Venturi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#effetto-venturi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Causa</strong>: riduzione sezione passaggio</li>
+<li><strong>Risultato</strong>: accelerazione per conservazione massa</li>
+<li><strong>Esempi</strong>: gole, vallate strette, passi montani</li>
+</ul>
+<h3 id="variazioni-topografiche">Variazioni Topografiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#variazioni-topografiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="dossi-e-avvallamenti">Dossi e Avvallamenti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dossi-e-avvallamenti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Dossi</strong>: accelerazione del vento (effetto collinare)</li>
+<li><strong>Avvallamenti</strong>: rallentamento e turbolenze</li>
+<li><strong>Formazioni</strong>: onde di sabbia, neve, “ripples”</li>
+</ul>
+<h4 id="effetti-sulla-vegetazione">Effetti sulla Vegetazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#effetti-sulla-vegetazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Adattamenti morfologici</strong>:</p>
+<ul>
+<li>Tronchi più robusti</li>
+<li>Crescita inclinata (direzione vento dominante)</li>
+<li>Foglie piccole e resistenti</li>
+<li>Riduzione evaporazione</li>
+</ul>
+<p><strong>Impatti climatici</strong>:</p>
+<ul>
+<li><strong>Vento freddo</strong>: brinamento, gelate localizzate</li>
+<li><strong>Vento secco</strong>: disidratazione, formazione steppe locali</li>
+</ul>
+<h2 id="tipologie-di-brezze-locali">Tipologie di Brezze Locali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tipologie-di-brezze-locali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="brezza-di-valle-e-di-monte">Brezza di Valle e di Monte<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#brezza-di-valle-e-di-monte" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="ciclo-diurno">Ciclo Diurno<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ciclo-diurno" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Giorno</strong>:</p>
+<ul>
+<li>Valle si scalda più rapidamente delle cime</li>
+<li>Aria calda sale lungo pendii</li>
+<li><strong>Brezza di valle</strong>: dal fondovalle verso l’alto</li>
+</ul>
+<p><strong>Notte</strong>:</p>
+<ul>
+<li>Aria in quota si raffredda più rapidamente</li>
+<li>Aria fredda e densa scende</li>
+<li><strong>Brezza di monte</strong>: dall’alto verso fondovalle</li>
+</ul>
+<h4 id="esempio-valle-daosta">Esempio: Valle d’Aosta<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#esempio-valle-daosta" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Osservazione</strong>: Forte di Bard mostra chiaramente il fenomeno <strong>Importanza</strong>: previsione meteorologica locale</p>
+<h3 id="brezza-di-ghiacciaio">Brezza di Ghiacciaio<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#brezza-di-ghiacciaio" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="meccanismo-specifico">Meccanismo Specifico<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meccanismo-specifico" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Giorno</strong>:</p>
+<ul>
+<li>Ghiacciaio rimane freddo vs pendii scuri riscaldati</li>
+<li>Aria fredda scende lungo ghiacciaio</li>
+<li><strong>Vento catabatico glaciale</strong></li>
+</ul>
+<p><strong>Notte</strong>:</p>
+<ul>
+<li>Processo si inverte</li>
+<li>Accumulo aria fredda dalle zone superiori</li>
+</ul>
+<h3 id="brezza-di-mare-e-di-terra">Brezza di Mare e di Terra<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#brezza-di-mare-e-di-terra" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="ciclo-giornaliero">Ciclo Giornaliero<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ciclo-giornaliero" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Giorno</strong>:</p>
+<ul>
+<li>Terra si scalda più rapidamente del mare</li>
+<li>Aria calda terrestre sale</li>
+<li><strong>Brezza di mare</strong>: aria umida dal mare verso terra</li>
+</ul>
+<p><strong>Notte</strong>:</p>
+<ul>
+<li>Terra si raffredda più rapidamente del mare</li>
+<li>Aria calda marina sale</li>
+<li><strong>Brezza di terra</strong>: aria secca dalla terra verso mare</li>
+</ul>
+<h4 id="significato-climatico">Significato Climatico<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#significato-climatico" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Moderazione termica</strong>: delle zone costiere</li>
+<li><strong>Umidificazione</strong>: dell’entroterra durante il giorno</li>
+<li><strong>Agricoltura</strong>: influenza sui microclimi costieri</li>
+</ul>
+<h2 id="venti-forti-regionali">Venti Forti Regionali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#venti-forti-regionali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="bora">Bora<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bora" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Caratteristiche</strong>: mini-monsone europeo</p>
+<p><strong>Meccanismo</strong>:</p>
+<ul>
+<li>Alta pressione sull’Europa centrale</li>
+<li>Bassa pressione sul Mediterraneo</li>
+<li>Aria fredda accelera verso Adriatico</li>
+</ul>
+<p><strong>Esempio</strong>: Bora di Trieste (>150 km/h)</p>
+<h3 id="bora-inversa">Bora Inversa<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bora-inversa" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Meccanismo</strong>: inversione condizioni pressorie <strong>Effetto</strong>: correnti calde in direzione opposta <strong>Esempio</strong>: fenomeno Maccagno-Bora</p>
+<h3 id="venti-catabatici-polari">Venti Catabatici Polari<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#venti-catabatici-polari" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Caratteristiche</strong>: molto più intensi della Bora</p>
+<p><strong>Meccanismo</strong>:</p>
+<ul>
+<li>Masse d’aria gelide scivolano lungo calotte glaciali</li>
+<li>Accelerazione gravitazionale</li>
+<li>Velocità: 70-85 km/h normale, >200 km/h in Antartide</li>
+</ul>
+<p><strong>Esempio</strong>: vento catabatico Terra Adelia (Antartide)</p>
+<hr/>
+<h1 id="effetti-su-neve-e-vegetazione">Effetti su Neve e Vegetazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#effetti-su-neve-e-vegetazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="trasporto-e-accumulo-neve">Trasporto e Accumulo Neve<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trasporto-e-accumulo-neve" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="processi-eolici">Processi Eolici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processi-eolici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Trasporto</strong>: redistribuzione neve dai venti</li>
+<li><strong>Compattamento</strong>: formazione strati duri (sinterizzazione)</li>
+<li><strong>Accumuli</strong>: formazione cornici sottovento</li>
+</ul>
+<h3 id="formazioni-specifiche">Formazioni Specifiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formazioni-specifiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Cornici</strong>: accumuli a sbalzo sottovento</li>
+<li><strong>Neve ventata</strong>: strati compatti pericolosi per valanghe</li>
+<li><strong>Lastroni</strong>: formazioni instabili</li>
+</ul>
+<h3 id="distribuzione-spaziale">Distribuzione Spaziale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distribuzione-spaziale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Sopravento</strong>: erosione, denudazione</li>
+<li><strong>Sottovento</strong>: accumulo, deposizione</li>
+</ul>
+<h2 id="influenza-sulla-vegetazione">Influenza sulla Vegetazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#influenza-sulla-vegetazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="adattamenti-al-vento">Adattamenti al Vento<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adattamenti-al-vento" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Esposizione al vento</strong>:</p>
+<ul>
+<li>Vegetazione rada e resistente</li>
+<li>Forme prostrate e aerodinamiche</li>
+<li>Sistemi radicali profondi</li>
+</ul>
+<p><strong>Protezione dal vento</strong>:</p>
+<ul>
+<li>Vegetazione più rigogliosa</li>
+<li>Maggiore umidità trattenuta</li>
+<li>Microclimi favorevoli</li>
+</ul>
+<h3 id="indicatori-morfologici">Indicatori Morfologici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#indicatori-morfologici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Foreste inclinate</strong>: direzione vento dominante</li>
+<li><strong>Bandiere</strong>: crescita unidirezionale alberi</li>
+<li><strong>Krummholz</strong>: forme prostrate in alta quota</li>
+</ul>
+<hr/>
+<h1 id="processi-di-trasporto-eolico">Processi di Trasporto Eolico<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#processi-di-trasporto-eolico" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="materiali-e-condizioni">Materiali e Condizioni<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#materiali-e-condizioni" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="materiali-trasportabili">Materiali Trasportabili<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#materiali-trasportabili" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Principalmente</strong>: sabbia e neve</li>
+<li><strong>Limite dimensionale</strong>: particelle >4 mm raramente mobilizzate</li>
+<li><strong>Fattore peso</strong>: limitazione fisica fondamentale</li>
+</ul>
+<h3 id="velocità-critiche">Velocità Critiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#velocità-critiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Soglie di mobilizzazione</strong>:</p>
+<ul>
+<li><strong>Sabbia/neve asciutta</strong>: ~5 m/s</li>
+<li><strong>Sabbia umida/neve compatta</strong>: 10-15 m/s</li>
+<li><strong>Dipendenza</strong>: umidità, coesione, temperatura</li>
+</ul>
+<h2 id="modalità-di-trasporto">Modalità di Trasporto<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#modalità-di-trasporto" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="saltazione">Saltazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#saltazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Meccanismo</strong>: granelli sollevati in traiettorie paraboliche</p>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Altezza</strong>: 10-50 cm tipica</li>
+<li><strong>Importanza</strong>: ~90% del trasporto totale</li>
+<li><strong>Efficienza</strong>: massima vicino al suolo</li>
+</ul>
+<h3 id="sospensione">Sospensione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sospensione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Meccanismo</strong>: particelle molto fini restano aerotrasportate</p>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Condizioni</strong>: vento >15 m/s</li>
+<li><strong>Distanze</strong>: trasporto a lunga distanza</li>
+<li><strong>Materiali</strong>: polveri, particelle &lt;0.1 mm</li>
+</ul>
+<h3 id="rotolamento-rolling">Rotolamento (Rolling)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rotolamento-rolling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Meccanismo</strong>: granelli spinti a rotolare sul suolo</p>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Velocità</strong>: movimento lento</li>
+<li><strong>Materiali</strong>: particelle più grosse</li>
+<li><strong>Importanza</strong>: contributo limitato</li>
+</ul>
+<h2 id="formazioni-geomorfologiche">Formazioni Geomorfologiche<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formazioni-geomorfologiche" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="dune">Dune<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dune" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Meccanismo</strong>: accumulo per perdita velocità vento</p>
+<p><strong>Tipologie morfologiche</strong>:</p>
+<ul>
+<li><strong>Longitudinali</strong>: parallele alla direzione vento</li>
+<li><strong>Trasversali</strong>: perpendicolari alla direzione vento</li>
+<li><strong>Complesse</strong>: combinazioni multiple</li>
+</ul>
+<p><strong>Dinamica</strong>:</p>
+<ul>
+<li><strong>Sopravento</strong>: erosione, trasporto</li>
+<li><strong>Sottovento</strong>: deposizione, accumulo</li>
+</ul>
+<h3 id="ripples">Ripples<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ripples" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Caratteristiche</strong>: increspature decimetriche</p>
+<p><strong>Formazione</strong>:</p>
+<ul>
+<li>Su dune sabbiose</li>
+<li>Su spiagge</li>
+<li>Pattern regolare ondulato</li>
+</ul>
+<hr/>
+<h1 id="inquinamento-urbano-e-trasporto-eolico">Inquinamento Urbano e Trasporto Eolico<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#inquinamento-urbano-e-trasporto-eolico" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="isola-di-calore-urbana">Isola di Calore Urbana<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#isola-di-calore-urbana" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="cause-principali">Cause Principali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cause-principali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Superfici artificiali</strong>: asfalto, cemento → riduzione albedo</li>
+<li><strong>Fonti di calore</strong>: riscaldamento, trasporti, industrie</li>
+<li><strong>Riduzione vegetazione</strong>: diminuzione evapotraspirazione</li>
+<li><strong>Geometria urbana</strong>: intrappolamento radiazione</li>
+</ul>
+<h3 id="effetti-termici">Effetti Termici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#effetti-termici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Differenza termica</strong>: +3-5°C rispetto aree rurali</li>
+<li><strong>Variabilità stagionale</strong>: massima in inverno</li>
+<li><strong>Distribuzione</strong>: gradiente centro-periferia</li>
+</ul>
+<h2 id="dome-di-inquinanti">Dome di Inquinanti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dome-di-inquinanti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="meccanismo-di-formazione">Meccanismo di Formazione<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meccanismo-di-formazione" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Cupola di aria calda</strong> trattiene gas e polveri</p>
+<p><strong>Processo</strong>:</p>
+<ol>
+<li>Riscaldamento urbano</li>
+<li>Formazione inversione termica</li>
+<li>Intrappolamento inquinanti</li>
+<li>Accumulo progressivo</li>
+</ol>
+<h3 id="esempi-storici">Esempi Storici<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#esempi-storici" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Londra</strong>: smog industriale</li>
+<li><strong>Los Angeles</strong>: smog fotochimico</li>
+<li><strong>Città industriali</strong>: dome persistenti</li>
+</ul>
+<h2 id="distribuzione-degli-inquinanti">Distribuzione degli Inquinanti<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distribuzione-degli-inquinanti" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="trasporto-a-lunga-distanza">Trasporto a Lunga Distanza<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trasporto-a-lunga-distanza" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Plume (pennacchio)</strong>: trasporto vento dominante</p>
+<p><strong>Caratteristiche</strong>:</p>
+<ul>
+<li><strong>Distanze</strong>: centinaia-migliaia km</li>
+<li><strong>Effetti transfrontalieri</strong>: inquinamento regionale</li>
+<li><strong>Ricadute</strong>: precipitazioni acide lontane</li>
+</ul>
+<h3 id="esempi-regionali">Esempi Regionali<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#esempi-regionali" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Piogge acide svedesi</strong>: origine industrie britanniche</li>
+<li><strong>Inquinamento alpino</strong>: origine Pianura Padana</li>
+<li><strong>Trasporto transcontinentale</strong>: polveri sahariane</li>
+</ul>
+<h2 id="riassunto-processi-di-trasporto">Riassunto Processi di Trasporto<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#riassunto-processi-di-trasporto" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Processo</th><th>Descrizione</th><th>Effetto Principale</th><th>Scala Spaziale</th></tr></thead><tbody><tr><td><strong>Saltazione</strong></td><td>Balzi bassi vicino suolo</td><td>Trasporto principale sabbia/neve</td><td>Locale</td></tr><tr><td><strong>Sospensione</strong></td><td>Particelle fini aerotrasportate</td><td>Trasporto a lunga distanza</td><td>Regionale-globale</td></tr><tr><td><strong>Isola di calore</strong></td><td>Temperatura urbana elevata</td><td>Smog, dome inquinanti</td><td>Urbana</td></tr><tr><td><strong>Plume</strong></td><td>Pennacchio trasportato</td><td>Inquinamento transfrontaliero</td><td>Regionale</td></tr></tbody></table></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="toc-content overflow" id="list-1"><li class="depth-1"><a href="#classificazione-dei-movimenti-daria" data-for="classificazione-dei-movimenti-daria">Classificazione dei Movimenti d’Aria</a></li><li class="depth-2"><a href="#movimenti-verticali" data-for="movimenti-verticali">Movimenti Verticali</a></li><li class="depth-2"><a href="#movimenti-orizzontali-venti" data-for="movimenti-orizzontali-venti">Movimenti Orizzontali (Venti)</a></li><li class="depth-0"><a href="#fenomeni-di-condensazione-da-moti-ascensionali" data-for="fenomeni-di-condensazione-da-moti-ascensionali">Fenomeni di Condensazione da Moti Ascensionali</a></li><li class="depth-1"><a href="#meccanismo-fisico-generale" data-for="meccanismo-fisico-generale">Meccanismo Fisico Generale</a></li><li class="depth-2"><a href="#processo-di-raffreddamento-adiabatico" data-for="processo-di-raffreddamento-adiabatico">Processo di Raffreddamento Adiabatico</a></li><li class="depth-1"><a href="#cause-dei-moti-ascensionali" data-for="cause-dei-moti-ascensionali">Cause dei Moti Ascensionali</a></li><li class="depth-2"><a href="#1-convergenza" data-for="1-convergenza">1. Convergenza</a></li><li class="depth-2"><a href="#2-subsidenza" data-for="2-subsidenza">2. Subsidenza</a></li><li class="depth-2"><a href="#3-innalzamento-frontale" data-for="3-innalzamento-frontale">3. Innalzamento Frontale</a></li><li class="depth-2"><a href="#4-innalzamento-orografico-effetto-stau" data-for="4-innalzamento-orografico-effetto-stau">4. Innalzamento Orografico (Effetto Stau)</a></li><li class="depth-2"><a href="#5-convezione" data-for="5-convezione">5. Convezione</a></li><li class="depth-1"><a href="#riassunto-dei-processi" data-for="riassunto-dei-processi">Riassunto dei Processi</a></li><li class="depth-0"><a href="#effetto-föhn" data-for="effetto-föhn">Effetto Föhn</a></li><li class="depth-1"><a href="#definizione-e-caratteristiche" data-for="definizione-e-caratteristiche">Definizione e Caratteristiche</a></li><li class="depth-1"><a href="#meccanismo-fisico" data-for="meccanismo-fisico">Meccanismo Fisico</a></li><li class="depth-2"><a href="#fase-di-salita-sopravento" data-for="fase-di-salita-sopravento">Fase di Salita (Sopravento)</a></li><li class="depth-2"><a href="#fase-di-discesa-sottovento" data-for="fase-di-discesa-sottovento">Fase di Discesa (Sottovento)</a></li><li class="depth-2"><a href="#bilancio-energetico" data-for="bilancio-energetico">Bilancio Energetico</a></li><li class="depth-1"><a href="#effetti-climatici-e-ambientali" data-for="effetti-climatici-e-ambientali">Effetti Climatici e Ambientali</a></li><li class="depth-2"><a href="#effetti-meteorologici" data-for="effetti-meteorologici">Effetti Meteorologici</a></li><li class="depth-2"><a href="#effetti-ambientali" data-for="effetti-ambientali">Effetti Ambientali</a></li><li class="depth-2"><a href="#distribuzione-globale" data-for="distribuzione-globale">Distribuzione Globale</a></li><li class="depth-1"><a href="#confronto-versanti" data-for="confronto-versanti">Confronto Versanti</a></li><li class="depth-0"><a href="#nebbie-e-superfici-fredde" data-for="nebbie-e-superfici-fredde">Nebbie e Superfici Fredde</a></li><li class="depth-1"><a href="#definizione-e-formazione" data-for="definizione-e-formazione">Definizione e Formazione</a></li><li class="depth-2"><a href="#processo-di-formazione" data-for="processo-di-formazione">Processo di Formazione</a></li><li class="depth-1"><a href="#tipologie-di-nebbie" data-for="tipologie-di-nebbie">Tipologie di Nebbie</a></li><li class="depth-2"><a href="#nebbie-monsoniche" data-for="nebbie-monsoniche">Nebbie Monsoniche</a></li><li class="depth-2"><a href="#nebbie-marine" data-for="nebbie-marine">Nebbie Marine</a></li><li class="depth-2"><a href="#nebbie-dei-deserti-costieri" data-for="nebbie-dei-deserti-costieri">Nebbie dei Deserti Costieri</a></li><li class="depth-1"><a href="#distribuzione-e-significato" data-for="distribuzione-e-significato">Distribuzione e Significato</a></li><li class="depth-0"><a href="#venti-locali-e-effetti-orografici" data-for="venti-locali-e-effetti-orografici">Venti Locali e Effetti Orografici</a></li><li class="depth-1"><a href="#influenza-dellorografia-sui-venti" data-for="influenza-dellorografia-sui-venti">Influenza dell’Orografia sui Venti</a></li><li class="depth-2"><a href="#fattori-modificanti" data-for="fattori-modificanti">Fattori Modificanti</a></li><li class="depth-2"><a href="#effetti-di-compressione-e-accelerazione" data-for="effetti-di-compressione-e-accelerazione">Effetti di Compressione e Accelerazione</a></li><li class="depth-2"><a href="#variazioni-topografiche" data-for="variazioni-topografiche">Variazioni Topografiche</a></li><li class="depth-1"><a href="#tipologie-di-brezze-locali" data-for="tipologie-di-brezze-locali">Tipologie di Brezze Locali</a></li><li class="depth-2"><a href="#brezza-di-valle-e-di-monte" data-for="brezza-di-valle-e-di-monte">Brezza di Valle e di Monte</a></li><li class="depth-2"><a href="#brezza-di-ghiacciaio" data-for="brezza-di-ghiacciaio">Brezza di Ghiacciaio</a></li><li class="depth-2"><a href="#brezza-di-mare-e-di-terra" data-for="brezza-di-mare-e-di-terra">Brezza di Mare e di Terra</a></li><li class="depth-1"><a href="#venti-forti-regionali" data-for="venti-forti-regionali">Venti Forti Regionali</a></li><li class="depth-2"><a href="#bora" data-for="bora">Bora</a></li><li class="depth-2"><a href="#bora-inversa" data-for="bora-inversa">Bora Inversa</a></li><li class="depth-2"><a href="#venti-catabatici-polari" data-for="venti-catabatici-polari">Venti Catabatici Polari</a></li><li class="depth-0"><a href="#effetti-su-neve-e-vegetazione" data-for="effetti-su-neve-e-vegetazione">Effetti su Neve e Vegetazione</a></li><li class="depth-1"><a href="#trasporto-e-accumulo-neve" data-for="trasporto-e-accumulo-neve">Trasporto e Accumulo Neve</a></li><li class="depth-2"><a href="#processi-eolici" data-for="processi-eolici">Processi Eolici</a></li><li class="depth-2"><a href="#formazioni-specifiche" data-for="formazioni-specifiche">Formazioni Specifiche</a></li><li class="depth-2"><a href="#distribuzione-spaziale" data-for="distribuzione-spaziale">Distribuzione Spaziale</a></li><li class="depth-1"><a href="#influenza-sulla-vegetazione" data-for="influenza-sulla-vegetazione">Influenza sulla Vegetazione</a></li><li class="depth-2"><a href="#adattamenti-al-vento" data-for="adattamenti-al-vento">Adattamenti al Vento</a></li><li class="depth-2"><a href="#indicatori-morfologici" data-for="indicatori-morfologici">Indicatori Morfologici</a></li><li class="depth-0"><a href="#processi-di-trasporto-eolico" data-for="processi-di-trasporto-eolico">Processi di Trasporto Eolico</a></li><li class="depth-1"><a href="#materiali-e-condizioni" data-for="materiali-e-condizioni">Materiali e Condizioni</a></li><li class="depth-2"><a href="#materiali-trasportabili" data-for="materiali-trasportabili">Materiali Trasportabili</a></li><li class="depth-2"><a href="#velocità-critiche" data-for="velocità-critiche">Velocità Critiche</a></li><li class="depth-1"><a href="#modalità-di-trasporto" data-for="modalità-di-trasporto">Modalità di Trasporto</a></li><li class="depth-2"><a href="#saltazione" data-for="saltazione">Saltazione</a></li><li class="depth-2"><a href="#sospensione" data-for="sospensione">Sospensione</a></li><li class="depth-2"><a href="#rotolamento-rolling" data-for="rotolamento-rolling">Rotolamento (Rolling)</a></li><li class="depth-1"><a href="#formazioni-geomorfologiche" data-for="formazioni-geomorfologiche">Formazioni Geomorfologiche</a></li><li class="depth-2"><a href="#dune" data-for="dune">Dune</a></li><li class="depth-2"><a href="#ripples" data-for="ripples">Ripples</a></li><li class="depth-0"><a href="#inquinamento-urbano-e-trasporto-eolico" data-for="inquinamento-urbano-e-trasporto-eolico">Inquinamento Urbano e Trasporto Eolico</a></li><li class="depth-1"><a href="#isola-di-calore-urbana" data-for="isola-di-calore-urbana">Isola di Calore Urbana</a></li><li class="depth-2"><a href="#cause-principali" data-for="cause-principali">Cause Principali</a></li><li class="depth-2"><a href="#effetti-termici" data-for="effetti-termici">Effetti Termici</a></li><li class="depth-1"><a href="#dome-di-inquinanti" data-for="dome-di-inquinanti">Dome di Inquinanti</a></li><li class="depth-2"><a href="#meccanismo-di-formazione" data-for="meccanismo-di-formazione">Meccanismo di Formazione</a></li><li class="depth-2"><a href="#esempi-storici" data-for="esempi-storici">Esempi Storici</a></li><li class="depth-1"><a href="#distribuzione-degli-inquinanti" data-for="distribuzione-degli-inquinanti">Distribuzione degli Inquinanti</a></li><li class="depth-2"><a href="#trasporto-a-lunga-distanza" data-for="trasporto-a-lunga-distanza">Trasporto a Lunga Distanza</a></li><li class="depth-2"><a href="#esempi-regionali" data-for="esempi-regionali">Esempi Regionali</a></li><li class="depth-1"><a href="#riassunto-processi-di-trasporto" data-for="riassunto-processi-di-trasporto">Riassunto Processi di Trasporto</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.1</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>
