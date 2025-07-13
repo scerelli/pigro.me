@@ -1,6 +1,6 @@
 ---
 title: 📖 Glossario
-date: 
+date: 01/06/2025
 published: true
 ---
 # Glossario di Geografia Fisica
