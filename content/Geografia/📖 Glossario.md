@@ -1,3 +1,8 @@
+---
+title: 📖 Glossario
+date: 
+published: true
+---
 # Glossario di Geografia Fisica
 
 ## A
