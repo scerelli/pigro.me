@@ -2,62 +2,62 @@
 
 ## A
 
-**Adiabatico**
+###### **Adiabatico**
 > Processo di cambiamento di temperatura o pressione in una massa d'aria senza scambio di calore con l'esterno. Espansione → raffreddamento, compressione → riscaldamento.
 
-**Albedo**
+###### **Albedo**
 > Frazione di radiazione solare incidente che una superficie riflette (0-1). Alto albedo = superfici chiare che riflettono, basso albedo = superfici scure che assorbono.
 
-**Alisei**
+###### **Alisei**
 > Venti costanti che soffiano dalle alte pressioni subtropicali (~30°) verso la zona equatoriale. Da NE a SW nell'emisfero nord, da SE a NW nell'emisfero sud.
 
-**Aloclastismo**
+###### **Aloclastismo**
 > Processo di degradazione delle rocce causato dalla cristallizzazione di sali igroscopici nelle fratture e nei pori, con conseguente disgregazione.
 
-**Alterazione chimica**
+###### **Alterazione chimica**
 > Modificazione della composizione mineralogica delle rocce attraverso reazioni con acqua, ossigeno e anidride carbonica.
 
-**Andosolizzazione**
+###### **Andosolizzazione**
 > Processo pedogenetico caratteristico di suoli derivati da ceneri vulcaniche, con formazione di minerali come allofane e imogolite.
 
-**Anticiclone**
+###### **Anticiclone**
 > Sistema di alta pressione atmosferica con movimento dell'aria a spirale verso l'esterno (orario nell'emisfero nord, antiorario nel sud).
 
-**Ascendenza**
+###### **Ascendenza**
 > Movimento verticale ascendente dell'aria che porta alla formazione di nubi e precipitazioni per raffreddamento adiabatico.
 
 ## B
 
-**Bilancio radiativo**
+###### **Bilancio radiativo**
 > Equilibrio tra radiazione solare assorbita dalla Terra e radiazione infrarossa emessa verso lo spazio.
 
-**Bora**
+###### **Bora**
 > Vento catabatico freddo e secco tipico dell'Adriatico, causato da alta pressione sull'Europa centrale e bassa pressione sul Mediterraneo.
 
-**Brunificazione**
+###### **Brunificazione**
 > Processo pedogenetico di alterazione dei minerali ferrosi in idrossidi ferrici (goethite), conferendo al suolo il caratteristico colore bruno.
 
 ## C
 
-**Carbonatazione**
+###### **Carbonatazione**
 > Processo di alterazione chimica che trasforma carbonati poco solubili in bicarbonati più solubili: CaCO₃ + H₂O + CO₂ ⇌ Ca²⁺ + 2HCO₃⁻.
 
-**Carsismo**
+###### **Carsismo**
 > Insieme di processi che interessano rocce solubili attraverso corrosione chimica, formando cavità e aumentando la permeabilità.
 
-**Celle di Hadley**
+###### **Celle di Hadley**
 > Grandi celle di circolazione atmosferica tra equatore e 30° di latitudine che trasportano calore e originano gli alisei.
 
-**Cianoficee litofite**
+###### **Cianoficee litofite**
 > Microrganismi che perforano e corrodono le rocce carbonatiche, contribuendo alla formazione di microforme carsiche costiere.
 
-**Ciclone**
+###### **Ciclone**
 > Sistema di bassa pressione atmosferica con movimento dell'aria a spirale verso l'interno (antiorario nell'emisfero nord, orario nel sud).
 
-**Ciclone extratropicale**
+###### **Ciclone extratropicale**
 > Sistema perturbato originato dalla rottura del fronte polare, caratterizzato da fronte caldo e fronte freddo.
 
-**Ciclone tropicale**
+###### **Ciclone tropicale**
 > Sistema perturbato che si forma su oceani caldi (>26°C) con venti molto forti e struttura ad occhio centrale (uragani, tifoni).
 
 **Cockpit**
@@ -245,16 +245,23 @@
 **Melanizzazione**
 > Processo pedogenetico di accumulo di humus che conferisce al suolo colore bruno-nerastro e riduce il leaching.
 
-**Microrizzazioni**
-> Migrazioni lente di ioni all'interno delle rocce in ambienti aridi, formando patine colorate di ossidi.
+###### **Menisco**
+> curvatura della superficie di un liquido quando è a contatto con un solido, dovuta alla tensione superficiale.
+> Esempi Visibili di Menischi: 
+> Goccia d'acqua su vetro: la curvatura ai bordi
+   Acqua in un bicchiere: la curvatura lungo le pareti
+   Mercurio in termometro: superficie curva (convessa)
 
-**Mogotes**
+###### **Microrizzazioni**
+> Migrazioni lente di ioni all'interno delle rocce in ambienti aridi, formando patine colorate di ossidi. 
+
+###### **Mogotes**
 > Colline isolate nel carsismo tropicale, evoluzione dei cockpits con depressioni sempre più separate.
 
-**Monsone**
+###### **Monsone**
 > Sistema di venti stagionali causato dal contrasto termico terra-mare, con alternanza di stagioni umide e secche.
 
-**Mud cracks**
+###### **Mud cracks**
 > Fessurazioni poligonali che si formano in suoli argillosi durante l'essiccamento in ambienti aridi.
 
 ## N
@@ -329,61 +336,64 @@
 
 ## T
 
-**Tafoni**
+###### **Tafoni**
 > Incavi sferici nelle rocce di dimensioni metriche, formati per aloclastismo in zone ombreggiate delle pareti.
 
-**Tempo di ricorrenza**
+###### **Taglio**
+> tentativo di far scivolare una parte del materiale rispetto all'altra
+
+###### **Tempo di ricorrenza**
 > Intervallo medio tra eventi geomorfologici rilevanti (frane, alluvioni, valanghe).
 
-**Termoclastismo**
+###### **Termoclastismo**
 > Processo di degradazione fisica delle rocce causato da alternanza di dilatazione e contrazione termica.
 
-**Trafori idrogeologici**
+###### **Trafori idrogeologici**
 > Gallerie carsiche che collegano due piane a quote diverse, tipiche dei carsi a mogotes e torri.
 
-**Traspirazione**
+###### **Traspirazione**
 > Perdita di acqua sotto forma di vapore attraverso gli stomi delle piante.
 
-**Troposfera**
+###### **Troposfera**
 > Strato più basso dell'atmosfera dove avvengono i fenomeni meteorologici, con temperatura decrescente con l'altitudine.
 
-**Tsingy**
+###### **Tsingy**
 > Microforme carsiche tropicali costituite da lame taglienti di roccia alte alcuni metri, simili a denti.
 
 ## U
 
-**Uragano**
+###### **Uragano**
 > Ciclone tropicale dell'Atlantico e Pacifico nord-orientale con venti superiori a 118 km/h.
 
-**Uvala**
+###### **Uvala**
 > Depressione carsica derivante dall'unione di doline contigue.
 
 ## V
 
-**Venti occidentali**
+###### **Venti occidentali**
 > Venti costanti delle medie latitudini (30°-60°) che soffiano da SW verso NE nell'emisfero nord.
 
-**Venti polari**
+###### **Venti polari**
 > Venti freddi e secchi che soffiano dalle alte pressioni polari verso le basse pressioni subpolari.
 
-**Versante di Richter**
+###### **Versante di Richter**
 > Tipo di versante con profilo convesso-concavo dove l'erosione è intensa in sommità e si accumula alla base.
 
 ## W
 
-**Westerlies**
+###### **Westerlies**
 > Venti occidentali delle zone temperate, meno regolari degli alisei ma portatori di perturbazioni.
 
-**Wind shear**
+###### **Wind shear**
 > Variazione della velocità o direzione del vento con l'altitudine, fattore importante per lo sviluppo dei cicloni tropicali.
 
 ## Z
 
-**Zona epifreatica**
+###### **Zona epifreatica**
 > Zona del sistema carsico soggetta ad allagamenti stagionali, caratterizzata da gallerie paragenetiche.
 
-**Zona freatica**
+###### **Zona freatica**
 > Zona più profonda del sistema carsico, permanentemente satura d'acqua, dove si formano i tubi freatici.
 
-**Zona vadosa**
+###### **Zona vadosa**
 > Zona intermedia del sistema carsico che contiene aria e acqua, caratterizzata da condotti verticali (pozzi).
