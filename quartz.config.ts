@@ -8,16 +8,16 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Pigro's KB",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    locale: "it-IT",
+    baseUrl: "pigro.me",
+    ignorePatterns: ["private", "templates", ".obsidian", "./**/_da_sistemare"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

@@ -1,3 +1,10 @@
+---
+title: Accrescimento secondario
+published: true
+tags: [botanica]
+---
+
+
 ## Definizione e Caratteristiche Generali
 
 **Accrescimento secondario**: crescita in spessore (diametro) degli organi vegetali, complementare alla crescita primaria in lunghezza.

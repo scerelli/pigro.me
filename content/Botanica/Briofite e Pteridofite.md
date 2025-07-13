@@ -1,3 +1,10 @@
+---
+title: Briofite e Pteridofite
+published: true
+tags: [botanica]
+---
+
+
 ## 🍃 **BRIOFITE**
 
 ### 📊 **Caratteristiche Generali**
@@ -175,4 +182,3 @@
 - **Interesse scientifico**: meccanismi tolleranza disidratazione
 
 ---
-
