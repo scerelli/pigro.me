@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Cellula - Parete Cellulare
+---
 ### Ruoli principali
 
 - Sostegno e protezione del **protoplasto**

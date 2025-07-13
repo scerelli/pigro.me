@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Fusto in Struttura Primaria
+---
 ## Origine e Caratteristiche Generali
 
 ### Derivazione Embriologica

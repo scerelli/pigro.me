@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Vegetali - Caratteristiche Fondamentali
+---
 ## Definizione
 
 - **Autotrofi foto-sintetici**: producono materia organica da CO₂ + H₂O + luce solare

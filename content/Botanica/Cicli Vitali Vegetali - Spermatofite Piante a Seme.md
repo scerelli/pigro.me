@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Cicli Vitali Vegetali - Spermatofite Piante a Seme
+---
 ## Definizione e Caratteristiche Generali
 
 ### Classificazione

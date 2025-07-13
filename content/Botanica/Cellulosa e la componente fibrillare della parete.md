@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Cellulosa e la componente fibrillare della parete
+---
 ### Differenze tra α-glucosio e β-glucosio
 
 - **α-glucosio**:

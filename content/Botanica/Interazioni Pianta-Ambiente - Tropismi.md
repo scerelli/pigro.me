@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Interazioni Pianta-Ambiente - Tropismi
+---
 # Interazioni Pianta-Ambiente: Tropismi
 
 ## Panoramica delle Risposte Ambientali

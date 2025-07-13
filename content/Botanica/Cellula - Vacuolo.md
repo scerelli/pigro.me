@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Cellula - Vacuolo
+---
 Il vacuolo rappresenta uno dei **tre comparti fondamentali** della cellula vegetale, insieme al citoplasma e al nucleo. È caratterizzato da una struttura relativamente semplice: un **sacco acquoso** delimitato da una membrana specializzata chiamata **tonoplasto**.
 
 Nelle cellule vegetali adulte, il vacuolo occupa **fino al 90%** del volume cellulare totale, rappresentando quindi il comparto dominante. Durante lo sviluppo cellulare, il vacuolo si forma attraverso la **fusione progressiva di pro-vacuoli** presenti nelle cellule giovani e meristematiche.

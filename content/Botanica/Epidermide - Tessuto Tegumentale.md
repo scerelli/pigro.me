@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Epidermide - Tessuto Tegumentale
+---
 ## Origine e Caratteristiche Generali
 
 ### Derivazione Embriologica

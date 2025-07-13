@@ -1,7 +1,7 @@
 ---
 title: Briofite e Pteridofite
 published: true
-tags: [botanica]
+date: 05/08/2025
 ---
 
 

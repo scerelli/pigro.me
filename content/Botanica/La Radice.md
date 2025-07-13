@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: La Radice
+---
 ## Funzioni Principali
 
 1. **Assorbimento**: acqua e sali minerali dal suolo

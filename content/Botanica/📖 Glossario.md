@@ -1,3 +1,7 @@
+---
+title: 📖 Glossario
+date: 05/08/2025
+---
 ## A
 
 **Accrescimento primario**

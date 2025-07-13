@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Foglie - Struttura, Funzioni e Adattamenti
+---
 ## Funzioni Principali
 
 1. **Fotosintesi**: processo metabolico primario

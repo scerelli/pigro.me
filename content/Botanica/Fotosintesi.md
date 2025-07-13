@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Fotosintesi
+---
 **Fotosintesi ossigenica**: 6CO₂ + 6H₂O + energia luminosa → C₆H₁₂O₆ + 6O₂
 
 - **Reazione redox**: H₂O viene ossidata (→ O₂), CO₂ viene ridotta (→ glucosio)

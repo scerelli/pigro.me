@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Cicli Vitali Vegetali - Classificazioni e Evoluzione
+---
 ## Classificazioni Principali
 
 ### Sistema di Classificazione Tradizionale

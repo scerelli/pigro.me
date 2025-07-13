@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Tricomi e specializzazione dell'epidermide
+---
 ### 🔸 **Funzione differenziata dell’epidermide**
 
 - **Organi ipogei**: assorbimento (→ peli radicali).

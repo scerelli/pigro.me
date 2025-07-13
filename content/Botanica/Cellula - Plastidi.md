@@ -1,3 +1,7 @@
+---
+date: 05/08/2025
+title: Cellula - Plastidi
+---
 ## Origine Evolutiva
 
 **Endosimbiosi primaria**: cianobatterio fotosintetico → plastide
