@@ -230,13 +230,13 @@ published: true
 
 ## L
 
-**Leaching**
+###### **Leaching**
 > Processo di lisciviazione di basi e cationi solubili dal suolo, tipico di climi umidi, che porta alla decalcificazione.
 
-**Lessivage**
+###### **Lessivage**
 > Trasporto meccanico di particelle argillose verso il basso nel suolo, formando orizzonti argillici.
 
-**Lettiera**
+###### **Lettiera**
 > Strato di detriti vegetali sulla superficie del suolo che protegge dall'erosione e fornisce sostanza organica.
 
 ## M

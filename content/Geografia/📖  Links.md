@@ -1,0 +1,4 @@
+- **[How to classify a landslide](https://www.bgs.ac.uk/discovering-geology/earth-hazards/landslides/how-to-classify-a-landslide/)**
+- [Glossario di Geologia](https://www.bgeo.it/glossario/)
+- [Maps and Cartography, History of Geography](https://www.loc.gov/maps/)
+- [Earth](https://earth.google.com/web/)
