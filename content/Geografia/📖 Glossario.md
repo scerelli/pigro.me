@@ -22,6 +22,9 @@ published: true
 ###### **Alterazione chimica**
 > Modificazione della composizione mineralogica delle rocce attraverso reazioni con acqua, ossigeno e anidride carbonica.
 
+###### Alveo
+> **Canale naturale** o **letto** di un corso d'acqua, delimitato dalle sponde, entro cui scorre normalmente il fiume.
+
 ###### **Andosolizzazione**
 > Processo pedogenetico caratteristico di suoli derivati da ceneri vulcaniche, con formazione di minerali come allofane e imogolite.
 
@@ -131,25 +134,28 @@ published: true
 
 ## F
 
-**Fasce climatiche**
+###### **Fasce climatiche**
 > Divisione della Terra in zone caratterizzate da diversa insolazione in funzione della latitudine e dell'inclinazione dei raggi solari.
 
-**Fellogeno**
+###### **Fellogeno**
 > Meristema secondario che produce sughero verso l'esterno e felloderma verso l'interno, formando il periderma.
 
-**Fenglin**
+###### **Fenglin**
 > Carso a torri tipico della Cina meridionale, stadio evolutivo finale dei mogotes con torri isolate emergenti da pianura.
 
-**Fotosintesi C4**
+###### **Flusso ipodermico**
+> Movimento laterale dell'acqua negli strati superficiali del suolo, al di sopra della falda freatica, che scorre lungo superfici meno permeabili. Si forma quando l'acqua piovana satura lo strato superiore permeabile e incontra uno strato sottostante impermeabile (argilla, roccia), deviando lateralmente lungo l'interfaccia. È un importante fattore di instabilità dei versanti perché causa saturazione progressiva e riduzione della resistenza dei materiali.
+
+###### **Fotosintesi C4**
 > Meccanismo fotosintetico con concentrazione spaziale della CO₂ per ridurre la fotorespirazione, tipico di piante di ambienti caldi.
 
-**Fronte atmosferico**
+###### **Fronte atmosferico**
 > Superficie di separazione tra due masse d'aria con caratteristiche diverse di temperatura e umidità.
 
-**Fronte caldo**
+###### **Fronte caldo**
 > Zona dove aria calda avanza sopra aria fredda con sollevamento graduale, causando nubi stratificate e precipitazioni moderate.
 
-**Fronte freddo**
+###### **Fronte freddo**
 > Zona dove aria fredda avanza sotto aria calda con sollevamento brusco, causando nubi cumuliformi e rovesci intensi.
 
 ## G
