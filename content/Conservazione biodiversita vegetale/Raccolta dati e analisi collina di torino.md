@@ -1,3 +1,8 @@
+---
+title: 'Raccolta dati e calcolo CO2 stock, in collina di torino'
+pubDate: 'Oct 20 2025'
+---
+
 ## Metodologia
 
 - **Data raccolta**: 23/10/2025

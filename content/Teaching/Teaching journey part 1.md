@@ -1,7 +1,8 @@
 ---
-title: 'Introducing technology to kids through storytelling'
-description: 'This blog post shares my experiences and challenges in bringing the magic of tech to a young audience in Turin. It is a reflection on bridging the gap between curiosity and understanding, tailored for educators parents, and anyone interested in the transformative power of tech education.'
-pubDate: 'Feb 22 2024'
+title: Introducing technology to kids through storytelling
+description: This blog post shares my experiences and challenges in bringing the magic of tech to a young audience in Turin. It is a reflection on bridging the gap between curiosity and understanding, tailored for educators parents, and anyone interested in the transformative power of tech education.
+pubDate: Feb 22 2024
+published: false
 ---
 ## A Creative Approach to Learning
 

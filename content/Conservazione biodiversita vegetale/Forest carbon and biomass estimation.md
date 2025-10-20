@@ -1,3 +1,9 @@
+---
+title: 'Forest carbon and biomass estmation.'
+description: 'Le foreste giocano un ruolo molto importante nella de-carbonizzazione, per ovvi motivi, visto che tramite la fotosintesi immagazinano CO2 in ogni parte della vegetazione, dalle foglie, alle radici fino al suolo. .'
+pubDate: 'Oct 20 2025'
+---
+
 # Cos'è?
 
 Le foreste giocano un ruolo molto importante nella de-carbonizzazione, per ovvi motivi, visto che tramite la fotosintesi immagazinano CO2 in ogni parte della vegetazione, dalle foglie, alle radici fino al suolo. 
